@@ -61,7 +61,7 @@ const Navbar = () => {
                     </Link>
             </div>
           </div>
-            <div className='md:hidden block'>
+            <div className='md:hidden block z-50'>
             <Sheet>
   <SheetTrigger className='text-white mt-3 text-2xl'><AlignJustify fill="white" size={34} /></SheetTrigger>
   <SheetContent>

@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 const FAQ = () => {
   return (
-    <div><div className='border mt-4 shadow-xl rounded-lg mb-4 text-zinc-800-z-50 py-6 mx-[300px] px-7'>
+    <div><div className='border mt-4 text-sm sm:text-md shadow-xl rounded-lg mb-4 text-zinc-800-z-50 py-6 mx-[44] md:mx-[140px] lg:mx-[240px] xl:mx-[300px] px-7'>
    <div className='bottom-6 left-4 right-4'>
    <h1 className='font-bold text-2xl text-center'>FAQ</h1>
         <Accordion type="single" collapsible  className='grid grid-cols-1 gap-x-8 w-full'>

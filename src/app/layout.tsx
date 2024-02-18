@@ -19,10 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Link href="/" className=" bg-[#1b3e63] fixed z-[999] mb-4 w-full flex justify-center items-center underline text-white capitalize">We are now offering MEMBERSHIPS!!!</Link>
+      <Link href="/" className=" bg-[#1b3e63] z-50 fixed mb-4 w-full flex justify-center items-center underline text-white capitalize">We are now offering MEMBERSHIPS!!!</Link>
       
     <Navbar />
-   
 
       {children}
       </body>

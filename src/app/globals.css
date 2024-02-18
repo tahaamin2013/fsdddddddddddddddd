@@ -79,3 +79,7 @@
   -webkit-text-stroke: 1.5px #346aa3 !important;
   -webkit-text-fill-color: #afc350 !important;
 }
+/* In your CSS file or in your HTML file with JIT mode enabled */
+.h-custom-height {
+  height: 5000px;
+}
