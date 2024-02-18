@@ -18,7 +18,7 @@ export default function Home() {
   <source src="/WashMe Car Wash Video - Edited.mp4" className="object-cover" type="video/mp4" />
 </video>
 
-<div className="grid sm:absolute -bottom-[20px] w-[30rem] h-[410px] left-4 right-4 hover:bg-black/20 transition-all bg-gradient-to-tr rounded-none from-black/40 to-transparent backdrop-blur-sm px-10 py-14 text-white">
+<div className="grid sm:absolute -bottom-[20px] w-[20rrem] sm:w-[30rem] h-fit left-4 right-4 hover:bg-black/20 transition-all bg-gradient-to-tr rounded-none from-black/40 to-transparent backdrop-blur-sm px-10 py-14 text-white">
 <h3 className="text-xl font-semibold mb-2 ">
             <div className="inline-block bg-white text-[#346aa3] py-2 px-4 rounded-md text-[17.5px] font-bold tracking-wide transition duration-300"><span>The ONLY Hand Wash in SW Washington</span></div> 
             <span>Offering Exclusive Benefits:</span>
