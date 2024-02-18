@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import Topbutton from "@/components/Topbutton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body className={inter.className}>
       <Link href="/" className=" bg-[#1b3e63] z-50 fixed mb-4 w-full flex justify-center items-center underline text-white capitalize">We are now offering MEMBERSHIPS!!!</Link>
       
     <Navbar />
 
       {children}
+      <Topbutton />
       </body>
     </html>
   );

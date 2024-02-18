@@ -1,3 +1,4 @@
+import Cleaning from "@/components/Cleaning";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Navbar from "@/components/Navbar";
@@ -46,9 +47,14 @@ export default function Home() {
             </div>
           </div>
     <main className="mx-5">
+    <div className="my-4">
+    <Cleaning />
+    </div>
       <Contact />
+      
       <FAQ />
       <Pricing />
+      
     </main>
     </>
   );

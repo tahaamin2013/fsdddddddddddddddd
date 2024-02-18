@@ -75,11 +75,13 @@
   }
 }
 
-.text-stroke{
-  -webkit-text-stroke: 1.5px #346aa3 !important;
-  -webkit-text-fill-color: #afc350 !important;
+
+.button{
+  transition: 0.8s !important;
+  background: -webkit-linear-gradient(0deg,#346aa3 50%,#aec247 50%);
+  background-size: 400px 80px !important;
 }
-/* In your CSS file or in your HTML file with JIT mode enabled */
-.h-custom-height {
-  height: 5000px;
+
+.button:hover{
+  background-position: 200px 0 !important;
 }
