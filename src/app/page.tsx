@@ -30,21 +30,23 @@ const Home: React.FC = () => {
     // Set a timeout to trigger the downward animation after 1 second
     const timeout = setTimeout(() => {
       setShouldAnimateDown(true);
-    }, 1000);
+    }, 3000);
 
     // Clear the timeout when the component unmounts or when the downward animation starts
     return () => clearTimeout(timeout);
   }, []);
 
   useEffect(() => {
-    // Automatically change text every 3 seconds (adjust the interval as needed)
     const intervalId = setInterval(() => {
-      setVisibleIndex((prevIndex) => (prevIndex + 1) % data.texts.length);
-    }, 5000);
+      setShouldAnimateDown(true);
+      setTimeout(() => {
+        setVisibleIndex((prevIndex) => (prevIndex + 1) % data.texts.length);
+        setShouldAnimateDown(false);
+      }, 500);
+    }, 4000);
 
-    // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
-  }, [data.texts.length]);
+  }, []);
   return (
     <>
       <video
@@ -61,15 +63,15 @@ const Home: React.FC = () => {
         />
       </video>
 
-      <div className="text-black top-[390px] flex flex-col justify-center items-center left-[600px]">
-        <div className="h-[40px] tracking-widest uppercase overflow-hidden ">
-        <motion.div
+      <div className="text-white absolute top-[390px] flex flex-col justify-center items-center left-[550px]">
+        <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
+    <motion.div
       className="text-transition"
       initial={{ y: "100%" }}
       animate={{ y: shouldAnimateDown ? "100%" : 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-xl font-normal">
+      <p className="text-6xl font-bold">
       {data.texts[visibleIndex].text}
       </p>
     </motion.div>
