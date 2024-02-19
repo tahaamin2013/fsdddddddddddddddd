@@ -15,13 +15,31 @@ type Data = {
 const Home: React.FC = () => {
   const [data, setData] = useState<Data>({
     texts: [
-      { text: "2 Miles from I-5 Longview exit.",  desc: "Welcome to Wash me car wash."},
-      { text: "No brushes no machinery.", desc: "The Only Handwash Tunnel"},
-      { text: "5 DIY Self Service Bays open 24/7", desc: "Safest Wash in Town."},
-      { text: "Free Vacuums with Car Wash", desc: "Our goal is to make you happy."},
-      { text: "Hands-on service lambs wool wash", desc: "a complete rejuvenation for your vehicle.",},
-      { text: "We treat your car the way you would treat it", desc: "Satisfaction guaranteed if we goof!"},
-      { text: "Spot Free rinse and teflon wax", desc: "Dedicated team of experts"},
+      {
+        text: "2 Miles from I-5 Longview exit.",
+        desc: "Welcome to Wash me car wash.",
+      },
+      { text: "No brushes no machinery.", desc: "The Only Handwash Tunnel" },
+      {
+        text: "5 DIY Self Service Bays open 24/7",
+        desc: "Safest Wash in Town.",
+      },
+      {
+        text: "Free Vacuums with Car Wash",
+        desc: "Our goal is to make you happy.",
+      },
+      {
+        text: "Hands-on service lambs wool wash",
+        desc: "a complete rejuvenation for your vehicle.",
+      },
+      {
+        text: "We treat your car the way you would treat it",
+        desc: "Satisfaction guaranteed if we goof!",
+      },
+      {
+        text: "Spot Free rinse and teflon wax",
+        desc: "Dedicated team of experts",
+      },
     ],
   });
 
@@ -51,52 +69,52 @@ const Home: React.FC = () => {
   }, []);
   return (
     <>
-    <div className="relative">
-
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="w-full pt-[100px] object-cover"
-      >
-        <source
-          src="/WashMe Car Wash Video - Edited.mp4"
-          className="object-cover"
-          type="video/mp4"
-        />
-      </video>
-      <div className="absolute top-[50%] sm:top-[40%] justify-center w-full flex flex-col">
-
-      <div className="text-white flex flex-col justify-center items-center left-[240px]">
-        <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
-          <motion.div
-            className="text-transition"
-            initial={{ y: "100%" }}
-            animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <p className="sm:text-lg text-sm mb-2 font-normal mx-5 uppercase">
-              {data.texts[visibleIndex].desc}
-            </p>
-          </motion.div>
+      <div className="relative">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full pt-[100px] object-cover"
+        >
+          <source
+            src="/WashMe Car Wash Video - Edited.mp4"
+            className="object-cover"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute top-[50%] sm:top-[40%] px-10 sm:px-36 items-center justify-center bg-red-500 w-full flex flex-col">
+          <div className="bg-green-500 max-w-max">
+            <div className="text-white flex flex-col justify-center items-left left-[200px]">
+              <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
+                <motion.div
+                  className="text-transition"
+                  initial={{ y: "100%" }}
+                  animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <p className="sm:text-lg text-sm mb-2 font-normal uppercase">
+                    {data.texts[visibleIndex].desc}
+                  </p>
+                </motion.div>
+              </div>
+            </div>
+            <div>
+              <div className="h-fit mx-auto text-center tracking-widest uppercase flex justify-center items-center text-white w-full overflow-hidden">
+                <motion.div
+                  className="text-transition"
+                  initial={{ y: "100%" }}
+                  animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <p className="text-2xl sm:text-5xl font-bold uppercase">
+                    {data.texts[visibleIndex].text}
+                  </p>
+                </motion.div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-          <div className="h-fit mx-auto text-center tracking-widest uppercase flex justify-center items-center text-white w-full overflow-hidden">
-            <motion.div
-              className="text-transition"
-              initial={{ y: "100%" }}
-              animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <p className="text-2xl sm:text-5xl mx-10 sm:mx-36 font-bold uppercase">
-                {data.texts[visibleIndex].text}
-              </p>
-            </motion.div>
-        </div>
-      </div>
-      </div>
 
         {/* <div className="text-white flex flex-col justify-center items-center">
           <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
