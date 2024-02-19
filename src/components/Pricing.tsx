@@ -55,21 +55,21 @@ const Pricing: React.FC = () => {
       <div className='mt-6 flex flex-col gap-4'>
         <button
           onClick={() => handleClick('small')}
-          className={`bg-green-500 text-white font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
+          className={`bg-green-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car1.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
           Small
         </button>
         <button
           onClick={() => handleClick('pickup')}
-          className={`bg-yellow-500 text-white font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'pickup' ? 'border-2 border-[#e5e5e5]' : ''}`}
+          className={`bg-yellow-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'pickup' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car2.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
           Pickup
         </button>
         <button
           onClick={() => handleClick('suv')}
-          className={`bg-red-500 text-white font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'suv' ? 'border-2 border-[#e5e5e5]' : ''}`}
+          className={`bg-red-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'suv' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car3.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
           SUV
