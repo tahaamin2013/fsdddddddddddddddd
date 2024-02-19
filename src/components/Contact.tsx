@@ -147,10 +147,17 @@ const Contact = () => {
 
   return (
     <>
-    <h1 className='flex flex-row items-center mb-4 mt-2 text-2xl'><hr className='bg-[#346aa3] w-full h-0.5 mt-0.5' /><span className='mx-2 text-[#346aa3]'>Contact</span><hr className='bg-[#346aa3] w-full h-0.5 mt-0.5'/></h1>
+    <h1 className='flex flex-row items-center mb-4 mt-2 text-2xl'><hr className='bg-blue w-full h-0.5 mt-0.5' /><span className='mx-2 text-blue'>Contact</span><hr className='bg-blue w-full h-0.5 mt-0.5'/></h1>
     <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
      
-        <form className="flex flex-col w-full gap-8 bg-[#acc042] text-zinc-800 border shadow-xl p-2 rounded-lg py-6 px-8 justify-center" onSubmit={onFormSubmit}>
+    <div className="relative bg-blue text-white border shadow-xl p-2 rounded-lg py-6 px-8 overflow-hidden">
+    <div className="absolute inset-0">
+      <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
+      <div className="absolute inset-0"></div>
+    </div>
+    
+    <div className="relative z-10 flex flex-col justify-center  items-center h-full">
+    <form className="flex flex-col w-full gap-8" onSubmit={onFormSubmit}>
          <div>
          <div className="flex sm:flex-row flex-col sm:gap-7 gap-0 w-full">
             {/* Email */}
@@ -230,53 +237,62 @@ const Contact = () => {
           <button
             type="submit"
             aria-label="Send Message button for Contact"
-            className="bg-primary transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-fit"
+            className="bg-[#b4c656] transition-all duration-150 text-black font-medium py-2.5 px-5 rounded-lg w-fit"
           >
             Send Message
           </button>
          </div>
         </form>
-        <div className='bg-[#acc042] text-zinc-800 border shadow-xl rounded-lg py-5 px-4'>
+    </div>
+  </div>  
+  <div className="relative bg-blue border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden">
+    <div className="absolute inset-0">
+      <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
+      <div className="absolute inset-0"></div>
+    </div>
+    
+    <div className='bg-blue text-white'>
          
-        <div>
-        <div>
-          <div className='grid grid-cols-1 mb-2 items-center gap-2'>
-          <div>
-            <p className='font-extrabold text-xl'>Visit for an extraordinary car care experience</p>
-            </div>
-              <div>
-                
-              <p className="m-0 dark:text-dark p-0 flex flex-row items-center justify-between">
-               <div className='flex gap-1 items-center'>
-               <FaMapMarkerAlt  fill="white" className="fill-black" />
-               1953 9th Ave, Longview, WA,
-               </div>
-                <p className="m-0 dark:text-dark -mt-3 p-0 flex flex-row items-center gap-3">
-                <IoTime fill="white" size={25} className="fill-black" />
-                <div className='flex flex-col'>
-               <h1 className='font-bold mt-3 text-lg'>Hand Wash Open</h1>
-                Mon - Fri 09:00 am – 06:00 pm <br />
-                Sun 10:00 am – 04:00 pm
-               </div>
-                </p>
-                </p>
-               
-              </div>
-               
+         <div>
+         <div>
+           <div className='grid grid-cols-1 mb-2 items-center gap-2'>
+           <div>
+             <p className='font-extrabold text-xl'>Visit for an extraordinary car care experience</p>
+             </div>
+               <div>
+                 
+               <p className="m-0 dark:text-dark p-0 flex flex-row items-center justify-between">
+                <div className='flex gap-1 items-center'>
+                <FaMapMarkerAlt  fill="white" className="fill-white" />
+                1953 9th Ave, Longview, WA,
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11057.182314530331!2d-122.9279929!3d46.14486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54946c94ec9bed79%3A0x41eb6feac6768b1b!2sWash%20Me%20Car%20Wash!5e0!3m2!1sen!2sbr!4v1708203053173!5m2!1sen!2sbr" className='rounded-xl mt-2 w-full' loading="lazy"></iframe>
-               <div className='flex flex-col gap-1 mt-6'>
-               <p className='flex gap-3 items-center'><IoMdMail className='mt-0.5' />
-              eileen@eileentefft.com</p>
-              <p className="m-0 dark:text-dark p-0 flex flex-row items-center gap-3">
-                <FaPhoneAlt fill="white" className="fill-black" />
-                360-4304126
-              </p>  
+                 <p className="m-0 dark:text-dark -mt-3 p-0 flex flex-row items-center gap-3">
+                 <IoTime fill="white" size={25} className="fill-white" />
+                 <div className='flex flex-col'>
+                <h1 className='font-bold mt-3 text-lg'>Hand Wash Open</h1>
+                 Mon - Fri 09:00 am – 06:00 pm <br />
+                 Sun 10:00 am – 04:00 pm
+                </div>
+                 </p>
+                 </p>
+                
                </div>
-            </div>
-            
-        </div>
-        </div>
+                
+                 </div>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11057.182314530331!2d-122.9279929!3d46.14486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54946c94ec9bed79%3A0x41eb6feac6768b1b!2sWash%20Me%20Car%20Wash!5e0!3m2!1sen!2sbr!4v1708203053173!5m2!1sen!2sbr" className='rounded-xl mt-2 w-full' loading="lazy"></iframe>
+                <div className='flex flex-col gap-1 mt-6'>
+                <p className='flex gap-3 items-center'><IoMdMail className='mt-0.5' />
+               eileen@eileentefft.com</p>
+               <p className="m-0 dark:text-dark p-0 flex flex-row items-center gap-3">
+                 <FaPhoneAlt fill="white" className="fill-white" />
+                 360-4304126
+               </p>  
+                </div>
+             </div>
+             
+         </div>
+         </div>
+  </div>  
 
 </div>
 </>

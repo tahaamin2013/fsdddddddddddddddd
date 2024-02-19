@@ -23,7 +23,7 @@ const Navbar = () => {
     
           // Adjust the condition as needed
           if (position > 130) {
-            setNavbarColor('bg-[#346aa3] shadow-xl');
+            setNavbarColor('bg-blue shadow-xl');
           } else {
             setNavbarColor('bg-transparent');
           }
@@ -39,8 +39,13 @@ const Navbar = () => {
  return (
     // ${navbarColor}
 
+    <div className="bg-blue text-white overflow-hidden mt-6 transition-all z-50 duration-200 shadow-xl px-5 lg:px-20 py-2 items-center justify-between fixed w-full">
+        <div className="absolute inset-0">
+      <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
+      <div className="absolute inset-0"></div>
+    </div>
     <div>
-        <div className={`flex transition-all z-50 duration-200 bg-[#346aa3] mt-6 shadow-xl px-5 lg:px-20 py-2 items-center justify-between fixed w-full`}>
+        <div className={`flex justify-between items-center`}>
            <Link href="/" className='pr-8 outline-none'><Image src="/Wash-Me-Logo.png" className='w-[90px] h-[60px] py-1' alt='Logo' width={939999999999999} height={99999999999999} /></Link>
           <div className='md:block hidden'>
           <div className='text-white font-bold flex gap-5 text-lg'>
@@ -92,7 +97,7 @@ const Navbar = () => {
             </div>
        </div>
     </div>
-  )
+    </div>  )
 }
 
 export default Navbar

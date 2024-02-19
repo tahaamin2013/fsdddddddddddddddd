@@ -63,8 +63,8 @@ const CarouselContainer = () => {
       <div
         className='flex sm:justify-start justify-center sm:items-start items-center w-full flex-col'
       >
-        <h2 className='flex items-center gap-3 tracking-wide uppercase text-[#346aa3]'>
-          <hr className='w-16 h-[1.5px] bg-[#346aa3]' /> DRY CLEANING
+        <h2 className='flex items-center gap-3 tracking-wide uppercase text-blue'>
+          <hr className='w-16 h-[1.5px] bg-blue' /> DRY CLEANING
         </h2>
           <p
             key={selectedImage}

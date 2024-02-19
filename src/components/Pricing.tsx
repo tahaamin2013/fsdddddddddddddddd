@@ -46,7 +46,7 @@ const Pricing: React.FC = () => {
   }, [selectedCar]);
   return (
     <div className="font-sans text-center mt-8 flex justify-center items-center flex-col">
-      <p className='tracking-widest text-[#346aa3]'>WASHING PRICE</p>
+      <p className='tracking-widest text-blue'>WASHING PRICE</p>
       <h1 className='text-4xl mb-2 font-bold'>Choose Your Plan</h1>
       <p className='w-fit lg:w-[990px]'>Sed non dapibus dolor, non rhoncus dui. Ut eleifend justo at ipsum aliquam, vel cursus tellus pulvinar. Nulla vel tempus diam. Nunc vulputate, quam sit amet commodo tincidunt, enim lorem scelerisque massa, vel ultricies.</p>
     
@@ -55,7 +55,7 @@ const Pricing: React.FC = () => {
       <div className='mt-6 flex flex-col gap-4'>
         <button
           onClick={() => handleClick('small')}
-          className={`bg-green-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
+          className={`bg-green text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car1.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
           Small
