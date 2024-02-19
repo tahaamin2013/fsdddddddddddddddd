@@ -60,55 +60,40 @@ const CarouselContainer = () => {
     <div
       className='grid grid-cols-1 sm:grid-cols-2 justify-center mb-5 sm:mx-9'
     >
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -20 }}
-        transition={{ duration: 0.5 }}
+      <div
         className='flex sm:justify-start justify-center sm:items-start items-center w-full flex-col'
       >
         <h2 className='flex items-center gap-3 tracking-wide uppercase text-[#346aa3]'>
           <hr className='w-16 h-[1.5px] bg-[#346aa3]' /> DRY CLEANING
         </h2>
-        <AnimatePresence>
-          <motion.p
+          <p
             key={selectedImage}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 900, x: 0 }}
-            transition={{ duration: 0.5}}
             className='text-4xl font-bold'
           >
             {imageData[selectedImage].caption}
-          </motion.p>
-        </AnimatePresence>
+          </p>
         <div className='carousel-navigation hidden sm:flex flex-row gap-3 mt-2'>
-          <motion.button
+          <button
             onClick={handlePrevClick}
             disabled={isPrevDisabled}
             className={`rounded-full p-1 border-2 ${
               isPrevDisabled ? 'border-zinc-300' : 'border-[#b0c36b]'
             }`}
-            whileTap={{ scale: 0.9 }}
           >
             <RiArrowLeftSLine size={25} />
-          </motion.button>
-          <motion.button
+          </button>
+          <button
             onClick={handleNextClick}
             disabled={isNextDisabled}
             className={`rounded-full p-1 border-2 ${
               isNextDisabled ? 'border-zinc-300' : 'border-[#b0c36b]'
             }`}
-            whileTap={{ scale: 0.9 }}
           >
             <MdKeyboardArrowRight size={26} />
-          </motion.button>
+          </button>
         </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 20 }}
-        transition={{ duration: 0.5 }}
+      </div>
+      <div
         className='carousel'
       >
         <div className='contentWrapper'>
@@ -123,28 +108,26 @@ const CarouselContainer = () => {
           )}
         </div>
         <div className='carousel-navigation flex sm:hidden flex-row gap-3 w-full justify-center items-center mt-2'>
-          <motion.button
+          <button
             onClick={handlePrevClick}
             disabled={isPrevDisabled}
             className={`rounded-full p-1 border-2 ${
               isPrevDisabled ? 'border-zinc-300' : 'border-[#b0c36b]'
             }`}
-            whileTap={{ scale: 0.9 }}
           >
             <RiArrowLeftSLine size={25} />
-          </motion.button>
-          <motion.button
+          </button>
+          <button
             onClick={handleNextClick}
             disabled={isNextDisabled}
             className={`rounded-full p-1 border-2 ${
               isNextDisabled ? 'border-zinc-300' : 'border-[#b0c36b]'
             }`}
-            whileTap={{ scale: 0.9 }}
           >
             <MdKeyboardArrowRight size={26} />
-          </motion.button>
+          </button>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

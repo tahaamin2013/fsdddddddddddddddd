@@ -13,6 +13,7 @@ interface Plan {
   price: string;
   options: string[];
   nooptions:string[];
+  minutes:string;
 }
 
 const Pricing: React.FC = () => {
@@ -21,15 +22,15 @@ const Pricing: React.FC = () => {
 
   const data: Record<string, Plan[]> = {
     small: [
-      { name: 'Small Plan 1', price: '20,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S'],nooptions:['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T']  },
+      { name: 'Small Plan 1', price: '20,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S'],nooptions:['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'], minutes:"15"  },
       // Add more small plans with similar structure
     ],
     pickup: [
-      { name: 'Pickup Plan 1', price: '35,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'],nooptions:['Option S', 'Option T','Option S', 'Option T'],  },
+      { name: 'Pickup Plan 1', price: '35,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'],nooptions:['Option S', 'Option T','Option S', 'Option T'], minutes:"25"  },
       // Add more pickup plans with similar structure
     ],
     suv: [
-      { name: 'SUV Plan 1', price: '40,000',options: ['Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'] ,nooptions:['Option S', 'Option T','Option S'] },
+      { name: 'SUV Plan 1', price: '40,000',options: ['Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'] ,nooptions:['Option S', 'Option T','Option S'],minutes:"45" },
       // Add more SUV plans with similar structure
     ],
   };
@@ -88,11 +89,14 @@ const Pricing: React.FC = () => {
                   </p>
                   <p className='flex flex-col gap-1'>
                     
-                    {plan.nooptions.map((nooptions, nooptionsIndex) => (
+                  {plan.nooptions.map((nooptions, nooptionsIndex) => (
                       <span key={nooptionsIndex} className='flex items-center justify-center w-full gap-2'>
                         <IoCloseSharp fill='red' size={20} />
                       {nooptions}</span>
                     ))}
+                  </p>
+                  <p className='text-[#346aa3]'>
+                    {plan.minutes}
                   </p>
                   
                 </div>
