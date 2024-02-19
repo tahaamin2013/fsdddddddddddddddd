@@ -15,9 +15,12 @@ type Data = {
 const Home: React.FC = () => {
   const [data, setData] = useState<Data>({
     texts: [
-      { text: "Your Cars is Always in great",  desc: "Welcome to autospa hand car wash", button: "Button 1",text2: "hands with us"},
-      { text: "We love your car the same as", desc: "full service and exterior treatments", button: "Button 2",text2: "you do"},
-      { text: "Detailing service with a", desc: "from express detail to full inside & out", button: "Button 3",text2: "personal touch"},
+      { text: "The Only Handwash Tunnel",  desc: "No brushes no machinery.", button: "Button 1",text2: "Around"},
+      { text: "We treat your car the way you would ", desc: "Our goal is to make you happy.", button: "Button 2",text2: "treat it"},
+      { text: "5 DIY Self Service Bays", desc: "Safest Wash in Town.", button: "Button 3",text2: "open 24/7"},
+      { text: "Satisfaction guaranteed ", desc: "a complete rejuvenation for your vehicle.", button: "Button 3",text2: "if we goof!"},
+      { text: "Free Vacuums with Car Wash", desc: "2 Miles from I-5 Longview exit.", button: "Button 3",text2: " "},
+      { text: "Hands-on service lambs wool", desc: "Welcome to Wash me car wash.", button: "Button 3",text2: "wash"},
     ],
   });
 
@@ -28,7 +31,7 @@ const Home: React.FC = () => {
     // Set a timeout to trigger the downward animation after 1 second
     const timeout = setTimeout(() => {
       setShouldAnimateDown(true);
-    }, 3000);
+    }, 4000);
 
     // Clear the timeout when the component unmounts or when the downward animation starts
     return () => clearTimeout(timeout);
@@ -60,7 +63,7 @@ const Home: React.FC = () => {
           type="video/mp4"
         />
       </video>
-      <div className="text-white absolute top-[333px] flex flex-col justify-center items-center left-[240px]">
+      <div className="text-white absolute top-[310px] flex flex-col justify-center items-center left-[240px]">
       <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
     <motion.div
       className="text-transition"
@@ -75,7 +78,8 @@ const Home: React.FC = () => {
 
       </div>
       </div>
-      <div className="text-white absolute top-[360px] flex flex-col justify-center items-center left-[240px]">
+     <div className="absolute top-[336px] left-[240px] flex flex-col justify-center items-center">
+     <div className="text-white flex flex-col justify-center items-center ">
       <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
     <motion.div
       className="text-transition"
@@ -90,7 +94,7 @@ const Home: React.FC = () => {
 
       </div>
       </div>
-      <div className="text-white absolute top-[416px] flex flex-col justify-center items-center left-[240px]">
+      <div className="text-white flex flex-col justify-center items-center">
       <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
     <motion.div
       className="text-transition"
@@ -102,6 +106,7 @@ const Home: React.FC = () => {
       {data.texts[visibleIndex].text2}
       </p>
     </motion.div>
+     </div>
 
       </div>
       </div>
