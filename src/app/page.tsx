@@ -15,9 +15,9 @@ type Data = {
 const Home: React.FC = () => {
   const [data, setData] = useState<Data>({
     texts: [
-      { text: "Your Cars is Always in great",  desc: "Description 1", button: "Button 1",text2: "hands with us"},
-      { text: "We love your car the same as", desc: "Description 2", button: "Button 2",text2: "you do"},
-      { text: "Detailing service with a", desc: "Description 3", button: "Button 3",text2: "personal touch"},
+      { text: "Your Cars is Always in great",  desc: "Welcome to autospa hand car wash", button: "Button 1",text2: "hands with us"},
+      { text: "We love your car the same as", desc: "full service and exterior treatments", button: "Button 2",text2: "you do"},
+      { text: "Detailing service with a", desc: "from express detail to full inside & out", button: "Button 3",text2: "personal touch"},
     ],
   });
 
@@ -60,8 +60,22 @@ const Home: React.FC = () => {
           type="video/mp4"
         />
       </video>
+      <div className="text-white absolute top-[333px] flex flex-col justify-center items-center left-[240px]">
+      <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
+    <motion.div
+      className="text-transition"
+      initial={{ y: "100%" }}
+      animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <p className="text-lg font-normal uppercase">
+      {data.texts[visibleIndex].desc}
+      </p>
+    </motion.div>
 
-      <div className="text-white absolute top-[360px] flex flex-col justify-center items-center left-[200px]">
+      </div>
+      </div>
+      <div className="text-white absolute top-[360px] flex flex-col justify-center items-center left-[240px]">
       <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
     <motion.div
       className="text-transition"
@@ -76,7 +90,7 @@ const Home: React.FC = () => {
 
       </div>
       </div>
-      <div className="text-white absolute top-[416px] flex flex-col justify-center items-center left-[200px]">
+      <div className="text-white absolute top-[416px] flex flex-col justify-center items-center left-[240px]">
       <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
     <motion.div
       className="text-transition"
