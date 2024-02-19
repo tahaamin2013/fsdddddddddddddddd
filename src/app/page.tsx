@@ -10,16 +10,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 type Data = {
-  texts: { text: string; desc: string; button: string }[];
+  texts: { text: string; desc: string; button: string; text2: string }[];
 };
 const Home: React.FC = () => {
   const [data, setData] = useState<Data>({
     texts: [
-      { text: "Text 1", desc: "Description 1", button: "Button 1" },
-      { text: "Text 2", desc: "Description 2", button: "Button 2" },
-      { text: "Text 3", desc: "Description 3", button: "Button 3" },
-      { text: "Text 4", desc: "Description 4", button: "Button 4" },
-      { text: "Text 5", desc: "Description 5", button: "Button 5" },
+      { text: "Your Cars is Always in great",  desc: "Description 1", button: "Button 1",text2: "hands with us"},
+      { text: "We love your car the same as", desc: "Description 2", button: "Button 2",text2: "you do"},
+      { text: "Detailing service with a", desc: "Description 3", button: "Button 3",text2: "personal touch"},
     ],
   });
 
@@ -63,16 +61,31 @@ const Home: React.FC = () => {
         />
       </video>
 
-      <div className="text-white absolute top-[390px] flex flex-col justify-center items-center left-[550px]">
-        <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
+      <div className="text-white absolute top-[360px] flex flex-col justify-center items-center left-[200px]">
+      <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
     <motion.div
       className="text-transition"
       initial={{ y: "100%" }}
       animate={{ y: shouldAnimateDown ? "100%" : 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-6xl font-bold">
+      <p className="text-5xl font-bold uppercase">
       {data.texts[visibleIndex].text}
+      </p>
+    </motion.div>
+
+      </div>
+      </div>
+      <div className="text-white absolute top-[416px] flex flex-col justify-center items-center left-[200px]">
+      <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
+    <motion.div
+      className="text-transition"
+      initial={{ y: "100%" }}
+      animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <p className="text-5xl font-bold uppercase">
+      {data.texts[visibleIndex].text2}
       </p>
     </motion.div>
 
