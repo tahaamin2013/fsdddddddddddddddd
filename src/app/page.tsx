@@ -10,17 +10,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 type Data = {
-  texts: { text: string; desc: string; button: string; text2: string }[];
+  texts: { text: string; desc: string }[];
 };
 const Home: React.FC = () => {
   const [data, setData] = useState<Data>({
     texts: [
-      { text: "The Only Handwash Tunnel",  desc: "No brushes no machinery.", button: "Button 1",text2: "Around"},
-      { text: "We treat your car the way you would ", desc: "Our goal is to make you happy.", button: "Button 2",text2: "treat it"},
-      { text: "5 DIY Self Service Bays", desc: "Safest Wash in Town.", button: "Button 3",text2: "open 24/7"},
-      { text: "Satisfaction guaranteed ", desc: "a complete rejuvenation for your vehicle.", button: "Button 3",text2: "if we goof!"},
-      { text: "Free Vacuums with Car Wash", desc: "2 Miles from I-5 Longview exit.", button: "Button 3",text2: " "},
-      { text: "Hands-on service lambs wool", desc: "Welcome to Wash me car wash.", button: "Button 3",text2: "wash"},
+      { text: "2 Miles from I-5 Longview exit.",  desc: "Welcome to Wash me car wash."},
+      { text: "No brushes no machinery.", desc: "The Only Handwash Tunnel"},
+      { text: "5 DIY Self Service Bays open 24/7", desc: "Safest Wash in Town."},
+      { text: "Free Vacuums with Car Wash", desc: "Our goal is to make you happy."},
+      { text: "Hands-on service lambs wool wash", desc: "a complete rejuvenation for your vehicle.",},
+      { text: "We treat your car the way you would treat it", desc: "Satisfaction guaranteed if we goof!"},
+      { text: "Spot Free rinse and teflon wax", desc: "Dedicated team of experts"},
     ],
   });
 
@@ -50,6 +51,8 @@ const Home: React.FC = () => {
   }, []);
   return (
     <>
+    <div className="relative">
+
       <video
         autoPlay
         loop
@@ -63,52 +66,52 @@ const Home: React.FC = () => {
           type="video/mp4"
         />
       </video>
-      <div className="text-white absolute top-[310px] flex flex-col justify-center items-center left-[240px]">
-      <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
-    <motion.div
-      className="text-transition"
-      initial={{ y: "100%" }}
-      animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <p className="text-lg font-normal uppercase">
-      {data.texts[visibleIndex].desc}
-      </p>
-    </motion.div>
+      <div className="absolute top-[50%] sm:top-[40%] justify-center w-full flex flex-col">
 
+      <div className="text-white flex flex-col justify-center items-center left-[240px]">
+        <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
+          <motion.div
+            className="text-transition"
+            initial={{ y: "100%" }}
+            animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="sm:text-lg text-sm mb-2 font-normal mx-5 uppercase">
+              {data.texts[visibleIndex].desc}
+            </p>
+          </motion.div>
+        </div>
+      </div>
+      <div>
+          <div className="h-fit mx-auto text-center tracking-widest uppercase flex justify-center items-center text-white w-full overflow-hidden">
+            <motion.div
+              className="text-transition"
+              initial={{ y: "100%" }}
+              animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="text-2xl sm:text-5xl mx-10 sm:mx-36 font-bold uppercase">
+                {data.texts[visibleIndex].text}
+              </p>
+            </motion.div>
+        </div>
       </div>
       </div>
-     <div className="absolute top-[336px] left-[240px] flex flex-col justify-center items-center">
-     <div className="text-white flex flex-col justify-center items-center ">
-      <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
-    <motion.div
-      className="text-transition"
-      initial={{ y: "100%" }}
-      animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <p className="text-5xl font-bold uppercase">
-      {data.texts[visibleIndex].text}
-      </p>
-    </motion.div>
 
-      </div>
-      </div>
-      <div className="text-white flex flex-col justify-center items-center">
-      <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
-    <motion.div
-      className="text-transition"
-      initial={{ y: "100%" }}
-      animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <p className="text-5xl font-bold uppercase">
-      {data.texts[visibleIndex].text2}
-      </p>
-    </motion.div>
-     </div>
-
-      </div>
+        {/* <div className="text-white flex flex-col justify-center items-center">
+          <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
+            <motion.div
+              className="text-transition"
+              initial={{ y: "100%" }}
+              animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="text-5xl font-bold uppercase">
+                {data.texts[visibleIndex].text2}
+              </p>
+            </motion.div>
+          </div>
+        </div> */}
       </div>
       <div className="sm:absolute hidden -bottom-[20px] w-[20rrem] sm:w-[30rem] h-fit left-4 right-4 hover:bg-black/20 transition-all bg-gradient-to-tr rounded-none from-black/40 to-transparent backdrop-blur-sm px-10 py-14 text-white">
         <h3 className="text-xl font-semibold mb-2 ">
@@ -146,7 +149,6 @@ const Home: React.FC = () => {
         <Pricing />
         <WhatWeDo />
         <FAQ />
-       
       </main>
     </>
   );
