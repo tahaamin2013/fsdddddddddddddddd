@@ -31,7 +31,7 @@ const Home: React.FC = () => {
     // Set a timeout to trigger the downward animation after 1 second
     const timeout = setTimeout(() => {
       setShouldAnimateDown(true);
-    }, 4000);
+    }, 5000);
 
     // Clear the timeout when the component unmounts or when the downward animation starts
     return () => clearTimeout(timeout);
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
         setVisibleIndex((prevIndex) => (prevIndex + 1) % data.texts.length);
         setShouldAnimateDown(false);
       }, 500);
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(intervalId);
   }, []);
