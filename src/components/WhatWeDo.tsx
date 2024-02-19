@@ -24,14 +24,15 @@ const WhatWeDo = () => {
         </div>
         <Carousel
       plugins={[plugin.current]}
-      className="w-full sm:w-[1100px]"
+      className="w-[1000px] xl:w-[1100px]"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
       <CarouselItem>
-      <div className="flex flex-row gap-7 bg-white border shadow-xl text-black rounded-xl">
-         <Image src="/image1.jpg" alt="girl with car" className="h-[520px] w-[1130px] object-cover" width={5000000000} height={500000000} />
+      <div className="flex flex-row gap-7 bg-white border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+         <Image src="/image1.jpg" alt="girl with car" className="h-[300px] xl:h-[520px] w-[900px] xl:w-[1130px] hidden sm:block 
+ object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
             <h1 className="text-left">
                 <h1 className="font-bold text-2xl">Exterior Washing</h1>
@@ -49,8 +50,8 @@ const WhatWeDo = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border shadow-xl text-black rounded-xl">
-         <Image src="/image2.jpg" alt="girl with car" className="h-[520px] w-[1130px] object-cover" width={5000000000} height={500000000} />
+        <div className="flex flex-row gap-7 bg-white border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+         <Image src="/image2.jpg" alt="girl with car" className="h-[520px] w-[900px] lg:w-[1130px] hidden sm:block object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
             <h1 className="text-left">
                 <h1 className="font-bold text-2xl">Engine Service</h1>
@@ -68,8 +69,8 @@ const WhatWeDo = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border shadow-xl text-black rounded-xl">
-         <Image src="/image3.jpg" alt="girl with car" className="h-[520px] w-[1130px] object-cover" width={5000000000} height={500000000} />
+        <div className="flex flex-row gap-7 bg-white border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+         <Image src="/image3.jpg" alt="girl with car" className="h-[520px] w-[900px] lg:w-[1130px] hidden sm:block object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
             <h1 className="text-left">
                 <h1 className="font-bold text-2xl">Interior Cleaning</h1>
@@ -87,8 +88,8 @@ const WhatWeDo = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border shadow-xl text-black rounded-xl">
-         <Image src="/image4.jpg" alt="girl with car" className="h-[520px] w-[1130px] object-cover" width={5000000000} height={500000000} />
+        <div className="flex flex-row gap-7 bg-white border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+         <Image src="/image4.jpg" alt="girl with car" className="h-[520px] w-[900px] lg:w-[1130px] hidden sm:block object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
             <h1 className="text-left">
                 <h1 className="font-bold text-2xl">Diagnostic Tests</h1>
@@ -106,8 +107,8 @@ const WhatWeDo = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border shadow-xl text-black rounded-xl">
-         <Image src="/image5.jpg" alt="girl with car" className="h-[520px] w-[1130px] object-cover" width={5000000000} height={500000000} />
+        <div className="flex flex-row gap-7 bg-white border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+         <Image src="/image5.jpg" alt="girl with car" className="h-[520px] w-[900px] lg:w-[1130px] hidden sm:block object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
             <h1 className="text-left">
                 <h1 className="font-bold text-2xl">Vacuum Cleaning</h1>
