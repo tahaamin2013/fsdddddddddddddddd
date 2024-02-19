@@ -41,7 +41,7 @@ const Home: React.FC = () => {
         setVisibleIndex((prevIndex) => (prevIndex + 1) % data.texts.length);
         setShouldAnimateDown(false);
       }, 500);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
