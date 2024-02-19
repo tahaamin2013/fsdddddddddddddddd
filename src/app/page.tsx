@@ -24,6 +24,17 @@ const Home: React.FC = () => {
   });
 
   const [visibleIndex, setVisibleIndex] = useState(0);
+  const [shouldAnimateDown, setShouldAnimateDown] = useState(false);
+
+  useEffect(() => {
+    // Set a timeout to trigger the downward animation after 1 second
+    const timeout = setTimeout(() => {
+      setShouldAnimateDown(true);
+    }, 1000);
+
+    // Clear the timeout when the component unmounts or when the downward animation starts
+    return () => clearTimeout(timeout);
+  }, []);
 
   useEffect(() => {
     // Automatically change text every 3 seconds (adjust the interval as needed)
@@ -52,48 +63,18 @@ const Home: React.FC = () => {
 
       <div className="text-black top-[390px] flex flex-col justify-center items-center left-[600px]">
         <div className="h-[40px] tracking-widest uppercase overflow-hidden ">
-          <motion.p
-            key={visibleIndex}
-            className="text-transition"
-            initial={{ y: "100%" }}
-            animate={{ y: "0" }}
-            exit={{ y: "0%" }}
-            transition={{ type: "tween", duration: 1.0 }}
-          >
-            <p className="text-xl font-normal">
-              {data.texts[visibleIndex].desc}
-            </p>
-          </motion.p>
-        </div>
+        <motion.div
+      className="text-transition"
+      initial={{ y: "100%" }}
+      animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <p className="text-xl font-normal">
+      {data.texts[visibleIndex].text}
+      </p>
+    </motion.div>
 
-        <div className="h-[50px] overflow-hidden">
-          <motion.p
-            key={visibleIndex}
-            className="text-transition"
-            initial={{ y: "100%" }}
-            animate={{ y: "0" }}
-            exit={{ y: "100%" }}
-            transition={{ type: "tween", duration: 1.0 }}
-          >
-            <p className="text-6xl font-bold">
-              {data.texts[visibleIndex].text}
-            </p>
-          </motion.p>
-        </div>
-        {/* <div className="h-[44px] mt-6 tracking-widest uppercase overflow-hidden"> */}
-        <motion.button
-          key={visibleIndex}
-          className="text-transition"
-          initial={{ y: "100%" }}
-          animate={{ y: "0", transition: { delay: 1.0, ease: "easeInOut" } }}
-          exit={{ y: "100%", transition: { delay: 2.0, ease: "easeInOut" } }}
-          transition={{ type: "tween", duration: 1.0 }}
-        >
-          <p className="border-2 rounded-xl border-white bg-transparent px-6 py-2">
-            {data.texts[visibleIndex].button}
-          </p>
-        </motion.button>
-        {/* </div> */}
+      </div>
       </div>
       <div className="sm:absolute hidden -bottom-[20px] w-[20rrem] sm:w-[30rem] h-fit left-4 right-4 hover:bg-black/20 transition-all bg-gradient-to-tr rounded-none from-black/40 to-transparent backdrop-blur-sm px-10 py-14 text-white">
         <h3 className="text-xl font-semibold mb-2 ">

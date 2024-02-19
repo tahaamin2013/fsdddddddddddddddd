@@ -6,6 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 
 import { useState, useEffect } from 'react';
 import { FaCheck } from "react-icons/fa";
+import { Clock1 } from 'lucide-react';
 
 
 interface Plan {
@@ -22,15 +23,15 @@ const Pricing: React.FC = () => {
 
   const data: Record<string, Plan[]> = {
     small: [
-      { name: 'Small Plan 1', price: '20,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S'],nooptions:['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'], minutes:"15"  },
+      { name: 'Small', price: '20,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S'],nooptions:['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'], minutes:"15"  },
       // Add more small plans with similar structure
     ],
     pickup: [
-      { name: 'Pickup Plan 1', price: '35,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'],nooptions:['Option S', 'Option T','Option S', 'Option T'], minutes:"25"  },
+      { name: 'Pickup', price: '35,000', options: ['Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'],nooptions:['Option S', 'Option T','Option S', 'Option T'], minutes:"25"  },
       // Add more pickup plans with similar structure
     ],
     suv: [
-      { name: 'SUV Plan 1', price: '40,000',options: ['Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'] ,nooptions:['Option S', 'Option T','Option S'],minutes:"45" },
+      { name: 'SUV', price: '40,000',options: ['Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T','Option S', 'Option T'] ,nooptions:['Option S', 'Option T','Option S'],minutes:"45" },
       // Add more SUV plans with similar structure
     ],
   };
@@ -80,7 +81,10 @@ const Pricing: React.FC = () => {
               {data[selectedCar].map((plan, index) => (
                 <div key={index} className="border p-4 h-[520px] bg-white shadow-lg rounded-xl my-6">
                   <strong>{plan.name}</strong>
-                  <p className='font-bold text-5xl mb-3 text-black flex items-start justify-center'><span className='text-lg font-bold'>$</span>{plan.price}</p>
+                  <p className='font-bold text-5xl mb-2 text-black flex items-start justify-center'><span className='text-lg font-bold'>$</span>{plan.price}</p>
+                  <p className='text-black w-full justify-center items-center mb-3 font-normal flex gap-1'>
+                    <Clock1 stroke='red'/> {plan.minutes} min
+                  </p>
                   <p className='flex flex-col gap-1 mb-1'>
                     
                     {plan.options.map((option, optionIndex) => (
@@ -95,10 +99,6 @@ const Pricing: React.FC = () => {
                       {nooptions}</span>
                     ))}
                   </p>
-                  <p className='text-[#346aa3]'>
-                    {plan.minutes}
-                  </p>
-                  
                 </div>
               ))}
           </>
