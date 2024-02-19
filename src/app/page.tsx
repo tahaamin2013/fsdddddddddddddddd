@@ -83,9 +83,9 @@ const Home: React.FC = () => {
             type="video/mp4"
           />
         </video>
-        <div className="absolute top-[50%] sm:top-[40%] px-10 sm:px-36 items-center justify-center bg-red-500 w-full flex flex-col">
-          <div className="bg-green-500 max-w-max">
-            <div className="text-white flex flex-col justify-center items-left left-[200px]">
+        <div className="absolute top-[50%] sm:top-[40%] px-10 sm:px-36 items-center justify-center w-full flex flex-col">
+          <div className="max-w-max">
+            <div className="text-white flex flex-col justify-center text-center sm:items-left left-[200px]">
               <div className="h-[25px] tracking-widest uppercase overflow-hidden ">
                 <motion.div
                   className="text-transition"
