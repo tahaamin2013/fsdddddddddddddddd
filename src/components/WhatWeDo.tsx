@@ -60,83 +60,36 @@ const WhatWeDo = () => {
   </div>
 </div>
         </CarouselItem>
-        
         <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border pb-4 sm:pb-0 shadow-xl px-2 sm:px-0 text-black rounded-xl">
-         <Image src="/image2.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px]  hidden md:block object-cover" width={5000000000} height={500000000} />
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+  <div className="absolute inset-0">
+    <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
+    <div className="absolute inset-0"></div>
+  </div>
+  
+  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+         <Image src="/image1.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
+ object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
-            <h1 className="text-left">
-                <h1 className="font-bold text-2xl">Engine Service</h1>
+            <h1 className="text-left text-white">
+                <h1 className="font-bold text-2xl">Exterior Washing</h1>
                 <p className="flex gap-2 font-bold text-sm mt-1 items-center"><Clock1 stroke="white" size={20} /> 30 min</p>
                 <p className="text-sm mt-3 mb-3">consectetur adipisicing elit. Vero reprehenderit temporibus facere voluptatibus fugiat quo expedita vel accusantium blanditiis laborum, doloribus inventore non nemo quod possimus nihil odio quam hic!</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Seets washing</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Vacuum cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> interior wet cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> window wiping</p>
+                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="white" size={20} /> Seets washing</p>
+                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="white" size={20} /> Vacuum cleaning</p>
+                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="white" size={20} /> interior wet cleaning</p>
+                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="white" size={20} /> window wiping</p>
             </h1>
-           <div className="flex justify-start items-start mt-4"> <button className="rounded-full px-16 py-3 text-white font-bold bg-blue">
+           <div className="flex justify-start items-start mt-4"> <button className="rounded-full px-16 py-3 text-black font-bold bg-green">
                 Get plan
             </button></div>
          </div>
           </div>
+  </div>
+</div>
         </CarouselItem>
-        <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border pb-4 sm:pb-0 shadow-xl px-2 sm:px-0 text-black rounded-xl">
-         <Image src="/image3.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block object-cover" width={5000000000} height={500000000} />
-         <div className="mt-7">
-            <h1 className="text-left">
-                <h1 className="font-bold text-2xl">Interior Cleaning</h1>
-                <p className="flex gap-2 font-bold text-sm mt-1 items-center"><Clock1 stroke="red" size={20} /> 30 min</p>
-                <p className="text-sm mt-3 mb-3">consectetur adipisicing elit. Vero reprehenderit temporibus facere voluptatibus fugiat quo expedita vel accusantium blanditiis laborum, doloribus inventore non nemo quod possimus nihil odio quam hic!</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Seets washing</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Vacuum cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> interior wet cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> window wiping</p>
-            </h1>
-           <div className="flex justify-start items-start mt-4"> <button className="rounded-full px-16 py-3 text-white font-bold bg-blue">
-                Get plan
-            </button></div>
-         </div>
-          </div>
-        </CarouselItem>
-        <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border pb-4 sm:pb-0 shadow-xl px-2 sm:px-0 text-black rounded-xl">
-         <Image src="/image4.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block object-cover" width={5000000000} height={500000000} />
-         <div className="mt-7">
-            <h1 className="text-left">
-                <h1 className="font-bold text-2xl">Diagnostic Tests</h1>
-                <p className="flex gap-2 font-bold text-sm mt-1 items-center"><Clock1 stroke="red" size={20} /> 30 min</p>
-                <p className="text-sm mt-3 mb-3">consectetur adipisicing elit. Vero reprehenderit temporibus facere voluptatibus fugiat quo expedita vel accusantium blanditiis laborum, doloribus inventore non nemo quod possimus nihil odio quam hic!</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Seets washing</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Vacuum cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> interior wet cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> window wiping</p>
-            </h1>
-           <div className="flex justify-start items-start mt-4"> <button className="rounded-full px-16 py-3 text-white font-bold bg-blue">
-                Get plan
-            </button></div>
-         </div>
-          </div>
-        </CarouselItem>
-        <CarouselItem>
-        <div className="flex flex-row gap-7 bg-white border pb-4 sm:pb-0 shadow-xl px-2 sm:px-0 text-black rounded-xl">
-         <Image src="/image5.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1200px] hidden md:block" width={5000000000} height={500000000} />
-         <div className="mt-7">
-            <h1 className="text-left">
-                <h1 className="font-bold text-2xl">Vacuum Cleaning</h1>
-                <p className="flex gap-2 font-bold text-sm mt-1 items-center"><Clock1 stroke="red" size={20} /> 30 min</p>
-                <p className="text-sm mt-3 mb-3">consectetur adipisicing elit. Vero reprehenderit temporibus facere voluptatibus fugiat quo expedita vel accusantium blanditiis laborum, doloribus inventore non nemo quod possimus nihil odio quam hic!</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Seets washing</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> Vacuum cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> interior wet cleaning</p>
-                <p className="flex gap-2 text-sm capitalize mb-1.5"><Check stroke="green" size={20} /> window wiping</p>
-            </h1>
-           <div className="flex justify-start items-start mt-4"> <button className="rounded-full px-16 py-3 text-white font-bold bg-blue">
-                Get plan
-            </button></div>
-         </div>
-          </div>
-        </CarouselItem>
+        
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
