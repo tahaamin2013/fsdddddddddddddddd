@@ -170,10 +170,8 @@ const Home: React.FC = () => {
         <div className="mt-5">
        <Team />
        </div>
-        <Contact />
-      
         <FAQ />
-        
+        <Contact />
        
         
       </main>
