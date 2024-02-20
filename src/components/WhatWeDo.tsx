@@ -202,7 +202,7 @@ const WhatWeDo = () => {
             <h1 className="text-left text-white">
                 <h1 className="font-bold text-2xl">Step 8: Last Step - Teflon Wax Then Dry</h1>
                 <p className="flex gap-2 font-bold text-sm mt-1 items-center"><Clock1 stroke="white" size={20} /> 30 min</p>
-                <p className="text-sm mt-3 mb-3">In the final step, Teflon wax is applied to the car's surface. This not only enhances the vehicle's shine but also provides a protective layer against environmental elements. The car is then carefully dried, completing the detailing process and leaving it looking polished and well-maintained.</p>
+                <p className="text-sm mt-3 mb-3">In the final step, Teflon wax is applied to the car&apos;s surface. This not only enhances the vehicle&apos;s shine but also provides a protective layer against environmental elements. The car is then carefully dried, completing the detailing process and leaving it looking polished and well-maintained.</p>
             </h1>
          </div>
           </div>
