@@ -151,17 +151,10 @@ const Contact = () => {
         <hr className="bg-blue w-full h-0.5 mt-0.5" />
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="relative bg-blue text-white border shadow-xl p-2 rounded-lg py-6 px-8 overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              src="/bubbles.png"
-              alt="Background Image"
-              className="object-cover object-center w-full h-full"
-            />
-            <div className="absolute inset-0"></div>
-          </div>
+        <div className="bg-blue text-white border shadow-xl p-2 rounded-lg py-6 px-8 overflow-hidden"
+         style={{ backgroundImage: "url(http://localhost:3000/bubbles.png)"}}>
 
-          <div className="relative z-10 flex flex-col justify-center  items-center h-full">
+          <div className="z-10 flex flex-col justify-center  items-center h-full">
             <form
               className="flex flex-col w-full gap-8"
               onSubmit={onFormSubmit}
@@ -259,17 +252,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="bg-blue relative border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              src="/bubbles.png"
-              alt="Background Image"
-              className="object-cover object-center w-full h-full"
-            />
-            <div className="absolute inset-0"></div>
-          </div>
-
-          <div className="bg-blue text-white">
+        <div className="bg-blue border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden" style={{ backgroundImage: "url(http://localhost:3000/bubbles.png)"}  }>
                 <div className="grid grid-cols-1 mb-2 items-center gap-2">
                   <div>
                     <p className="font-extrabold text-xl">
@@ -311,7 +294,6 @@ const Contact = () => {
                   </p>
                 </div>
           </div>
-        </div>
       </div>
     </>
   );
