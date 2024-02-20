@@ -90,7 +90,7 @@ const WhatWeDo: React.FC = () => {
         <CarouselContent>
           {data.map((item, index) => (
             <CarouselItem key={index}>
-              <div className="relative bg-blue rounded-xl h-[400px] text-white overflow-hidden pr-5 shadow-xl">
+              <div className="relative bg-blue rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl">
               <div className="absolute inset-0">
                   <img
                     src="/bubbles.png"
@@ -100,7 +100,7 @@ const WhatWeDo: React.FC = () => {
                   <div className="absolute inset-0"></div>
                 </div>
   
-  <div className="relative z-10 flex flex-row justify-center h-full text-left gap-5">
+  <div className="relative z-10 flex flex-col lg:flex-row justify-center h-full text-left">
   <img
                       src={item.image}
                       alt={`Step ${index + 1} image`}
@@ -115,6 +115,11 @@ const WhatWeDo: React.FC = () => {
                         <p className="text-sm mt-3 mb-3">{item.description}</p>
                       </h1>
                     </div>
+                    <img
+                      src={item.image}
+                      alt={`Step ${index + 1} image`}
+                      className="w-screen h-screen object-cover object-top lg:hidden block"
+/>
   </div>
 </div>
 
