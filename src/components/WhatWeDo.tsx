@@ -22,12 +22,23 @@ const WhatWeDo = () => {
         <h1 className='text-2xl sm:text-3xl font-bold'>Premium Washing Services</h1>
         <p className='text-sm w-full sm:w-[500px] text-center'>Nulla vel tempus diam. Nunc vulputate, quam sit amet commodo tincidunt, enim lorem scelerisque massa, vel ultricies.</p>
         </div>
+        <div className="relative bg-blue to-blue-600 text-white overflow-hidden">
+  <div className="absolute inset-0">
+    <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+  
+  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+  fsd
+  </div>
+</div>
         <Carousel
       plugins={[plugin.current]}
       className="w-full md:w-[900px] lg:w-[1100px]"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
+      
       <CarouselContent>
       <CarouselItem>
       <div className="flex flex-row gap-7 bg-white text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">

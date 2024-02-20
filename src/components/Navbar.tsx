@@ -39,15 +39,16 @@ const Navbar = () => {
  return (
     // ${navbarColor}
 
-    <div className="bg-blue text-white overflow-hidden mt-6 transition-all z-50 duration-200 shadow-xl px-5 lg:px-20 py-2 items-center justify-between fixed w-full">
+    <div className="bg-blue text-white mt-6 transition-all z-50 duration-200 shadow-xl px-5 lg:px-20 py-2 items-center justify-between fixed w-full">
         <div className="absolute inset-0">
       <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
-      <div className="absolute inset-0"></div>
+      <div className="inset-0"></div>
     </div>
     <div>
         <div className={`flex justify-between items-center`}>
-           <Link href="/" className='pr-8 outline-none'><Image src="/Wash-Me-Logo.png" className='w-[90px] h-[60px] py-1' alt='Logo' width={939999999999999} height={99999999999999} /></Link>
-          <div className='md:block hidden'>
+           <Link href="/" className='outline-none absolute'><Image src="/Wash-Me-Logo.png" className='w-[100px] h-[70px] py-1' alt='Logo' width={939999999999999} height={99999999999999} /></Link>
+<div className='w-full flex justify-end'>
+<div className='md:block hidden'>
           <div className='text-white font-bold flex gap-5 text-lg'>
                     <Link href="/our-services">
                         Our Services
@@ -68,7 +69,7 @@ const Navbar = () => {
           </div>
             <div className='md:hidden block z-50'>
             <Sheet>
-  <SheetTrigger className='text-white mt-3 text-2xl'><AlignJustify fill="white" size={34} /></SheetTrigger>
+  <SheetTrigger className='text-white  -my-4 mt-1 text-2xl'><AlignJustify fill="white" size={27} /></SheetTrigger>
   <SheetContent>
     <SheetHeader>
       <SheetDescription>
@@ -95,6 +96,7 @@ const Navbar = () => {
 </Sheet>
 
             </div>
+</div>
        </div>
     </div>
     </div>  )

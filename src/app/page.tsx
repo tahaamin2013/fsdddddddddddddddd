@@ -76,7 +76,7 @@ const Home: React.FC = () => {
           loop
           muted
           playsInline
-          className="w-full pt-[100px] object-cover"
+          className="w-full pt-[50px] object-cover"
         >
           <source
             src="/WashMe Car Wash Video - Edited.mp4"
