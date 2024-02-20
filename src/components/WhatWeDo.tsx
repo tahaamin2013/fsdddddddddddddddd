@@ -8,12 +8,70 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Check, Clock1 } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
-const WhatWeDo = () => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+const WhatWeDo: React.FC = () => {
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+
+  const data = [
+    {
+      image: "/23.png",
+      title: "Step 1: Washing the Wheels",
+      time: 30,
+      description:
+        "In the first step, attention is given to the wheels of the car. This involves a thorough cleaning process to remove dirt, brake dust, and other debris from the wheels, ensuring a fresh and polished look.",
+    },
+    {
+      image: "/washing-the-weels.png",
+      title: "Step 2: Darrin Carefully Prewashes the Lower Car",
+      time: 30,
+      description:
+        "Darrin, presumably the car detailing professional, takes special care to prewash the lower parts of the car. This step is crucial for removing initial layers of grime and preparing the vehicle for a comprehensive cleaning.",
+    },
+    {
+      image: "/full.jpg",
+      title: "Step 3: Beginning of the Full Body Wash Even Before the Tunnel",
+      time: 30,
+      description:
+        "The full-body wash commences, starting even before the car enters the cleaning tunnel. This stage involves a general surface cleaning to eliminate surface dirt and contaminants from the entire vehicle.",
+    },
+    {
+      image: "/fsd.jpg",
+      title: "Step 4: Full Body Hand Wash Before the Tunnel",
+      time: 30,
+      description:
+        "Before entering the automated cleaning tunnel, a meticulous hand wash is performed on the entire body of the car. This step ensures a detailed cleaning, addressing specific areas that may require extra attention.",
+    },
+    {
+      image: "/get.jpg",
+      title: "Step 5: Getting Ready for the Pre-Soak Rinse",
+      time: 30,
+      description:
+        "Preparations are made for the pre-soak rinse, a step that involves applying a specialized cleaning solution to loosen and break down stubborn dirt and grime before the main washing process.",
+    },
+    {
+      image: "/rain.jpg",
+      title: "Step 6: Working in the Rain! ",
+      time: 30,
+      description:
+        "The car detailing process continues, even in adverse weather conditions such as rain. This may add an extra layer of challenge and precision to the detailing process, showcasing the dedication and expertise of the professional.",
+    },
+    {
+      image: "/rain.jpg",
+      title: "Step 7: Inside the Tunnel with Another Hand Wash Using Lambswool Mittens",
+      time: 30,
+      description:
+        "As the car enters the cleaning tunnel, another round of hand washing takes place. This time, lambswool mittens are utilized for a gentle yet effective cleaning, ensuring that every nook and cranny is thoroughly addressed.",
+    },
+    {
+      image: "/rain.jpg",
+      title: "Last Step: Teflon Wax Then Dry",
+      time: 30,
+      description:
+        "In the final step, Teflon wax is applied to the car's surface. This not only enhances the vehicle's shine but also provides a protective layer against environmental elements. The car is then carefully dried, completing the detailing process and leaving it looking polished and well-maintained.",
+    },
+  ];
+
   return (
     <div className="flex flex-col w-full justify-center items-center mt-3">
       <div className="text-center flex flex-col gap-2 mb-2">
@@ -25,337 +83,70 @@ const WhatWeDo = () => {
 
       <Carousel
         plugins={[plugin.current]}
-        className="h-fit"
+        className="h-full w-full"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          <CarouselItem itemID="1"     style={{
-                backgroundImage: "url(http://localhost:3000/bubbles.png)",
-                height: "75%",
-              }}          className="bg-blue grid grid-cols-3 gap-5 rounded-xl text-white overflow-hidden w-fit shadow-xl"
->
-            {/* <div
-              
-            > */}
-              <Image
-                src="/washing-the-weels.jpg"
-                alt="girl with car"
-                loading="eager"
-                className="object-cover object-top h-[75%] col-span-2 bg-red-500"
-                width={5000000000}
-                height={500000000}
-              />
-              <div className="bg-green-500 mt-7 col-span-1">
-                <h1 className="text-left text-white">
-                  <h1 className="font-bold text-2xl capitalize">
-                    Step 1: Washing the Wheels
-                  </h1>
-                  <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                    <Clock1 stroke="white" size={20} /> 30 min
-                  </p>
-                  <p className="text-sm mt-3 mb-3">
-                    In the first step, attention is given to the wheels of the
-                    car. This involves a thorough cleaning process to remove
-                    dirt, brake dust, and other debris from the wheels, ensuring
-                    a fresh and polished look.
-                  </p>
-                </h1>
-              {/* </div> */}
-            </div>
-          </CarouselItem>
-          {/* <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
+          {data.map((item, index) => (
+            <CarouselItem key={index}>
+              <div className="relative bg-blue rounded-xl h-[400px] text-white overflow-hidden pr-5 shadow-xl">
               <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
-
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/43.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
+                  <img
+                    src="/bubbles.png"
+                    alt="Background Image"
+                    className="object-cover object-center w-full h-full"
                   />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Step 2: Darrin Carefully Prewashes the Lower Car
-                      </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        Darrin, presumably the car detailing professional, takes
-                        special care to prewash the lower parts of the car. This
-                        step is crucial for removing initial layers of grime and
-                        preparing the vehicle for a comprehensive cleaning.
-                      </p>
-                    </h1>
-                  </div>
+                  <div className="absolute inset-0"></div>
                 </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
+  
+  <div className="relative z-10 flex flex-row justify-center h-full text-left gap-5">
+  <img
+                      src={item.image}
+                      alt={`Step ${index + 1} image`}
+                      className="w-[700px] h-[500px] object-cover object-top lg:block hidden"
+/>
+                    <div className="mt-4 flex flex-col flex-wrap ml-6">
+                      <h1 className="text-left text-white">
+                        <h1 className="font-bold text-2xl">{item.title}</h1>
+                        <p className="flex gap-2 font-bold text-sm mt-1">
+                          <Clock1 stroke="white" size={20} /> {item.time} min
+                        </p>
+                        <p className="text-sm mt-3 mb-3">{item.description}</p>
+                      </h1>
+                    </div>
+  </div>
+</div>
 
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/full.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
+              {/* <div className="relative bg-blue rounded-xl h-[400px] text-white overflow-hidden pr-5 shadow-xl">
+                <div className="absolute inset-0">
+                  <img
+                    src="/bubbles.png"
+                    alt="Background Image"
+                    className="object-cover object-center w-full h-full"
                   />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Step 3: Beginning of the Full Body Wash Even Before the
-                        Tunnel
-                      </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        The full-body wash commences, starting even before the
-                        car enters the cleaning tunnel. This stage involves a
-                        general surface cleaning to eliminate surface dirt and
-                        contaminants from the entire vehicle.
-                      </p>
-                    </h1>
-                  </div>
+                  <div className="absolute inset-0"></div>
                 </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
 
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/fsd.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
-                  />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Step 4: Full Body Hand Wash Before the Tunnel
+                  <div className="flex flex-row text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
+                    <img
+                      src={item.image}
+                      alt={`Step ${index + 1} image`}
+                      className="w-full h-[500px] object-cover object-top"
+/>
+                    <div className="mt-7">
+                      <h1 className="text-left text-white">
+                        <h1 className="font-bold text-2xl">{item.title}</h1>
+                        <p className="flex gap-2 font-bold text-sm mt-1 items-center">
+                          <Clock1 stroke="white" size={20} /> {item.time} min
+                        </p>
+                        <p className="text-sm mt-3 mb-3">{item.description}</p>
                       </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        Before entering the automated cleaning tunnel, a
-                        meticulous hand wash is performed on the entire body of
-                        the car. This step ensures a detailed cleaning,
-                        addressing specific areas that may require extra
-                        attention.
-                      </p>
-                    </h1>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
-
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/get.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
-                  />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Step 5: Getting Ready for the Pre-Soak Rinse
-                      </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        Preparations are made for the pre-soak rinse, a step
-                        that involves applying a specialized cleaning solution
-                        to loosen and break down stubborn dirt and grime before
-                        the main washing process.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
-
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/rain.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
-                  />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Working in the Rain!
-                      </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        The car detailing process continues, even in adverse
-                        weather conditions such as rain. This may add an extra
-                        layer of challenge and precision to the detailing
-                        process, showcasing the dedication and expertise of the
-                        professional.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
-
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/rain.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
-                  />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Step 6: Inside the Tunnel with Another Hand Wash Using
-                        Lambswool Mittens
-                      </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        As the car enters the cleaning tunnel, another round of
-                        hand washing takes place. This time, lambswool mittens
-                        are utilized for a gentle yet effective cleaning,
-                        ensuring that every nook and cranny is thoroughly
-                        addressed.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
-
-          <CarouselItem>
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
-
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/la.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
-                  />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl">
-                        Last Step: Teflon Wax Then Dry
-                      </h1>
-                      <p className="text-sm mt-3 mb-3">
-                        In the final step, Teflon wax is applied to the
-                        car&apos;s surface. This not only enhances the
-                        vehicle&apos;s shine but also provides a protective
-                        layer against environmental elements. The car is then
-                        carefully dried, completing the detailing process and
-                        leaving it looking polished and well-maintained.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem> */}
+              </div> */}
+            </CarouselItem>
+          ))}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
