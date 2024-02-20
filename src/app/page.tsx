@@ -165,6 +165,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <main className="mx-5">
+      <New />
         <WhatWeDo />
         <div className="my-5">
         <Cleaning />
@@ -174,7 +175,6 @@ const Home: React.FC = () => {
         <div className="mt-5">
           <Team />
         </div>
-        <New />
         <FAQ />
         <Contact />
       </main>

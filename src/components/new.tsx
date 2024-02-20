@@ -22,7 +22,7 @@ const New: React.FC = () => {
       <div className="text-center flex flex-col gap-2 mb-2">
         <p className="tracking-widest text-blue">WHAT WE DO</p>
         <h1 className="text-2xl sm:text-3xl font-bold">
-          From Tire Clean to Dryer
+        State-of-the-Art Car Wash Facilities
         </h1>
         <div>
           <Tabs defaultValue="account" className="w-fit">
