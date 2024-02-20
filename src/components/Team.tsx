@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <div className="relative bg-blue h-[520px] text-white overflow-hidden rounded-xl">
     <div className="absolute inset-0">
-    <Image alt='Wash me car wash team image' src="/team.jpg" width={5000000000000} height={500000000000000} className='w-full h-full object-center  object-cover' />
+    <Image alt='Wash me car wash team image' src="/teem.png" width={5000000000000} height={500000000000000} className='w-full h-full object-center  object-cover' />
       <div className="absolute inset-0"></div>
     </div>
     <div className="relative z-10 inset-0 text-center flex justify-between w-full gap-3 items-center h-full">
