@@ -24,7 +24,7 @@ const WhatWeDo: React.FC = () => {
       image: "/washing-the-weels.png",
       title: "Step 2: Darrin Carefully Prewashes the Lower Car",
       description:
-        "Darrin, presumably the car detailing professional, takes special care to prewash the lower parts of the car. This step is crucial for removing initial layers of grime and preparing the vehicle for a comprehensive cleaning.",
+        "Darrin, the car detailing professional, takes special care to prewash the lower parts of the car. This step is crucial for removing initial layers of grime and preparing the vehicle for a comprehensive cleaning.",
     },
     {
       image: "/full.jpg",
