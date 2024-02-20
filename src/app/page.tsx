@@ -168,8 +168,11 @@ const Home: React.FC = () => {
         <Pricing />
         <WhatWeDo />
         <Contact />
+       <div className="mt-5">
+       <Team />
+       </div>
         <FAQ />
-        <Team />
+        
        
         
       </main>
