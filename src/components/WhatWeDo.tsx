@@ -31,14 +31,14 @@ const WhatWeDo = () => {
       
       <CarouselContent>
       <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0  px-2 sm:px-0 text-black rounded-xl">
          <Image src="/washing-the-weels.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -53,14 +53,14 @@ const WhatWeDo = () => {
 </div>
         </CarouselItem>
         <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/43.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -75,14 +75,14 @@ const WhatWeDo = () => {
 </div>
         </CarouselItem>
         <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/full.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -97,14 +97,14 @@ const WhatWeDo = () => {
 </div>
 </CarouselItem>
 <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/fsd.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -119,14 +119,14 @@ const WhatWeDo = () => {
 </div>
 </CarouselItem>
 <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/get.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -141,14 +141,14 @@ const WhatWeDo = () => {
 </div>
 </CarouselItem>
 <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/rain.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -163,14 +163,14 @@ const WhatWeDo = () => {
 </div>
 </CarouselItem>
 <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/rain.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
@@ -188,14 +188,14 @@ const WhatWeDo = () => {
 </CarouselItem>
 
 <CarouselItem>
-      <div className="relative bg-blue rounded-xl text-white overflow-hidden">
+      <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
   <div className="absolute inset-0">
     <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
     <div className="absolute inset-0"></div>
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 border shadow-xl px-2 sm:px-0 text-black rounded-xl">
+  <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0 px-2 sm:px-0 text-black rounded-xl">
          <Image src="/la.jpg" alt="girl with car" className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
  object-cover" width={5000000000} height={500000000} />
          <div className="mt-7">
