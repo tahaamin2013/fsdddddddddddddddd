@@ -18,10 +18,10 @@ const Team = () => {
       <p className='text-sm'>If this sounds like the level of care and service that you’d like to experience at your car wash, then visit today and join the GO Car Wash family!</p></div> */}
      <div className="absolute bottom-4 rounded-none w-fit h-fit left-6 right-4 text-left text-black transition-all bg-white backdrop-blur-sm px-7 py-7">
             <h3 className="text-2xl font-semibold mb-1 ">
-            GO CAR WASH IS HOME TO YOUR CAR WASH <br /> PROFESSIONALS
-            </h3>
-            <div className='flex flex-col gap-2 w-full lg:w-[600px]'> <p className='text-[13px]'>GO Car Wash delivers superior washes performed by a caring team of people who appreciate the value of your time. We adhere to the highest standards of our industry, using only environmentally friendly products.</p>
-      <p className='text-[13px]'>To offer this level of consistent service, each of our car wash professionals is committed to ongoing training. Our commitment to continual learning ensures that GO Car Wash customers in each of our markets enjoy best-of-industry standards and practices.</p></div>
+            Meet the Team 
+              </h3>
+            <div className='flex flex-col gap-2 w-full lg:w-[600px]'> <p className='text-[13px]'>Although Wash Me Car Wash was started in 1992, Randy and Eileen Tefft bought the car wash in March of 2021. Why did they buy Wash Me Car Wash Longview? Because it was the only hand wash car wash around and all the wonderful staff stayed on with us. We’ll keep on the good work!</p>
+      <p className='text-[13px]'>We are local owners with a long history of owning and managing businesses. We love that we can serve this community.</p></div>
           </div>
      </div>
     </div>
