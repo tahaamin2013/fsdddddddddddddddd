@@ -162,11 +162,10 @@ const Home: React.FC = () => {
         </div>
       </div>
       <main className="mx-5">
-        <div className="my-4">
+      <WhatWeDo />
           <Cleaning />
-        </div>
         <Pricing />
-        <WhatWeDo />
+       
         <div className="mt-5">
        <Team />
        </div>
