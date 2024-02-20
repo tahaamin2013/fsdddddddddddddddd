@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import WhatWeDo from "@/components/WhatWeDo";
+import New from "@/components/new";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 type Data = {
@@ -174,6 +174,7 @@ const Home: React.FC = () => {
         <div className="mt-5">
           <Team />
         </div>
+        <New />
         <FAQ />
         <Contact />
       </main>

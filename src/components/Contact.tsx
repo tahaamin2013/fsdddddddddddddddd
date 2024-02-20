@@ -152,7 +152,7 @@ const Contact = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-blue text-white border shadow-xl p-2 rounded-lg py-6 px-8 overflow-hidden"
-         style={{ backgroundImage: "url(http://localhost:3000/bubbles.png)"}}>
+         style={{ backgroundImage: "url(/bubbles.png)"}}>
 
           <div className="z-10 flex flex-col justify-center  items-center h-full">
             <form
@@ -252,7 +252,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="bg-blue border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden" style={{ backgroundImage: "url(http://localhost:3000/bubbles.png)"}  }>
+        <div className="bg-blue border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden" style={{ backgroundImage: "url(/bubbles.png)"}  }>
                 <div className="grid grid-cols-1 mb-2 items-center gap-2">
                   <div>
                     <p className="font-extrabold text-xl">
