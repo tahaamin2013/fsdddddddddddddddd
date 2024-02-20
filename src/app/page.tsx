@@ -167,10 +167,11 @@ const Home: React.FC = () => {
         </div>
         <Pricing />
         <WhatWeDo />
-        <Contact />
-       <div className="mt-5">
+        <div className="mt-5">
        <Team />
        </div>
+        <Contact />
+      
         <FAQ />
         
        
