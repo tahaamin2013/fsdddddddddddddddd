@@ -25,53 +25,46 @@ const WhatWeDo = () => {
 
       <Carousel
         plugins={[plugin.current]}
-        className="max-w-max"
+        className="h-fit"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          <CarouselItem itemID="1">
-            <div className="relative bg-blue rounded-xl text-white overflow-hidden w-fit pr-5 shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/bubbles.png"
-                  alt="Background Image"
-                  className="object-cover object-center w-full h-full"
-                />
-                <div className="absolute inset-0"></div>
-              </div>
-
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-                <div className="flex flex-row gap-7 bg-transparent text-center pb-4 sm:pb-0  px-2 sm:px-0 text-black rounded-xl">
-                  <Image
-                    src="/washing-the-weels.jpg"
-                    alt="girl with car"
-                    className="h-[370px] xl:h-[520px] w-[950px] xl:w-[1130px] hidden md:block 
- object-cover"
-                    width={5000000000}
-                    height={500000000}
-                  />
-                  <div className="mt-7">
-                    <h1 className="text-left text-white">
-                      <h1 className="font-bold text-2xl capitalize">
-                        Step 1: Washing the Wheels
-                      </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
-                      <p className="text-sm mt-3 mb-3">
-                        In the first step, attention is given to the wheels of
-                        the car. This involves a thorough cleaning process to
-                        remove dirt, brake dust, and other debris from the
-                        wheels, ensuring a fresh and polished look.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-              </div>
+          <CarouselItem itemID="1"     style={{
+                backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                height: "75%",
+              }}          className="bg-blue grid grid-cols-3 gap-5 rounded-xl text-white overflow-hidden w-fit shadow-xl"
+>
+            {/* <div
+              
+            > */}
+              <Image
+                src="/washing-the-weels.jpg"
+                alt="girl with car"
+                loading="eager"
+                className="object-cover object-top h-[75%] col-span-2 bg-red-500"
+                width={5000000000}
+                height={500000000}
+              />
+              <div className="bg-green-500 mt-7 col-span-1">
+                <h1 className="text-left text-white">
+                  <h1 className="font-bold text-2xl capitalize">
+                    Step 1: Washing the Wheels
+                  </h1>
+                  <p className="flex gap-2 font-bold text-sm mt-1 items-center">
+                    <Clock1 stroke="white" size={20} /> 30 min
+                  </p>
+                  <p className="text-sm mt-3 mb-3">
+                    In the first step, attention is given to the wheels of the
+                    car. This involves a thorough cleaning process to remove
+                    dirt, brake dust, and other debris from the wheels, ensuring
+                    a fresh and polished look.
+                  </p>
+                </h1>
+              {/* </div> */}
             </div>
           </CarouselItem>
-          <CarouselItem>
+          {/* <CarouselItem>
             <div className="relative bg-blue rounded-xl text-white overflow-hidden  pr-5 shadow-xl">
               <div className="absolute inset-0">
                 <img
@@ -261,7 +254,7 @@ const WhatWeDo = () => {
                   <div className="mt-7">
                     <h1 className="text-left text-white">
                       <h1 className="font-bold text-2xl">
-                        Step 6: Working in the Rain!
+                        Working in the Rain!
                       </h1>
                       <p className="flex gap-2 font-bold text-sm mt-1 items-center">
                         <Clock1 stroke="white" size={20} /> 30 min
@@ -303,7 +296,7 @@ const WhatWeDo = () => {
                   <div className="mt-7">
                     <h1 className="text-left text-white">
                       <h1 className="font-bold text-2xl">
-                        Step 7: Inside the Tunnel with Another Hand Wash Using
+                        Step 6: Inside the Tunnel with Another Hand Wash Using
                         Lambswool Mittens
                       </h1>
                       <p className="flex gap-2 font-bold text-sm mt-1 items-center">
@@ -347,11 +340,8 @@ const WhatWeDo = () => {
                   <div className="mt-7">
                     <h1 className="text-left text-white">
                       <h1 className="font-bold text-2xl">
-                        Step 8: Last Step - Teflon Wax Then Dry
+                        Last Step: Teflon Wax Then Dry
                       </h1>
-                      <p className="flex gap-2 font-bold text-sm mt-1 items-center">
-                        <Clock1 stroke="white" size={20} /> 30 min
-                      </p>
                       <p className="text-sm mt-3 mb-3">
                         In the final step, Teflon wax is applied to the
                         car&apos;s surface. This not only enhances the
@@ -365,7 +355,7 @@ const WhatWeDo = () => {
                 </div>
               </div>
             </div>
-          </CarouselItem>
+          </CarouselItem> */}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />

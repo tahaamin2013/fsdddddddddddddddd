@@ -101,7 +101,7 @@ const Home: React.FC = () => {
                 </p>
               </motion.div>
             </div>
-            <div className="h-fit text-left tracking-widest flex justify-center items-center text-white w-full overflow-hidden">
+            <div className="h-fit pb-3 text-left tracking-widest flex justify-center items-center text-white w-full overflow-hidden">
               <motion.div
                 className="text-transition"
                 initial={{ y: "100%" }}
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
                 {/* <p className="h-[25px] tracking-widest uppercase overflow-hidden bg-red-500 sm:text-lg text-sm mb-2 font-normal uppercase">
                     {data.texts[visibleIndex].desc}
                   </p> */}
-                <p className="text-2xl font-sans sm:text-8xl w-fit font-bold text-center">
+                <p className="text-2xl font-sans sm:text-7xl w-fit font-bold text-center">
                   {data.texts[visibleIndex].text}
                 </p>
               </motion.div>
