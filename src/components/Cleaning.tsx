@@ -3,7 +3,7 @@ import CarouselContainer from './Carousel'
 
 const Cleaning = () => {
   return (
-    <div>
+    <div className='mt-0'>
         <CarouselContainer />
     </div>
   )

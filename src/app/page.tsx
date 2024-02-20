@@ -17,7 +17,7 @@ const Home: React.FC = () => {
   const [data, setData] = useState<Data>({
     texts: [
       {
-        text: "2 Miles from I-5 Longview exit.",
+        text: "2 Miles from I-5 Longview exit",
         desc: "Welcome to Wash me car wash",
       },
       { text: "No brushes no machinery", desc: "The Only Handwash Tunnel" },
@@ -70,48 +70,51 @@ const Home: React.FC = () => {
   }, []);
   return (
     <>
+
       <div className="relative">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full pt-[50px] object-cover"
-        >
-          <source
-            src="/WashMe Car Wash Video - Edited.mp4"
-            className="object-cover"
-            type="video/mp4"
-          />
-        </video>
-        <div className="absolute top-[50%] sm:top-[40%] items-center justify-center w-full flex flex-col">
-            <div className="text-white flex flex-col mx-10 sm:mx-36 justify-center max-w-fit items-center left-[200px]">
-              <div className="">
-                <motion.div
-                  className="text-transition"
-                  initial={{ y: "100%" }}
-                  animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <p className="h-[25px] tracking-widest uppercase overflow-hidden sm:text-lg text-sm mb-2 font-normal">
-                    {data.texts[visibleIndex].desc}
-                  </p>
-                </motion.div>
-              </div>
-              <div className="h-fit mx-auto text-left tracking-widest uppercase flex justify-center items-center text-white w-full overflow-hidden">
-                <motion.div
-                  className="text-transition"
-                  initial={{ y: "100%" }}
-                  animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  {/* <p className="h-[25px] tracking-widest uppercase overflow-hidden bg-red-500 sm:text-lg text-sm mb-2 font-normal uppercase">
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full pt-[50px] object-cover"
+          >
+            <source
+              src="/WashMe Car Wash Video - Edited.mp4"
+              className="object-cover"
+              type="video/mp4"
+            />
+          </video>
+
+        <div className="absolute top-[50%] sm:top-[35%] items-center justify-center w-full flex flex-col">
+          <div className="text-white flex flex-col mx-7 sm:mx-36 justify-center max-w-fit items-center left-[200px]">
+            <div className="">
+              <motion.div
+                className="text-transition"
+                initial={{ y: "100%" }}
+                animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <p className="h-[25px] text-[#0097dd] tracking-widest uppercase overflow-hidden sm:text-xl font-semibold text-sm mb-2">
+                  {data.texts[visibleIndex].desc}
+                </p>
+              </motion.div>
+            </div>
+            <div className="h-fit text-left tracking-widest flex justify-center items-center text-white w-full overflow-hidden">
+              <motion.div
+                className="text-transition"
+                initial={{ y: "100%" }}
+                animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                {/* <p className="h-[25px] tracking-widest uppercase overflow-hidden bg-red-500 sm:text-lg text-sm mb-2 font-normal uppercase">
                     {data.texts[visibleIndex].desc}
                   </p> */}
-                  <p className="text-2xl sm:text-5xl w-fit font-bold uppercase text-center">
-                    {data.texts[visibleIndex].text}
-                  </p>
-                </motion.div>
+                <p className="text-2xl font-sans sm:text-8xl w-fit font-bold text-center">
+                  {data.texts[visibleIndex].text}
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -162,17 +165,15 @@ const Home: React.FC = () => {
         </div>
       </div>
       <main className="mx-5">
-      <WhatWeDo />
-          <Cleaning />
+        <WhatWeDo />
+        <Cleaning />
         <Pricing />
-       
+
         <div className="mt-5">
-       <Team />
-       </div>
+          <Team />
+        </div>
         <FAQ />
         <Contact />
-       
-        
       </main>
     </>
   );
