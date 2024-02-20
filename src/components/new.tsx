@@ -43,13 +43,13 @@ const New: React.FC = () => {
               Car Wash elevate your car care routine.
             </TabsContent>
             <TabsContent value="password">
-              Take control of your car care journey with Wash Me Car Wash's five
+              Take control of your car care journey with Wash Me Car Wash&lsquo;s five
               self-service bays, available 24/7 for your convenience. Whether
-              you're driving a car, motorcycle, or towing a trailer, our
+              you&lsquo;re driving a car, motorcycle, or towing a trailer, our
               self-service bays cater to all your needs. Enjoy a bright and
               clean environment, equipped with user-friendly tools that make
-              maintaining your vehicle a breeze. At Wash Me Car Wash, it's more
-              than just self-service – it's a personalized experience designed
+              maintaining your vehicle a breeze. At Wash Me Car Wash, it&lsquo;s more
+              than just self-service – it&lsquo;s a personalized experience designed
               for you.
             </TabsContent>
           </Tabs>
