@@ -262,11 +262,11 @@ const Contact = () => {
                   <div>
                     <p className="m-0 dark:text-dark p-0 flex flex-row items-center justify-between">
                       <div className="flex gap-1 items-center">
-                        <FaMapMarkerAlt fill="white" className="fill-white" />
+                        <FaMapMarkerAlt className="fill-green" />
                         1953 9th Ave, Longview, WA,
                       </div>
                       <p className="m-0 dark:text-dark -mt-3 p-0 flex flex-row items-center gap-3">
-                        <IoTime fill="white" size={25} className="fill-white" />
+                        <IoTime size={25} className="fill-green" />
                         <div className="flex flex-col">
                           <h1 className="font-bold mt-3 text-lg">
                             Hand Wash Open
@@ -285,11 +285,11 @@ const Contact = () => {
                 ></iframe>
                 <div className="flex flex-col gap-1 mt-6">
                   <p className="flex gap-3 items-center">
-                    <IoMdMail className="mt-0.5" />
+                    <IoMdMail className="mt-0.5 fill-green" />
                     eileen@eileentefft.com
                   </p>
                   <p className="m-0 dark:text-dark p-0 flex flex-row items-center gap-3">
-                    <FaPhoneAlt fill="white" className="fill-white" />
+                    <FaPhoneAlt className="fill-green" />
                     360-4304126
                   </p>
                 </div>

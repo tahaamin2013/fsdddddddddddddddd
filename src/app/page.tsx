@@ -8,6 +8,7 @@ import Team from "@/components/Team";
 import WhatWeDo from "@/components/WhatWeDo";
 import New from "@/components/new";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 type Data = {
@@ -164,19 +165,22 @@ const Home: React.FC = () => {
           </Link>
         </div>
       </div>
-      <main className="mx-5">
+      <Image  src="/washhouse.png" alt="image of house" className="w-screen" width={5000000} height={5000000} />
+      <main>
+        <div className="-mt-3">
       <New />
-        <WhatWeDo />
+      </div>
+       <div className="mx-5"> <WhatWeDo /></div>
         <div className="my-5">
         <Cleaning />
         </div>
         <Pricing />
 
-        <div className="mt-5">
+        <div className="mt-5 mx-5">
           <Team />
         </div>
         <FAQ />
-        <Contact />
+        <div className="mx-5"><Contact /></div>
       </main>
     </>
   );
