@@ -55,6 +55,9 @@ const Pricing: React.FC = () => {
       <div className='mt-6 flex flex-col gap-4'>
         <button
           onClick={() => handleClick('small')}
+            style={{
+                  backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                }}
           className={`bg-green text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car1.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
@@ -62,6 +65,9 @@ const Pricing: React.FC = () => {
         </button>
         <button
           onClick={() => handleClick('pickup')}
+          style={{
+            backgroundImage: "url(http://localhost:3000/bubbles.png)",
+          }}
           className={`bg-yellow-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'pickup' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car2.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
@@ -69,6 +75,9 @@ const Pricing: React.FC = () => {
         </button>
         <button
           onClick={() => handleClick('suv')}
+          style={{
+            backgroundImage: "url(http://localhost:3000/bubbles.png)",
+          }}
           className={`bg-red-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'suv' ? 'border-2 border-[#e5e5e5]' : ''}`}
         >
           <Image alt='car image' src="/car3.png" width={50000000} height={600000000000} className='w-52 hover:scale-110 transition-all duration-300' />
@@ -79,7 +88,10 @@ const Pricing: React.FC = () => {
           <>
             {/* <h2 className="text-2xl font-bold">{`Plans for ${selectedCar}`}</h2> */}
               {data[selectedCar].map((plan, index) => (
-                <div key={index} className="border p-4 h-[520px] bg-white shadow-lg rounded-xl my-6">
+                <div key={index} className="border p-4 h-[520px] bg-white shadow-lg rounded-xl my-6"
+                style={{
+                  backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                }}>
                   <strong>{plan.name}</strong>
                   <p className='font-bold text-5xl mb-2 text-black flex items-start justify-center'><span className='text-lg font-bold'>$</span>{plan.price}</p>
                   <p className='text-black w-full justify-center items-center mb-3 font-normal flex gap-1'>

@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import WhatWeDo from "@/components/WhatWeDo";
+import Reviews from "@/components/fsdfds";
+import ReviewsComponent from "@/components/fsdfds";
 import New from "@/components/new";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -169,6 +171,7 @@ const Home: React.FC = () => {
       <main>
         <div className="-mt-3">
       <New />
+      <Reviews />
       </div>
        <div className="mx-5"> <WhatWeDo /></div>
         <div className="my-5">
