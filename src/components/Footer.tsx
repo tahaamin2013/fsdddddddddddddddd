@@ -20,7 +20,7 @@ export default function Footer() {
             loop
             muted
             playsInline
-            className="w-[500px] rounded-xl object-cover"
+            className="w-[440px] rounded-xl object-cover"
           >
             <source
               src="/car.mp4"
