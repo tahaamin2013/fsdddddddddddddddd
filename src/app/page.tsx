@@ -6,12 +6,11 @@ import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import WhatWeDo from "@/components/WhatWeDo";
-import Reviews from "@/components/fsdfds";
-import ReviewsComponent from "@/components/fsdfds";
+import Reviews from "@/components/reviews";
+import Git from "@/components/fsdklfsjd";
 import New from "@/components/new";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 type Data = {
   texts: { text: string; desc: string }[];
@@ -138,35 +137,7 @@ const Home: React.FC = () => {
         </div> */}
       </div>
 
-      <div className="sm:absolute hidden -bottom-[20px] w-[20rrem] sm:w-[30rem] h-fit left-4 right-4 hover:bg-black/20 transition-all bg-gradient-to-tr rounded-none from-black/40 to-transparent backdrop-blur-sm px-10 py-14 text-white">
-        <h3 className="text-xl font-semibold mb-2 ">
-          <div className="inline-block bg-white text-blue py-2 px-4 rounded-md text-[17.5px] font-bold tracking-wide transition duration-300">
-            <span>The ONLY Hand Wash in SW Washington</span>
-          </div>
-          <span>Offering Exclusive Benefits:</span>
-        </h3>
-        <h3 className="text-4xl font-semibold mb-4 ">
-          <span className="text-xl font-normal">
-            <ul style={{ listStyleType: "disc", marginLeft: "1.5em" }}>
-              <li>Spot Free rinse and teflon wax</li>
-              <li>Safest Wash in Town</li>
-              <li>Free Vacuums with Wash</li>
-              <li>2 Miles from I-5 Longview exit</li>
-              <li>We Use Lambs Wool Mittens</li>
-              <li>No brushes no machinery OR: Five DIY Self Service Bays</li>
-            </ul>
-          </span>
-        </h3>
-        <div>
-          <Link
-            className="inline-block bg-
-            blue hover:bg-[#afc34d] hover:text-black text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
-            href="sdsdf"
-          >
-            Learn more
-          </Link>
-        </div>
-      </div>
+    <Git />
       <Image  src="/washhouse.png" alt="image of house" className="w-screen" width={5000000} height={5000000} />
       <main>
         <div className="-mt-3">
