@@ -78,22 +78,22 @@ const Reviews = () => {
   )
 
   return (
-    <div className='text-black flex justify-center items-center w-full px-16 mt-4'>
+    <div className='flex justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4'style={{
+        backgroundImage: "url(http://localhost:3000/bubbles.png)",
+      }}>
       {loading ? (
         <p><Loader2 className='animate-spin' size={90} stroke='#346aa1'></Loader2></p>
       ) : (
         <div className='w-full'>
           <Carousel
                 plugins={[plugin.current]}
-                className="w-full"
+                className="w-full text-black"
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}>
             <CarouselContent>
               {currentReviews.map((review, index) => (
-                <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/4">
-                  <div className="p-2 border-2 rounded w-full h-full ml-3"  style={{
-                  backgroundImage: "url(http://localhost:3000/bubbles.png)",
-                }}>
+                <CarouselItem key={index} className="pl-1 md:basis-1/1 text-white lg:basis-1/3 px-6">
+                  <div className="p-2 border border-white rounded-lg py-5 w-full h-full ml-3">
                     <div className='flex gap-3 items-center'>
                       <Image width={45} height={45} src={review.reviewer_picture_url} alt={`Image for ${review.reviewer_name}`} />
                       <h3 className="text-lg font-bold">{review.reviewer_name}</h3>

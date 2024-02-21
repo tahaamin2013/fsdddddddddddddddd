@@ -99,7 +99,7 @@ const New: React.FC = () => {
           <CarouselNext />
         </Carousel> */}
 
-      <div className=" w-full justify-center items-center ml-1 sm:ml-8 flex text-black">
+      <div className=" w-full justify-center items-center flex text-black">
         <Carousel
           opts={{
             align: "start",

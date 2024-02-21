@@ -13,7 +13,8 @@ export default function Footer() {
       <section className="bg-black mt-5" style={{
       backgroundImage: "url(/bubbles.png)",
     }}>
-        <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+
+        <div className="max-w-screen-xl pr-4 pb-4 pt-12 space-y-8 overflow-hidden sm:pr-6 lg:pr-8">
           <nav className="flex flex-wrap justify-center -mx-5 -my-2">
             <div className="px-5 py-2">
               <Link
@@ -159,7 +160,20 @@ export default function Footer() {
             </TooltipProvider>
           </div>
 
-          <div className="flex justify-between items-start">
+          <div className="flex justify-between items-start flex-col sm:flex-row">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-[500px] rounded-xl object-cover"
+          >
+            <source
+              src="/car.mp4"
+              className="object-cover"
+              type="video/mp4"
+            />
+          </video>
           <h1 className="mt-8 text-white">Designed by WebKin Solutions</h1>
             <p className="mt-8 text-base leading-6 text-center text-gray-400">
               Copyright Wash Me Carwash Longview
