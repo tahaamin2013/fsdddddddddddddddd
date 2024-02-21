@@ -23,15 +23,55 @@ import {
     ];
   
     return (
-      <div className="flex flex-col w-full justify-center items-center mt-3">
-        <div className="text-center flex flex-col gap-2 mb-2">
+     <>
+      <div className="flex flex-col w-full justify-center gap-11 items-center mt-3">
+        <div className="text-center flex flex-col gap-5 mb-2">
           <p className="tracking-widest text-blue">WHAT WE DO</p>
           <h1 className="text-2xl sm:text-3xl font-bold">
           Step-by-Step Guide to Washing Success
           </h1>
         </div>
             {data.map((item, index) => (
-                <div
+
+                  <div
+                  className="bg-blue mx-5 rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
+                  style={{
+                    backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                  }}
+                >
+                  <div className="z-10 flex flex-col lg:flex-row justify-center h-full text-left">
+                  <img
+                      src='gift2.png'
+                      alt={`Step ${index + 1} image`}
+                      className="w-[730px] h-[460px] lg:block hidden"
+                    />
+ <div>
+  <p>1. Scan QR: Utilize your smartphone camera to scan the QR code corresponding to your desired membership level or by clicking these links:
+
+Compact Club
+
+Mid Size Club
+
+SUV Truck Club
+
+2. Enjoy the Benefits: Instantly access our exclusive membership benefits without the need to download the app. Simply follow the link provided after scanning the QR code.</p>
+ </div>
+                     
+                  </div>
+                </div>
+
+            ))}
+      </div>
+      <div className="flex flex-col w-full justify-center gap-11 items-center mt-3">
+        <div className="text-center flex flex-col gap-5 mb-2">
+          <p className="tracking-widest text-blue">WHAT WE DO</p>
+          <h1 className="text-2xl sm:text-3xl font-bold">
+          Step-by-Step Guide to Washing Success
+          </h1>
+        </div>
+            {data.map((item, index) => (
+
+                  <div
                   className="bg-blue mx-5 rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
                   style={{
                     backgroundImage: "url(http://localhost:3000/bubbles.png)",
@@ -41,24 +81,19 @@ import {
                     <img
                       src={item.image}
                       alt={`Step ${index + 1} image`}
-                      className="w-[700px] h-[500px] object-cover object-top lg:block hidden"
+                      className="w-[690px] h-[460px] lg:block hidden"
                     />
-                    <div className="mt-4 flex flex-col flex-wrap ml-6">
-                      <h1 className="text-left text-white">
-                        <h1 className="font-bold text-2xl">{item.title}</h1>
-                      
-                        <p className="text-sm mt-3 mb-3">{item.description}</p>
-                      </h1>
-                    </div>
-                    <img
-                      src={item.image}
+                           <img
+                      src='gift2.png'
                       alt={`Step ${index + 1} image`}
-                      className="w-screen h-screen object-cover object-top lg:hidden block"
+                      className="w-[730px] h-[460px] ml-0 sm:ml-11 lg:block hidden"
                     />
                   </div>
                 </div>
+
             ))}
       </div>
+     </>
     );
   };
   
