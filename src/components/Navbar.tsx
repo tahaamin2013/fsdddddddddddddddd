@@ -89,7 +89,7 @@ const Navbar = () => {
                     </SheetClose>
                   </div>
 
-                <SheetContent style={{ backgroundImage: "url(/bubbles.png)" }}>
+                  {/* <SheetContent style={{ backgroundImage: "url(/bubbles.png)" }}>
                   <SheetHeader>
                     <SheetDescription>
                       <div className="text-black font-bold flex flex-col text-left items-start gap-3 text-lg">
@@ -100,7 +100,7 @@ const Navbar = () => {
                         <Link href="/contact-us">Contact us</Link>
                       </div>
                     </SheetDescription>
-                  </SheetHeader>
+                  </SheetHeader> */}
                 </SheetContent>
               </Sheet>
             </div>
