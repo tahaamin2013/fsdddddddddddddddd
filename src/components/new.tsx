@@ -179,6 +179,7 @@ const New: React.FC = () => {
                 src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.jpg"
                 className="w-[365px] object-cover object-center h-full rounded-xl border-2 border-white"
               />
+              
             </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
