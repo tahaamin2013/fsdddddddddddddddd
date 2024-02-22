@@ -79,7 +79,7 @@ const Reviews = () => {
 
   return (
     <div className='flex justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4'style={{
-        backgroundImage: "url(http://localhost:3000/bubbles.png)",
+        backgroundImage: "url(/bubbles.png)",
       }}>
       {loading ? (
         <p><Loader2 className='animate-spin' size={90} stroke='#346aa1'></Loader2></p>

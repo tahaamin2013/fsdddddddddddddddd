@@ -150,7 +150,7 @@ const Home: React.FC = () => {
           <Team />
         </div>  
         <Pricing />
-        <Image  src="/teflon.png" alt="image of house" className="w-screen" width={5000000} height={5000000} />
+        {/* <Image  src="/teflon.png" alt="image of house" className="w-screen" width={5000000} height={5000000} /> */}
         <Git />
         <Reviews />
 

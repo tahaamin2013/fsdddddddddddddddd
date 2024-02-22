@@ -164,14 +164,14 @@ const Pricing: React.FC = () => {
   }, [selectedCar]);
   return (
     <div className="font-sans text-center mt-8 flex justify-center items-center flex-col">
-      <p className="tracking-widest text-blue">WASHING PRICE</p>
+  <div className="flex flex-row items-center justify-between">
+    <Image  src="/frame 1.png" alt="image of house" className="w-[200px] h-[200px] " width={5000000} height={5000000} />
+  <div>
+      <p className="tracking-widest text-blue">OUR ONE-TIME SERVICES</p>
       <h1 className="text-4xl mb-2 font-bold">Choose Your Plan</h1>
-      <p className="w-fit lg:w-[990px]">
-        Sed non dapibus dolor, non rhoncus dui. Ut eleifend justo at ipsum
-        aliquam, vel cursus tellus pulvinar. Nulla vel tempus diam. Nunc
-        vulputate, quam sit amet commodo tincidunt, enim lorem scelerisque
-        massa, vel ultricies.
-      </p>
+      </div>
+      <div />
+  </div>
 
       <div className="flex flex-col sm:gap-[10px] mb-3">
         <div className="flex flex-col xl:flex-row w-full justify-center items-center gap-[50px]">
@@ -180,7 +180,7 @@ const Pricing: React.FC = () => {
             <div
               className="border p-4 h-[500px] bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
               style={{
-                backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                backgroundImage: "url(/bubbles.png)",
               }}
             >
               <Image
@@ -197,7 +197,7 @@ const Pricing: React.FC = () => {
               <p className="flex flex-col gap-1 mb-1">
                 <span className="flex items-center justify-center w-full gap-2">
                   <FaCheck fill="green" />
-                  Tire And All wover hand Soapy
+                  Tire And All over hand Soapy
                 </span>
                 <span className="flex items-center justify-center w-full gap-2">
                   <FaCheck fill="green" />
@@ -218,6 +218,10 @@ const Pricing: React.FC = () => {
                 <span className="flex items-center justify-center w-full gap-2">
                   <FaCheck fill="green" />
                   Free Vacuum
+                </span>
+                <span className="flex items-center justify-center w-full gap-2">
+                  <FaCheck fill="green" />
+                  Add $2 For Wax
                 </span>
               </p>
             </div>
@@ -241,7 +245,7 @@ const Pricing: React.FC = () => {
               <p className="flex flex-col gap-1 mb-1">
                 <span className="flex items-center justify-center w-full gap-2">
                   <FaCheck fill="green" size={20} />
-                  Tire And All wover hand SoapyTire And All wover hand Soapy
+                  Tire And All over hand Soapy
                 </span>
                 <span className="flex items-center justify-center w-full gap-2">
                   <FaCheck fill="green" />
@@ -319,7 +323,7 @@ const Pricing: React.FC = () => {
               <p className="flex flex-col gap-1 mb-1">
                 <span className="flex items-center justify-center w-full gap-2">
                 <FaCheck fill="green" />
-                  Tire And All wover hand Soapy
+                  Tire And All over hand Soapy
                 </span>
                 <span className="flex items-center justify-center w-full gap-2">
                   <FaCheck fill="green" />
