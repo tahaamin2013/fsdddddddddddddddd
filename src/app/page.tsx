@@ -136,23 +136,25 @@ const Home: React.FC = () => {
           </div>
         </div> */}
       </div>
-
-    <Git />
       <Image  src="/washhouse.png" alt="image of house" className="w-screen" width={5000000} height={5000000} />
       <main>
         <div className="-mt-3">
       <New />
-      <Reviews />
+      
       </div>
        <div className="mx-5"> <WhatWeDo /></div>
         <div className="my-5">
         {/* <Cleaning /> */}
         </div>
-        <Pricing />
-
         <div className="mt-5 mx-5">
           <Team />
-        </div>
+        </div>  
+        <Pricing />
+        <Image  src="/teflon.png" alt="image of house" className="w-screen" width={5000000} height={5000000} />
+        <Git />
+        <Reviews />
+
+        
         <FAQ />
         <div className="mx-5"><Contact /></div>
       </main>

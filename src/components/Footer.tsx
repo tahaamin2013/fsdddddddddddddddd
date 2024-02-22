@@ -15,12 +15,14 @@ export default function Footer() {
     }}>
 
         <div className="max-w-screen-xl px-4 py-12 grid grid-cols-1fsda md:grid-cols-2 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <div className="flex flex-row">
+        <Image src="/final.png" width={50000000000} height={5000000000} className="h-[200px] sm:h-[300px] w-fit rounded-l-xl" alt="wash me car wash timing image with pink and blue color" />
         <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-[440px] rounded-xl object-cover"
+            className="w-[300px] sm:w-[440px] rounded-r-xl object-cover"
           >
             <source
               src="/car.mp4"
@@ -28,6 +30,7 @@ export default function Footer() {
               type="video/mp4"
             />
           </video> 
+        </div>
        <div>
        <nav className="flex flex-wrap justify-center -mx-5 -my-2">
         
