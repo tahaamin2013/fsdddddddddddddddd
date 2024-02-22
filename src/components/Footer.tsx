@@ -12,14 +12,14 @@ export default function Footer() {
   return (
     <div
       style={{ backgroundImage: "url(/bubbles.png)" }}
-      className="sm:grid mt-4 grid-cols-2 w-full lg:p-9 bg-black text-white h-fit"
+      className="sm:grid mt-4 grid-cols-2 w-full lg:p-9 bg-black items-center justify-center flex-col sm:text-left text-center flex text-white h-fit"
     >
       <div className="flex flex-col">
         <div className="flex">
           <Image
             src="/final.png"
-            width={50000000000}
-            height={5000000000}
+            width={100}
+            height={300}
             className="h-[200px] sm:h-[300px] w-fit rounded-l-xl"
             alt="wash me car wash timing image with pink and blue color"
           />
@@ -28,7 +28,7 @@ export default function Footer() {
             loop
             muted
             playsInline
-            className="w-[300px] sm:w-[440px] rounded-r-xl object-cover"
+            className="w-[250px] sm:w-[440px] rounded-r-xl object-cover"
           >
             <source src="/car.mp4" className="object-cover" type="video/mp4" />
           </video>
@@ -138,7 +138,7 @@ export default function Footer() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <nav className="flex flex-col justify-center -mx-5 -my-2 text-left space-y-7">
+        <nav className="flex flex-col justify-center -mx-5 -my-2 sm:text-center mb-7 text-left space-y-7">
           <div className="text-white/70 hover:text-white transition-all w-fit">
             <Goy
               aria-label="About"
@@ -148,7 +148,7 @@ export default function Footer() {
               Our Services
             </Goy>
           </div>
-          <div className="text-white/70 hover:text-white transition-all w-fit">
+          <div className="text-white/70 hover:text-white transition-all w-fu">
             <Goy
               aria-label="Blog"
               id="Pricing"
