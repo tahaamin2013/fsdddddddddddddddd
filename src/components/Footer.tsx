@@ -164,10 +164,10 @@ export default function Footer() {
           <div className="text-white/70 hover:text-white transition-all w-fit">
             <Goy
               aria-label="Team"
-              it="Meet the Teem"
-              className=" text-base leading-6"
+              id="Meet the Team"
+              className="text-base leading-6"
             >
-              Meet the Teem
+              Meet the Team
             </Goy>
           </div>
           <div className="text-white/70 hover:text-white transition-all w-fit">
