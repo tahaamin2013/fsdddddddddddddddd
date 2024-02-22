@@ -1,13 +1,6 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Check, Clock1, Plus } from "lucide-react";
-import Image from "next/image";
+mport Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
 

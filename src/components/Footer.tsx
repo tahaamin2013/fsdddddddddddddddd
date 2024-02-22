@@ -17,7 +17,7 @@ export default function Footer() {
         }}
       >
         <div className="max-w-screen-xl px-4 py-12 grid grid-cols-1fsda md:grid-cols-2 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center">
+          <div className="flex w-full flex-col items-center">
             <div className="flex">
               <Image
                 src="/final.png"
@@ -39,16 +39,14 @@ export default function Footer() {
                   type="video/mp4"
                 />
               </video>
-              </div>
-              <div className="flex gap-20 justify-between items-start">
-                <h1 className="mt-8 text-white">
-                  Designed by WebKin Solutions
-                </h1>
-                <p className="mt-8 text-base leading-6 text-center text-gray-400">
-                  Copyright Wash Me Carwash Longview
-                </p>
+            </div>
+            <div className="flex gap-20 w-full justify-between items-start">
+              <h1 className="mt-8 text-white">Designed by WebKin Solutions</h1>
+              <p className="mt-8 text-base leading-6 text-center text-gray-400">
+                Copyright Wash Me Carwash Longview
+              </p>
 
-                <div />
+              <div />
             </div>
           </div>
           <div>
