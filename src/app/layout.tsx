@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Topbutton from "@/components/Topbutton";
 import Footer from "@/components/Footer";
+import Memberships from "@/components/memberships";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,21 +19,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className={inter.className}>
-      {/* <Link href="/" className=" bg-[#1b3e63] z-50 fixed mb-4 w-full flex justify-center items-center underline text-white capitalize">
-    <div className="absolute inset-0">
-      <img src="/bubbles.png" alt="Background Image" className="object-cover object-center w-full h-full" />
-      <div className="absolute inset-0"></div>
-    </div>
-    
-    <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-    We are now offering MEMBERSHIPS!!!
-    </div>
-    </Link> */}
-      <Link href="/" className=" bg-[#1b3e63] z-50 fixed mb-4 w-full flex justify-center items-center underline text-white capitalize">We are now offering MEMBERSHIPS!!!</Link>
-      
+        <Memberships />      
     <Navbar />
 
       {children}
