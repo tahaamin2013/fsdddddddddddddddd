@@ -176,7 +176,7 @@ const New: React.FC = () => {
               <img
                 alt="image6"
                 loading="eager"
-                src="/phone.jpghttps://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.jpg"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.jpg"
                 className="w-[365px] object-cover object-center h-full rounded-xl border-2 border-white"
               />
             </CarouselItem>
