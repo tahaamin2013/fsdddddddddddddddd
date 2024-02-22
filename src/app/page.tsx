@@ -146,7 +146,7 @@ const Home: React.FC = () => {
       </div>
        <div className="mx-5"> <WhatWeDo /></div>
         <div className="my-5">
-        <Cleaning />
+        {/* <Cleaning /> */}
         </div>
         <Pricing />
 
