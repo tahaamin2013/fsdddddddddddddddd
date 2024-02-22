@@ -98,7 +98,7 @@ const New: React.FC = () => {
               className="w-fit h-[100px] lg:hidden block"
             />
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold mt-3">
+          <h1 className="text-2xl sm:text-3xl font-bold mt-8">
             State-of-the-Art Car Wash Facilities
           </h1>
           <div>

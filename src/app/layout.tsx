@@ -6,6 +6,7 @@ import Link from "next/link";
 import Topbutton from "@/components/Topbutton";
 import Footer from "@/components/Footer";
 import Memberships from "@/components/memberships";
+import Loader from "@/lib/Loader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +20,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className={inter.className}>
-        <Memberships />      
-    <Navbar />
+        <Loader>
+          <Memberships />
+          <Navbar />
 
-      {children}
-      <Topbutton />
-      <Footer />
+          {children}
+          <Topbutton />
+          <Footer />
+        </Loader>
       </body>
     </html>
   );
