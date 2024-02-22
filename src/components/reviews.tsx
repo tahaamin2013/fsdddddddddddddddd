@@ -11,6 +11,7 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
+import Link from 'next/link';
 // Define a type for the review object
 interface Review {
   reviewer_name: string;
@@ -82,6 +83,7 @@ const Reviews = () => {
       <div className='flex justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4'style={{
         backgroundImage: "url(/bubbles.png)",
       }}>
+        <Link href="https://www.google.com/search?hl=en-BR&gl=br&q=Wash+Me+Car+Wash,+1953+9th+Ave,+Longview,+WA+98632,+United+States&ludocid=4750013286135008027&lsig=AB86z5V2TG630eID1b_fI-RNBxns#lrd=0x54946c94ec9bed79:0x41eb6feac6768b1b,3" className="bg-green text-black px-4 py-5">Write a review</Link>
       {loading ? (
         <p><Loader2 className='animate-spin' size={90} stroke='#346aa1'></Loader2></p>
       ) : (
