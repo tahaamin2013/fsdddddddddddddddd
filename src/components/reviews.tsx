@@ -76,9 +76,10 @@ const Reviews = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
-
   return (
-    <div className='flex justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4'style={{
+    <div>
+      <div className='flex flex-row justify-center items-center w-full text-2xl font-bold'>What our customers say</div>
+      <div className='flex justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4'style={{
         backgroundImage: "url(/bubbles.png)",
       }}>
       {loading ? (
@@ -109,6 +110,7 @@ const Reviews = () => {
           </Carousel>
         </div>
       )}
+    </div>
     </div>
   );
 };

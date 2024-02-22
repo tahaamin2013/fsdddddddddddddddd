@@ -271,8 +271,8 @@ const Contact = () => {
                           <h1 className="font-bold mt-3 text-lg">
                             Hand Wash Open
                           </h1>
-                          Mon - Fri 09:00 am – 06:00 pm <br />
-                          Sun 10:00 am – 04:00 pm
+                          Mon - Sat 9 – 6 <br />
+                          Sun 10 – 4
                         </div>
                       </p>
                     </p>
