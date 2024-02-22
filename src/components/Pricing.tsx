@@ -58,7 +58,7 @@
 //         <button
 //           // onClick={() => handleClick('small')}
 //             style={{
-//                   backgroundImage: "url(http://localhost:3000/bubbles.png)",
+//                   backgroundImage: "/bubbles.png)",
 //                 }}
 //           className={`bg-green text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
 //         >
@@ -68,7 +68,7 @@
 //         <button
 //           // onClick={() => handleClick('pickup')}
 //           style={{
-//             backgroundImage: "url(http://localhost:3000/bubbles.png)",
+//             backgroundImage: "/bubbles.png)",
 //           }}
 //           className={`bg-yellow-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'pickup' ? 'border-2 border-[#e5e5e5]' : ''}`}
 //         >
@@ -78,7 +78,7 @@
 //         <button
 //           // onClick={() => handleClick('suv')}
 //           style={{
-//             backgroundImage: "url(http://localhost:3000/bubbles.png)",
+//             backgroundImage: "/bubbles.png)",
 //           }}
 //           className={`bg-red-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'suv' ? 'border-2 border-[#e5e5e5]' : ''}`}
 //         >
@@ -92,7 +92,7 @@
 //               {data[selectedCar].map((plan, index) => (
 //                 <div key={index} className="border p-4 h-[520px] bg-white px-12 shadow-lg rounded-xl my-6"
 //                 style={{
-//                   backgroundImage: "url(http://localhost:3000/bubbles.png)",
+//                   backgroundImage: "/bubbles.png)",
 //                 }}>
 //                   <strong>{plan.name}</strong>
 //                   <p className='font-bold text-5xl mb-2 text-black flex items-start justify-center'><span className='text-lg font-bold'>$</span>{plan.price}</p>
@@ -228,7 +228,7 @@ const Pricing: React.FC = () => {
             <div
              className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
-                backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                backgroundImage: "/bubbles.png)",
               }}
             >
             <Image
@@ -276,7 +276,7 @@ const Pricing: React.FC = () => {
             <div
              className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
-                backgroundImage: "url(http://localhost:3000/bubbles.png)",
+                backgroundImage: "/bubbles.png)",
               }}
             >
                <Carousel
