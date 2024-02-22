@@ -8,9 +8,10 @@ const Team = () => {
     <Image alt='Wash me car wash team image' src="/teem.png" width={5000000000000} height={500000000000000} className='w-full h-[900px] sm:h-full object-top sm:object-center  object-cover' />
       <div className="absolute inset-0"></div>
     </div>
-    <div className="relative z-10 inset-0 text-center flex justify-between w-full gap-3 items-center h-full">
+    <div className="relative z-10 inset-0 text-
+    center flex justify-between w-full gap-3 items-center h-full">
      <div className='flex flex-col gap-4 mt-[1px] sm:mt-[120px] w-full justify-center items-center' >
-     <div className="absolute bottom-4 rounded-none w-fit h-fit left-6 right-4 text-left text-black transition-all bg-white backdrop-blur-sm px-7 py-7">
+     <div className="absolute bottom-4 rounded-none w-fit h-fit left-6 right-4 text-left text-black transition-all bg-white backdrop-blur-sm px-3 sm:px-7 py-3 sm:py-7">
             <h3 className="text-2xl font-semibold mb-1 text-blue">
             Meet the Team 
               </h3>
