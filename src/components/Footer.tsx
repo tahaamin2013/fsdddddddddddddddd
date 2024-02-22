@@ -193,7 +193,7 @@ export default function Footer() {
     // </div>
     <div
       style={{ backgroundImage: "url(/bubbles.png)" }}
-      className="sm:grid mt-4 grid-cols-2 w-full p-9 bg-black text-white h-fit"
+      className="sm:grid mt-4 grid-cols-2 w-full lg:p-9 bg-black text-white h-fit"
     >
       <div className="flex flex-col">
         <div className="flex">
@@ -230,7 +230,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="flex w-full h-full items-center justify-center gap-[7rem]">
+      <div className="flex lg:flex-row flex-col w-full h-full items-center justify-center gap-7 sm:gap-[7rem]">
         <div className="flex text-right justify-center mt-8 space-x-6">
           <TooltipProvider>
             <Tooltip>
