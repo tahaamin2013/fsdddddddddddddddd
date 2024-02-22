@@ -165,7 +165,7 @@ const Pricing: React.FC = () => {
   return (
     <div
       id="Pricing"
-      className="font-sans text-center mt-8 flex justify-center items-center flex-col"
+      className="font-sans text-center mt-8 my-8 flex justify-center items-center flex-col"
     >
       <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
         <Image
@@ -195,6 +195,7 @@ const Pricing: React.FC = () => {
             src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car3.png"
             width={320}
             height={250}
+            loading="eager"
             className="w-52 hover:scale-110 transition-all duration-300"
           />
           <h1 className="text-2xl font-bold capitalize">
@@ -244,7 +245,8 @@ const Pricing: React.FC = () => {
         >
           <Image
             alt="car image"
-            src="/sedan.png"
+            src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sedan.png"
+            loading="eager"
             width={320}
             height={250}
             className="w-52 hover:scale-110 transition-all duration-300"
@@ -302,6 +304,7 @@ const Pricing: React.FC = () => {
                   src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car2.png"
                   width={320}
                   height={250}
+                  loading="eager"
                   className="w-52 hover:scale-110 transition-all duration-300"
                 />
               </CarouselItem>
@@ -312,6 +315,7 @@ const Pricing: React.FC = () => {
                   src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car1.png"
                   width={320}
                   height={250}
+                  loading="eager"
                   className="w-52 hover:scale-110 transition-all duration-300"
                 />
               </CarouselItem>
@@ -320,6 +324,7 @@ const Pricing: React.FC = () => {
                   alt="car image"
                   src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/van.png"
                   width={320}
+                  loading="eager"
                   height={250}
                   className="w-52 hover:scale-110 transition-all duration-300"
                 />
