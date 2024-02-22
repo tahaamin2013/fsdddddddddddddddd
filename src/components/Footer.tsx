@@ -13,7 +13,7 @@ export default function Footer() {
     <div
       style={{
         backgroundImage:
-          "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+          "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
       }}
       className="sm:grid mt-4 grid-cols-2 w-full lg:p-9 bg-black items-center justify-center flex-col sm:text-left text-center flex text-white h-fit"
     >
@@ -47,11 +47,12 @@ export default function Footer() {
               WebKin Solutions
             </Link>
           </h1>
-          <p className="sm:relative !text-white/70 left-44">
+          <p className="sm:relative sm:block hidden !text-white/70 left-44">
             CopyRight Wash Me Carwash Longview
           </p>
         </div>
       </div>
+
       <div className="flex lg:flex-row flex-col w-full h-full items-center justify-center gap-7 sm:gap-[7rem]">
         <div className="flex text-right justify-center mt-8 space-x-6">
           <TooltipProvider>
@@ -141,7 +142,7 @@ export default function Footer() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <nav className="flex flex-col justify-center -mx-5 -my-2 sm:text-center mb-7 text-left space-y-7">
+        <nav className="flex flex-col justify-center -mx-5 -my-2 sm:text-center text-left space-y-7">
           <div className="text-white/70 hover:text-white transition-all w-fit">
             <Goy
               aria-label="About"
@@ -151,7 +152,7 @@ export default function Footer() {
               Our Services
             </Goy>
           </div>
-          <div className="text-white/70 hover:text-white transition-all w-fu">
+          <div className="text-white/70 hover:text-white transition-all w-fit">
             <Goy
               aria-label="Blog"
               id="Pricing"
@@ -184,6 +185,9 @@ export default function Footer() {
             </Goy>
           </div>
         </nav>
+        <p className="sm:relative mb-7 sm:hidden block !text-white/70 left-44">
+          CopyRight Wash Me Carwash Longview
+        </p>
       </div>
     </div>
   );

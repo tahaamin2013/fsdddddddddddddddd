@@ -82,7 +82,7 @@ const WhatWeDo: React.FC = () => {
                 className="bg-blue rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
                 style={{
                   backgroundImage:
-                    "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+                    "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
                 }}
               >
                 <div className="z-10 flex flex-col lg:flex-row justify-center h-full text-left">

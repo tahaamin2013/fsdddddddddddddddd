@@ -32,7 +32,7 @@ const Git: React.FC = () => {
             className="bg-blue mx-5 rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
             style={{
               backgroundImage:
-                "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+                "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
             }}
           >
             <div className="z-10 flex flex-col lg:flex-row justify-center h-full text-left">
@@ -98,7 +98,7 @@ const Git: React.FC = () => {
             className="bg-blue pt-8 sm:pb-1 pb-20 sm:pt-0 mx-5 rounded-xl mb-4 h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
             style={{
               backgroundImage:
-                "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+                "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
             }}
           >
             <div className="z-10 flex flex-col lg:flex-row justify-center w-full items-center h-full text-left">

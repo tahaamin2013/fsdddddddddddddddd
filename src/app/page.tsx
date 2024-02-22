@@ -87,7 +87,7 @@ const Home: React.FC = () => {
         </video>
 
         <div className="absolute top-[50%] sm:top-[35%] items-center justify-center w-full flex flex-col">
-          <div className="text-white flex flex-col mx-7 sm:mx-36 justify-center max-w-fit items-center left-[200px]">
+          <div className="text-white flex flex-col lg:!mx-52 sm:!mx-7 mx-auto justify-center max-w-fit items-center left-[200px]">
             <div className="">
               <motion.div
                 className="text-transition"
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
                 {/* <p className="h-[25px] tracking-widest uppercase overflow-hidden bg-red-500 sm:text-lg text-sm mb-2 font-normal uppercase">
                     {data.texts[visibleIndex].desc}
                   </p> */}
-                <p className="text-2xl font-sans sm:text-7xl w-fit font-bold text-center">
+                <p className="text-4xl font-sans sm:text-7xl w-fit font-bold text-center">
                   {data.texts[visibleIndex].text}
                 </p>
               </motion.div>
@@ -122,8 +122,8 @@ const Home: React.FC = () => {
         src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.png"
         alt="image of house"
         className="w-screen"
-        width={500}
-        height={200}
+        width={3200}
+        height={390}
       />
       <main>
         <div className="-mt-3">

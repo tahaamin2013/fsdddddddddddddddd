@@ -88,7 +88,7 @@ const Reviews = () => {
         className="flex flex-col gap-2 justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4"
         style={{
           backgroundImage:
-            "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+            "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
         }}
       >
         <div className="w-full flex justify-center sm:justify-end items-center">
