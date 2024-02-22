@@ -4,10 +4,7 @@ import React from "react";
 const Team = () => {
   return (
     <>
-      <div
-        id="Meet the Teem"
-        className="relative hidden sm:block bg-blue h-[520px] text-white overflow-hidden rounded-xl"
-      >
+      <div id="Meet the Teem" className="relative hidden sm:block bg-blue h-[520px] text-white overflow-hidden rounded-xl">
         <div className="absolute inset-0">
           <Image
             alt="Wash me car wash team image"

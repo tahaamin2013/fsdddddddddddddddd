@@ -40,10 +40,8 @@ const Navbar = () => {
   return (
     // ${navbarColor}
 
-    <div
-      className="bg-blue text-white mt-6 transition-all z-50 duration-200 shadow-xl px-5 lg:px-20 py-2 items-center justify-between fixed w-full"
-      style={{ backgroundImage: "url(/bubbles.png)" }}
-    >
+    <div className="bg-blue text-white mt-6 transition-all z-50 duration-200 shadow-xl px-5 lg:px-20 py-2 items-center justify-between fixed w-full"
+      style={{ backgroundImage: "url(/bubbles.png)" }}>
       <div>
         <div className={`flex justify-between items-center`}>
           <Link href="/" className="outline-none absolute">

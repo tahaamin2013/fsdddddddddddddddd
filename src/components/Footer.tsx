@@ -10,10 +10,7 @@ import Goy from "./goy";
 
 export default function Footer() {
   return (
-    <div
-      style={{ backgroundImage: "url(/bubbles.png)" }}
-      className="sm:grid mt-4 grid-cols-2 w-full lg:p-9 bg-black text-white h-fit"
-    >
+    <div style={{ backgroundImage: "url(/bubbles.png)" }} className="sm:grid mt-4 grid-cols-2 w-full lg:p-9 bg-black text-white h-fit">
       <div className="flex flex-col">
         <div className="flex">
           <Image
