@@ -228,7 +228,7 @@ const Pricing: React.FC = () => {
             <div
              className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
-                backgroundImage: "/bubbles.png)",
+                backgroundImage: "url(/bubbles.png)",
               }}
             >
             <Image
@@ -276,7 +276,7 @@ const Pricing: React.FC = () => {
             <div
              className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
-                backgroundImage: "/bubbles.png)",
+                backgroundImage: "url(/bubbles.png)",
               }}
             >
                <Carousel
