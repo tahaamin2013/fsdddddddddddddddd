@@ -86,6 +86,19 @@ const Navbar = () => {
                       <Goy id="Contact">Contact us</Goy>
                     </SheetClose>
                   </div>
+
+                <SheetContent style={{ backgroundImage: "url(/bubbles.png)" }}>
+                  <SheetHeader>
+                    <SheetDescription>
+                      <div className="text-black font-bold flex flex-col text-left items-start gap-3 text-lg">
+                        <Link href="/our-services">Our Services</Link>
+                        <Link href="/save-here">Save Here</Link>
+                        <Link href="/meet-the-teem">Meet The Teem</Link>
+                        <Link href="/faq">FAQ</Link>
+                        <Link href="/contact-us">Contact us</Link>
+                      </div>
+                    </SheetDescription>
+                  </SheetHeader>
                 </SheetContent>
               </Sheet>
             </div>

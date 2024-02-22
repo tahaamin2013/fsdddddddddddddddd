@@ -43,15 +43,9 @@ const WhatWeDo: React.FC = () => {
         "Preparations are made for the pre-soak rinse, a step that involves applying a specialized cleaning solution to loosen and break down stubborn dirt and grime before the main washing process.",
     },
     {
-      image: "/rain.jpg",
-      title: "Step 6: Working in the Rain! ",
-      description:
-        "The car detailing process continues, even in adverse weather conditions such as rain. This may add an extra layer of challenge and precision to the detailing process, showcasing the dedication and expertise of the professional.",
-    },
-    {
       image: "/in.png",
       title:
-        "Step 7: Inside the Tunnel with Another Hand Wash Using Lambswool Mittens",
+        "Step 6: Inside the Tunnel with Another Hand Wash Using Lambswool Mittens",
       description:
         "As the car enters the cleaning tunnel, another round of hand washing takes place. This time, lambswool mittens are utilized for a gentle yet effective cleaning, ensuring that every nook and cranny is thoroughly addressed.",
     },

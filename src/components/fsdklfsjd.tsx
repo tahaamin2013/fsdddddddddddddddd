@@ -1,12 +1,5 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { Check, Clock1, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
@@ -58,19 +51,19 @@ const Git: React.FC = () => {
                 <div className="flex flex-row gap-4 font-bold w-full justify-center items-center">
                   <Link
                     href="https://touch4wash.com/hugesavings/hugesavingmembers.php?flk=2266b543ddd7762a69f0a4c0173dfbdd"
-                    className="bg-green text-black px-2 py-1 text-sm w-fit rounded-lg"
+                    className="bg-green text-black px-2 py-1 text-sm w-fit rounded-lg text-center"
                   >
                     Compact Club
                   </Link>
                   <Link
                     href="https://touch4wash.com/hugesavings/hugesavingmembers.php?flk=d283035156d4b2fd9776ac54c0a05cd7"
-                    className="bg-green text-black px-2 py-1 text-sm w-fit rounded-lg"
+                    className="bg-green text-black px-2 py-1 text-sm w-fit rounded-lg text-center"
                   >
                     Mid Size Club
                   </Link>
                   <Link
                     href="https://touch4wash.com/hugesavings/hugesavingmembers.php?flk=a68d0e837cb627acbfc0e9a24343e4ac"
-                    className="bg-green text-black px-2 py-1 text-sm w-fit rounded-lg"
+                    className="bg-green text-black px-2 py-1 text-sm w-fit rounded-lg text-center"
                   >
                     SUV Truck Club
                   </Link>
@@ -98,7 +91,7 @@ const Git: React.FC = () => {
           
           <div
           key={index}
-            className="bg-blue pt-8 sm:pt-0 mx-5 rounded-xl mb-4 h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
+            className="bg-blue pt-8 sm:pb-1 pb-20 sm:pt-0 mx-5 rounded-xl mb-4 h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
             style={{
               backgroundImage: "url(/bubbles.png)",
             }}
