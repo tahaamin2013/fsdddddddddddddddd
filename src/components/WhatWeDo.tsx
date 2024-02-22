@@ -84,7 +84,7 @@ const WhatWeDo: React.FC = () => {
             <div
               className="bg-blue rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
               style={{
-                backgroundImage: "url(/bubbles.png)",
+                backgroundImage: "/bubbles.png)",
               }}
             >
               <div className="z-10 flex flex-col lg:flex-row justify-center h-full text-left">
