@@ -64,7 +64,7 @@ const WhatWeDo: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full justify-center items-center mt-3">
+    <div id="Our Services" className="flex flex-col w-full justify-center items-center mt-3">
     <div className="text-center flex flex-col gap-2 mb-2">
       <p className="tracking-widest text-blue">WHAT WE DO</p>
       <h1 className="text-2xl sm:text-3xl font-bold">

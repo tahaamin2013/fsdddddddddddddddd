@@ -163,9 +163,9 @@ const Pricing: React.FC = () => {
     console.log(`Selected Car: ${selectedCar}`);
   }, [selectedCar]);
   return (
-    <div className="font-sans text-center mt-8 flex justify-center items-center flex-col">
+    <div id="Pricing" className="font-sans text-center mt-8 flex justify-center items-center flex-col">
   <div className="flex flex-row items-center gap-[40px]">
-    <Image  src="/frame-1.png" alt="image of house" className="w-[200px] h-[200px] ml-0" width={5000000} height={5000000} />
+    <Image  src="/Frame-1.png" alt="image of house" className="w-[200px] h-[200px] ml-0" width={5000000} height={5000000} />
   <div>
       <p className="tracking-widest text-blue">OUR ONE-TIME SERVICES</p>
       <h1 className="text-4xl mb-2 font-bold">Choose Your Plan</h1>
@@ -174,7 +174,7 @@ const Pricing: React.FC = () => {
   </div>
 
       <div className="flex flex-col sm:gap-[10px] mb-3">
-        <div className="flex flex-col xl:flex-row w-full justify-center items-center gap-[50px]">
+        <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-[50px]">
           <>
             {/* <h2 className="text-2xl font-bold">{`Plans for ${selectedCar}`}</h2> */}
             <div

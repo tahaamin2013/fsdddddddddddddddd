@@ -24,7 +24,7 @@ const Git: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col w-full justify-center  items-center mt-3">
+      <div id="#MemberShips" className="flex flex-col w-full justify-center  items-center mt-3">
         <div className="text-center flex flex-col mb-2">
           <h1 className="text-2xl sm:text-3xl font-bold">
             OUR MEMBERSHIP PLANS
