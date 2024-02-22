@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 const FAQ = () => {
   return (
-    <div><div   style={{
+    <div id="FAQ"><div   style={{
       backgroundImage: "url(/bubbles.png)",
     }} className='border mt-4 text-sm sm:text-md shadow-xl rounded-lg mb-4 text-zinc-800-z-50 py-6 mx-[44] md:mx-[140px] lg:mx-[240px] xl:mx-[300px] px-7'>
    <div className='bottom-6 left-4 right-4'>
