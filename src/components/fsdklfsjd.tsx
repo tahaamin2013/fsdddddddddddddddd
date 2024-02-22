@@ -95,7 +95,9 @@ const Git: React.FC = () => {
   
         </div>
         {data.map((item, index) => (
+          
           <div
+          key={index}
             className="bg-blue pt-8 sm:pt-0 mx-5 rounded-xl mb-4 h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
             style={{
               backgroundImage: "url(http://localhost:3000/bubbles.png)",
