@@ -174,7 +174,7 @@ const Pricing: React.FC = () => {
       </p>
 
       <div className="flex flex-col sm:gap-[10px] mb-3">
-        <div className="flex flex-row w-full justify-center items-center gap-[50px]">
+        <div className="flex flex-col xl:flex-row w-full justify-center items-center gap-[50px]">
           <>
             {/* <h2 className="text-2xl font-bold">{`Plans for ${selectedCar}`}</h2> */}
             <div
