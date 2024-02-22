@@ -70,22 +70,21 @@ const Home: React.FC = () => {
   }, []);
   return (
     <>
-
       <div className="relative">
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full pt-[50px] object-cover"
-          >
-            <source
-              src="/WashMe Car Wash Video - Edited.mp4"
-              className="object-cover"
-              type="video/mp4"
-            />
-          </video>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full pt-[50px] object-cover"
+        >
+          <source
+            src="/WashMe Car Wash Video - Edited.mp4"
+            className="object-cover"
+            type="video/mp4"
+          />
+        </video>
 
         <div className="absolute top-[50%] sm:top-[35%] items-center justify-center w-full flex flex-col">
           <div className="text-white flex flex-col mx-7 sm:mx-36 justify-center max-w-fit items-center left-[200px]">
@@ -118,43 +117,32 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="text-white flex flex-col justify-center items-center">
-          <div className="h-[53px] tracking-widest uppercase overflow-hidden ">
-            <motion.div
-              className="text-transition"
-              initial={{ y: "100%" }}
-              animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <p className="text-5xl font-bold uppercase">
-                {data.texts[visibleIndex].text2}
-              </p>
-            </motion.div>
-          </div>
-        </div> */}
       </div>
-      <Image  src="/washhouse.png" alt="image of house" className="w-screen" width={5000000} height={5000000} />
+      <Image
+        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.png"
+        alt="image of house"
+        className="w-screen"
+        width={5000000}
+        height={5000000}
+      />
       <main>
         <div className="-mt-3">
-      <New />
-      
-      </div>
-       <div className="mx-5"> <WhatWeDo /></div>
-        <div className="my-5">
-        {/* <Cleaning /> */}
+          <New />
+        </div>
+        <div className="mx-5">
+          {" "}
+          <WhatWeDo />
         </div>
         <div className="mt-5 mx-5">
           <Team />
-        </div>  
+        </div>
         <Pricing />
-        {/* <Image  src="/teflon.png" alt="image of house" className="w-screen" width={5000000} height={5000000} /> */}
         <Git />
         <Reviews />
-
-        
         <FAQ />
-        <div className="mx-5"><Contact /></div>
+        <div className="mx-5">
+          <Contact />
+        </div>
       </main>
     </>
   );

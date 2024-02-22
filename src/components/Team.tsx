@@ -5,7 +5,10 @@ const Team = () => {
   return (
     <>
       {/* Desktop View */}
-      <div className="hidden sm:block relative bg-blue h-[520px] text-white overflow-hidden rounded-xl">
+      <div
+        id="Meet the Team"
+        className="hidden sm:block relative bg-blue h-[520px] text-white overflow-hidden rounded-xl"
+      >
         <div className="absolute inset-0">
           <Image
             alt="Wash me car wash team image"
@@ -40,7 +43,10 @@ const Team = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="sm:hidden block text-white overflow-hidden rounded-xl">
+      <div
+        id="Meet the Team - mobile"
+        className="sm:hidden block text-white overflow-hidden rounded-xl"
+      >
         <Image
           alt="Wash me car wash team image"
           src="/teem.png"
