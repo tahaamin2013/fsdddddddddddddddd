@@ -50,12 +50,10 @@ const Home: React.FC = () => {
   const [shouldAnimateDown, setShouldAnimateDown] = useState(false);
 
   useEffect(() => {
-    // Set a timeout to trigger the downward animation after 1 second
     const timeout = setTimeout(() => {
       setShouldAnimateDown(true);
     }, 5000);
 
-    // Clear the timeout when the component unmounts or when the downward animation starts
     return () => clearTimeout(timeout);
   }, []);
 
