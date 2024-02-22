@@ -5,6 +5,7 @@ import { AlignJustify } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -70,17 +71,23 @@ const Navbar = () => {
                   <AlignJustify fill="white" size={27} />
                 </SheetTrigger>
                 <SheetContent>
-                  <SheetHeader>
-                    <SheetDescription>
-                      <div className="text-black font-bold flex flex-col text-left items-start gap-3 text-lg">
-                        <Link href="/our-services">Our Services</Link>
-                        <Link href="/save-here">Save Here</Link>
-                        <Link href="/meet-the-teem">Meet The Teem</Link>
-                        <Link href="/faq">FAQ</Link>
-                        <Link href="/contact-us">Contact us</Link>
-                      </div>
-                    </SheetDescription>
-                  </SheetHeader>
+                  <div className="flex-col flex gap-3 text-left items-start w-full font-bold">
+                    <SheetClose>
+                      <Goy id="Our Services">Our Services</Goy>
+                    </SheetClose>
+                    <SheetClose>
+                      <Goy id="Pricing">Save Here</Goy>
+                    </SheetClose>
+                    <SheetClose>
+                      <Goy id="Meet the Teem - for mobile">Meet The Teem</Goy>
+                    </SheetClose>
+                    <SheetClose>
+                      <Goy id="FAQ">FAQ</Goy>
+                    </SheetClose>
+                    <SheetClose>
+                      <Goy id="Contact">Contact us</Goy>
+                    </SheetClose>
+                  </div>
                 </SheetContent>
               </Sheet>
             </div>

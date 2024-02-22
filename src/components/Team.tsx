@@ -45,8 +45,8 @@ const Team = () => {
 
       <div className="sm:hidden block">
         <div
-          id="Meet the Teem"
-          className="bg-blue h-[520px] text-white overflow-hidden rounded-xl"
+          id="Meet the Teem - for mobile"
+          className="text-white overflow-hidden rounded-xl"
         >
           <Image
             alt="Wash me car wash team image"
@@ -55,8 +55,8 @@ const Team = () => {
             height={500000000000000}
             className="w-full h-full object-center  object-cover"
           />
-          <div className="flex flex-col gap-4 mt-[1px] sm:mt-[120px] w-full justify-center items-center">
-            <div className="absolute bottom-4 rounded-none w-fit h-fit left-6 right-4 text-left text-black transition-all bg-white backdrop-blur-sm px-7 py-7">
+          <div className="flex flex-col gap-4 w-full justify-center items-center">
+            <div className="rounded-none w-fit h-fit text-left text-black transition-all bg-white px-7 py-7">
               <h3 className="text-2xl font-semibold mb-1 text-blue">
                 Meet the Team
               </h3>
