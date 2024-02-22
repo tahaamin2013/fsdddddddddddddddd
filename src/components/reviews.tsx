@@ -83,7 +83,7 @@ const Reviews = () => {
       <div className='flex flex-col gap-2 justify-center items-center w-full bg-blue text-white py-7 px-16 mt-4'style={{
         backgroundImage: "url(/bubbles.png)",
       }}>
-        <div className="w-full flex justify-end items-center"><Link href="https://www.google.com/search?hl=en-BR&gl=br&q=Wash+Me+Car+Wash,+1953+9th+Ave,+Longview,+WA+98632,+United+States&ludocid=4750013286135008027&lsig=AB86z5V2TG630eID1b_fI-RNBxns#lrd=0x54946c94ec9bed79:0x41eb6feac6768b1b,3" className="bg-green text-black px-3 py-2 rounded-lg text-lg">Write a review</Link></div>
+        <div className="w-full flex justify-center sm:justify-end items-center"><Link href="https://www.google.com/search?hl=en-BR&gl=br&q=Wash+Me+Car+Wash,+1953+9th+Ave,+Longview,+WA+98632,+United+States&ludocid=4750013286135008027&lsig=AB86z5V2TG630eID1b_fI-RNBxns#lrd=0x54946c94ec9bed79:0x41eb6feac6768b1b,3" className="bg-green text-black px-3 py-2 rounded-lg text-lg">Write a review</Link></div>
      <div className='flex justify-center items-center w-full'>
      {loading ? (
         <p><Loader2 className='animate-spin' size={90} stroke='#346aa1'></Loader2></p>
@@ -96,8 +96,8 @@ const Reviews = () => {
                 onMouseLeave={plugin.current.reset}>
             <CarouselContent>
               {currentReviews.map((review, index) => (
-                <CarouselItem key={index} className="pl-1 md:basis-1/1 text-white lg:basis-1/3 px-6">
-                  <div className="p-2 border border-white rounded-lg py-5 w-full h-full ml-3">
+                <CarouselItem key={index} className="pl-1 md:basis-1/1 text-white lg:basis-1/3 px-3 sm:px-6">
+                  <div className="p-2 border border-white rounded-lg py-3 sm:py-5 w-full h-full ml-3">
                     <div className='flex gap-3 items-center'>
                       <Image width={45} height={45} src={review.reviewer_picture_url} alt={`Image for ${review.reviewer_name}`} />
                       <h3 className="text-lg font-bold">{review.reviewer_name}</h3>

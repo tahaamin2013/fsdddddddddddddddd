@@ -164,7 +164,7 @@ const Pricing: React.FC = () => {
   }, [selectedCar]);
   return (
     <div id="Pricing" className="font-sans text-center mt-8 flex justify-center items-center flex-col">
-  <div className="flex flex-row items-center gap-[40px]">
+  <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
     <Image  src="/Frame-1.png" alt="image of house" className="w-[200px] h-[200px] ml-0" width={5000000} height={5000000} />
   <div>
       <p className="tracking-widest text-blue">OUR ONE-TIME SERVICES</p>
