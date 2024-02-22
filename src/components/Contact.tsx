@@ -144,16 +144,17 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div id="Contact">
       <h1 className="flex flex-row items-center mb-4 mt-2 text-2xl">
         <hr className="bg-blue w-full h-0.5 mt-0.5" />
         <span className="mx-2 text-blue">Contact</span>
         <hr className="bg-blue w-full h-0.5 mt-0.5" />
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-blue text-white border shadow-xl p-2 rounded-lg py-6 px-8 overflow-hidden"
-         style={{ backgroundImage: "url(/bubbles.png)"}}>
-
+        <div
+          className="bg-blue text-white border shadow-xl p-2 rounded-lg py-6 px-8 overflow-hidden"
+          style={{ backgroundImage: "url(/bubbles.png)" }}
+        >
           <div className="z-10 flex flex-col justify-center  items-center h-full">
             <form
               className="flex flex-col w-full gap-8"
@@ -252,50 +253,51 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="bg-blue border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden" style={{ backgroundImage: "url(/bubbles.png)"}  }>
-                <div className="grid grid-cols-1 mb-2 items-center gap-2">
-                  <div>
-                    <p className="font-extrabold text-xl">
-                      Visit for an extraordinary car care experience
-                    </p>
-                  </div>
-                  <div>
-                    <p className="m-0 dark:text-dark p-0 flex flex-row items-center justify-between">
-                      <div className="flex gap-1 items-center">
-                        <FaMapMarkerAlt className="fill-green" />
-                        1953 9th Ave, Longview, WA,
-                      </div>
-                      <p className="m-0 dark:text-dark -mt-3 p-0 flex flex-row items-center gap-3">
-                        <IoTime size={25} className="fill-green" />
-                        <div className="flex flex-col">
-                          <h1 className="font-bold mt-3 text-lg">
-                            Hand Wash Open
-                          </h1>
-                          Mon - Sat 9 – 6 <br />
-                          Sun 10 – 4
-                        </div>
-                      </p>
-                    </p>
-                  </div>
+        <div
+          className="bg-blue border shadow-xl rounded-lg py-5 px-4 text-white overflow-hidden"
+          style={{ backgroundImage: "url(/bubbles.png)" }}
+        >
+          <div className="grid grid-cols-1 mb-2 items-center gap-2">
+            <div>
+              <p className="font-extrabold text-xl">
+                Visit for an extraordinary car care experience
+              </p>
+            </div>
+            <div>
+              <p className="m-0 dark:text-dark p-0 flex flex-row items-center justify-between">
+                <div className="flex gap-1 items-center">
+                  <FaMapMarkerAlt className="fill-green" />
+                  1953 9th Ave, Longview, WA,
                 </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11057.182314530331!2d-122.9279929!3d46.14486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54946c94ec9bed79%3A0x41eb6feac6768b1b!2sWash%20Me%20Car%20Wash!5e0!3m2!1sen!2sbr!4v1708203053173!5m2!1sen!2sbr"
-                  className="rounded-xl mt-2 w-full"
-                  loading="lazy"
-                ></iframe>
-                <div className="flex flex-col gap-1 mt-6">
-                  <p className="flex gap-3 items-center">
-                    <IoMdMail className="mt-0.5 fill-green" />
-                    eileen@eileentefft.com
-                  </p>
-                  <p className="m-0 dark:text-dark p-0 flex flex-row items-center gap-3">
-                    <FaPhoneAlt className="fill-green" />
-                    360-4304126
-                  </p>
-                </div>
+                <p className="m-0 dark:text-dark -mt-3 p-0 flex flex-row items-center gap-3">
+                  <IoTime size={25} className="fill-green" />
+                  <div className="flex flex-col">
+                    <h1 className="font-bold mt-3 text-lg">Hand Wash Open</h1>
+                    Mon - Sat 9 – 6 <br />
+                    Sun 10 – 4
+                  </div>
+                </p>
+              </p>
+            </div>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11057.182314530331!2d-122.9279929!3d46.14486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54946c94ec9bed79%3A0x41eb6feac6768b1b!2sWash%20Me%20Car%20Wash!5e0!3m2!1sen!2sbr!4v1708203053173!5m2!1sen!2sbr"
+            className="rounded-xl mt-2 w-full"
+            loading="lazy"
+          ></iframe>
+          <div className="flex flex-col gap-1 mt-6">
+            <p className="flex gap-3 items-center">
+              <IoMdMail className="mt-0.5 fill-green" />
+              eileen@eileentefft.com
+            </p>
+            <p className="m-0 dark:text-dark p-0 flex flex-row items-center gap-3">
+              <FaPhoneAlt className="fill-green" />
+              360-4304126
+            </p>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

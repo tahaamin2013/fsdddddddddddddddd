@@ -61,7 +61,7 @@ const Navbar = () => {
                 <Goy id="Pricing">Save Here</Goy>
                 <Goy id="Meet the Teem">Meet The Teem</Goy>
                 <Goy id="FAQ">FAQ</Goy>
-                <Goy id="Pricing">Contact us</Goy>
+                <Goy id="Contact">Contact us</Goy>
               </div>
             </div>
             <div className="md:hidden block z-50">
