@@ -17,7 +17,7 @@ const New: React.FC = () => {
       className="flex flex-col w-full justify-center items-center mt-3 bg-blue px-5 pb-3 text-white"
       style={{
         backgroundImage:
-          "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+          "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
       }}
     >
       <div className="text-center flex items-center flex-col sm:flex-row gap-2 mb-2 justify-between">
@@ -39,7 +39,7 @@ const New: React.FC = () => {
                     alt="e"
                     width={200}
                     height={200}
-                    className="w-[200px] h-fit"
+                    className="w-fit h-fit"
                   />
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center w-full">
@@ -49,7 +49,7 @@ const New: React.FC = () => {
                     alt="e"
                     width={200}
                     height={200}
-                    className="w-[200px] h-fit"
+                    className="w-fit h-fit"
                   />
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center w-full">
@@ -58,7 +58,7 @@ const New: React.FC = () => {
                     alt="e"
                     width={200}
                     height={200}
-                    className="w-[200px] h-fit"
+                    className="w-fit h-fit"
                   />
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center w-full">
@@ -67,7 +67,7 @@ const New: React.FC = () => {
                     alt="e"
                     width={200}
                     height={200}
-                    className="w-[200px] h-fit"
+                    className="w-fit h-fit"
                   />
                 </CarouselItem>
               </CarouselContent>

@@ -13,7 +13,7 @@ const FAQ = () => {
       <div
         style={{
           backgroundImage:
-            "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+            "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
         }}
         className="border mt-4 text-sm text-left sm:text-md shadow-xl rounded-lg mb-4 text-zinc-800-z-50 py-6 mx-[44] md:mx-[140px] lg:mx-[240px] xl:mx-[300px] px-7"
       >

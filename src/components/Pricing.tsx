@@ -190,7 +190,7 @@ const Pricing: React.FC = () => {
               className="border p-4 h-[500px] bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
               style={{
                 backgroundImage:
-                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
               }}
             >
               <Image
@@ -242,7 +242,7 @@ const Pricing: React.FC = () => {
               className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
                 backgroundImage:
-                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
               }}
             >
               <Image
@@ -294,7 +294,7 @@ const Pricing: React.FC = () => {
               className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
                 backgroundImage:
-                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
+                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
               }}
             >
               <Carousel plugins={[plugin.current]} className="w-full">
