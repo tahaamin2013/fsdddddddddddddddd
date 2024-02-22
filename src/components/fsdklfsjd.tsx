@@ -31,8 +31,8 @@ const Git: React.FC = () => {
             OUR MEMBERSHIP PLANS
           </h1>
         </div>
-        {data.map((item, index) => (
-          <div
+        {data.map((item,index ) => (
+          <div key={index}
             className="bg-blue mx-5 rounded-xl h-[600px] sm:h-[400px] text-white overflow-hidden shadow-xl"
             style={{
               backgroundImage: "url(http://localhost:3000/bubbles.png)",
