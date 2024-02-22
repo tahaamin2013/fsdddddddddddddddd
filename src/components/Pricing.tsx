@@ -178,7 +178,7 @@ const Pricing: React.FC = () => {
           <>
             {/* <h2 className="text-2xl font-bold">{`Plans for ${selectedCar}`}</h2> */}
             <div
-              className="border p-4 h-fit bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
+              className="border p-4 h-[500px] bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
               style={{
                 backgroundImage: "url(http://localhost:3000/bubbles.png)",
               }}
@@ -222,7 +222,7 @@ const Pricing: React.FC = () => {
               </p>
             </div>
             <div
-             className="border p-4 h-fit bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
+             className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
                 backgroundImage: "url(http://localhost:3000/bubbles.png)",
               }}
@@ -270,7 +270,7 @@ const Pricing: React.FC = () => {
               </p>
             </div>
             <div
-             className="border p-4 h-fit bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
+             className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
                 backgroundImage: "url(http://localhost:3000/bubbles.png)",
               }}
