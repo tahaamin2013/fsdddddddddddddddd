@@ -42,7 +42,7 @@ const Git: React.FC = () => {
               <img
                 src="gift2.png"
                 alt={`Step ${index + 1} image`}
-                className="w-[730px] h-[460px] lg:block hidden"
+                className="w-full sm:w-[730px] h-[460px]"
               />
               <div className="ml-4 mt-3 flex flex-col gap-7">
                 <p>
