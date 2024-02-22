@@ -76,7 +76,7 @@ const Navbar = () => {
                       <Goy id="Our Services">Our Services</Goy>
                     </SheetClose>
                     <SheetClose>
-                      <Goy id="Pricing">Save Here</Goy>
+                      <Goy id="#MemberShips">Save Here</Goy>
                     </SheetClose>
                     <SheetClose>
                       <Goy id="Meet the Team - mobile">Meet The Teem</Goy>

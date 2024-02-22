@@ -126,6 +126,7 @@
 
 // export default Pricing;
 // Pricing.js
+
 "use client";
 
 import Image from "next/image";
@@ -133,8 +134,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import React, { useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
@@ -150,10 +149,10 @@ interface Plan {
 
 const Pricing: React.FC = () => {
   const [selectedCar, setSelectedCar] = useState<string>("small");
-  const [selectedButton, setSelectedButton] = useState<string>("");
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
+
   const handleClick = (carType: string) => {
     setSelectedCar(carType);
   };
@@ -163,10 +162,7 @@ const Pricing: React.FC = () => {
     console.log(`Selected Car: ${selectedCar}`);
   }, [selectedCar]);
   return (
-    <div
-      id="Pricing"
-      className="font-sans text-center mt-8 my-8 flex justify-center items-center flex-col"
-    >
+    <div className="font-sans text-center mt-8 my-8 flex justify-center items-center flex-col">
       <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
         <Image
           src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/Frame-1.png"
