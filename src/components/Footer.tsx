@@ -40,13 +40,11 @@ export default function Footer() {
                 />
               </video>
             </div>
-            <div className="flex gap-20 w-full justify-between items-start">
+            <div className="flex gap-20 w-full bg-red-500 justify-between items-start">
               <h1 className="mt-8 text-white">Designed by WebKin Solutions</h1>
               <p className="mt-8 text-base leading-6 text-center text-gray-400">
                 Copyright Wash Me Carwash Longview
               </p>
-
-              <div />
             </div>
           </div>
           <div>

@@ -69,7 +69,7 @@ const Navbar = () => {
                 <SheetTrigger className="text-white  -my-4 mt-1 text-2xl">
                   <AlignJustify fill="white" size={27} />
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent style={{ backgroundImage: "url(/bubbles.png)" }}>
                   <SheetHeader>
                     <SheetDescription>
                       <div className="text-black font-bold flex flex-col text-left items-start gap-3 text-lg">
