@@ -169,7 +169,7 @@ const Pricing: React.FC = () => {
     >
       <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
         <Image
-          src="/Frame-1.png"
+          src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/Frame-1.png"
           alt="image of house"
           className="w-[200px] h-[200px] ml-0"
           width={200}
@@ -182,10 +182,196 @@ const Pricing: React.FC = () => {
         <div />
       </div>
 
-      <div className="flex flex-col sm:gap-[10px] mb-3">
+      <div className="flex md:flex-row flex-col w-full items-center justify-center gap-[50px] mb-3">
+        <div
+          className="border p-4 h-[500px] bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
+          style={{
+            backgroundImage:
+              "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
+          }}
+        >
+          <Image
+            alt="car image"
+            src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car3.png"
+            width={320}
+            height={250}
+            className="w-52 hover:scale-110 transition-all duration-300"
+          />
+          <h1 className="text-2xl font-bold capitalize">
+            <span className="text-blue">Custom car </span>
+            <br /> hand wash
+          </h1>
+          <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
+            <span className="text-lg font-bold">$</span>15
+          </p>
+          <p className="flex flex-col gap-1 mb-1">
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Tire And All over hand Soapy
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Tri Color Foam
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Full Body Hand Wash
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              High Pressure Dry
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Spot Free Rinse
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Free Vacuum
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Add $2 For Wax
+            </span>
+          </p>
+        </div>
+        <div
+          className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
+          style={{
+            backgroundImage:
+              "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
+          }}
+        >
+          <Image
+            alt="car image"
+            src="/sedan.png"
+            width={320}
+            height={250}
+            className="w-52 hover:scale-110 transition-all duration-300"
+          />
+          <h1 className="text-2xl font-bold capitalize">
+            <span className="text-blue">Basic Mid Sized Cars</span> <br /> Hand
+            Wash
+          </h1>
+          <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
+            <span className="text-lg font-bold">$</span>16
+          </p>
+          <p className="flex flex-col gap-1 mb-1">
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" size={20} />
+              Tire And All over hand Soapy
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Tri Color Foam
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Full Body Hand Wash
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              High Pressure Dry
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Spot Free Rinse
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Free Vacuum
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Add $2 For Wax
+            </span>
+          </p>
+        </div>
+        <div
+          className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
+          style={{
+            backgroundImage:
+              "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
+          }}
+        >
+          <Carousel plugins={[plugin.current]} className="w-full">
+            <CarouselContent>
+              <CarouselItem className="w-full flex justify-center items-center">
+                <Image
+                  alt="car image"
+                  src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car2.png"
+                  width={320}
+                  height={250}
+                  className="w-52 hover:scale-110 transition-all duration-300"
+                />
+              </CarouselItem>
+
+              <CarouselItem className="w-full flex justify-center items-center">
+                <Image
+                  alt="car image"
+                  src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car1.png"
+                  width={320}
+                  height={250}
+                  className="w-52 hover:scale-110 transition-all duration-300"
+                />
+              </CarouselItem>
+              <CarouselItem className="w-full flex justify-center items-center">
+                <Image
+                  alt="car image"
+                  src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/van.png"
+                  width={320}
+                  height={250}
+                  className="w-52 hover:scale-110 transition-all duration-300"
+                />
+              </CarouselItem>
+            </CarouselContent>
+          </Carousel>
+
+          <h1 className="text-2xl font-bold capitalize">
+            <span className="text-blue">
+              Basic SUVs, Vans and Full Sized Pickups Trucks
+            </span>
+            <br /> Hand Wash
+          </h1>
+          <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
+            <span className="text-lg font-bold">$</span>17
+          </p>
+          <p className="flex flex-col gap-1 mb-1">
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Tire And All over hand Soapy
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Tri Color Foam
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Full Body Hand Wash
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              High Pressure Dry
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Spot Free Rinse
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Free Vacuum
+            </span>
+            <span className="flex items-center justify-center w-full gap-2">
+              <FaCheck fill="green" />
+              Add $2 For Wax
+            </span>
+          </p>
+        </div>
+      </div>
+
+      {/* <div className="flex flex-col sm:gap-[10px] mb-3">
         <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-[50px]">
           <>
-            {/* <h2 className="text-2xl font-bold">{`Plans for ${selectedCar}`}</h2> */}
             <div
               className="border p-4 h-[500px] bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
               style={{
@@ -195,9 +381,9 @@ const Pricing: React.FC = () => {
             >
               <Image
                 alt="car image"
-                src="/car3.png"
-                width={52}
-                height={200}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car3.png"
+                width={320}
+                height={250}
                 className="w-52 hover:scale-110 transition-all duration-300"
               />
               <h1 className="text-2xl font-bold capitalize">
@@ -248,8 +434,8 @@ const Pricing: React.FC = () => {
               <Image
                 alt="car image"
                 src="/sedan.png"
-                width={52}
-                height={200}
+                width={320}
+                height={250}
                 className="w-52 hover:scale-110 transition-all duration-300"
               />
               <h1 className="text-2xl font-bold capitalize">
@@ -302,9 +488,9 @@ const Pricing: React.FC = () => {
                   <CarouselItem className="w-full flex justify-center items-center">
                     <Image
                       alt="car image"
-                      src="/car2.png"
-                      width={52}
-                      height={200}
+                      src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car2.png"
+                      width={320}
+                      height={250}
                       className="w-52 hover:scale-110 transition-all duration-300"
                     />
                   </CarouselItem>
@@ -312,18 +498,18 @@ const Pricing: React.FC = () => {
                   <CarouselItem className="w-full flex justify-center items-center">
                     <Image
                       alt="car image"
-                      src="/car1.png"
-                      width={52}
-                      height={200}
+                      src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/car1.png"
+                      width={320}
+                      height={250}
                       className="w-52 hover:scale-110 transition-all duration-300"
                     />
                   </CarouselItem>
                   <CarouselItem className="w-full flex justify-center items-center">
                     <Image
                       alt="car image"
-                      src="/van.png"
-                      width={52}
-                      height={200}
+                      src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/van.png"
+                      width={320}
+                      height={250}
                       className="w-52 hover:scale-110 transition-all duration-300"
                     />
                   </CarouselItem>
@@ -333,7 +519,7 @@ const Pricing: React.FC = () => {
               <h1 className="text-2xl font-bold capitalize">
                 <span className="text-blue">
                   Basic SUVs, Vans and Full Sized Pickups Trucks
-                </span>{" "}
+                </span>
                 <br /> Hand Wash
               </h1>
               <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
@@ -372,7 +558,7 @@ const Pricing: React.FC = () => {
             </div>
           </>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
