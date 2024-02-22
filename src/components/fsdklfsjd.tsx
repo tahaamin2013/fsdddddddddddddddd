@@ -13,11 +13,10 @@ import React, { useRef } from "react";
 
 const Git: React.FC = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
-
   const data = [
     {
-      image: "/Gift.png",
-      title: "Step 1: Washing the Wheels",
+     image: "/Gift.png",
+     title: "Step 1: Washing the Wheels",
       description:
         "In the first step, attention is given to the wheels of the car. This involves a thorough cleaning process to remove dirt, brake dust, and other debris from the wheels, ensuring a fresh and polished look.",
     },
