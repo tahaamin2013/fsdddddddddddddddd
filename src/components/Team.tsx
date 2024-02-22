@@ -3,7 +3,7 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <div className="relative bg-blue h-[520px] text-white overflow-hidden rounded-xl">
+    <div id="Meet the Teem" className="relative bg-blue h-[520px] text-white overflow-hidden rounded-xl">
     <div className="absolute inset-0">
     <Image alt='Wash me car wash team image' src="/teem.png" width={5000000000000} height={500000000000000} className='w-full h-full object-center  object-cover' />
       <div className="absolute inset-0"></div>

@@ -59,8 +59,8 @@ const Navbar = () => {
               <div className="text-white font-bold flex gap-5 text-lg">
                 <Goy id="Our Services">Our Services</Goy>
                 <Goy id="Pricing">Save Here</Goy>
-                <Goy id="Pricing">Meet The Teem</Goy>
-                <Goy id="Pricing">FAQ</Goy>
+                <Goy id="Meet the Teem">Meet The Teem</Goy>
+                <Goy id="FAQ">FAQ</Goy>
                 <Goy id="Pricing">Contact us</Goy>
               </div>
             </div>
