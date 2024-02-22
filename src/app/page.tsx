@@ -122,8 +122,8 @@ const Home: React.FC = () => {
         src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.png"
         alt="image of house"
         className="w-screen"
-        width={500}
-        height={200}
+        width={3200}
+        height={390}
       />
       <main>
         <div className="-mt-3">

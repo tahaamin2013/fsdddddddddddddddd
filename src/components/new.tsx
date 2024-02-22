@@ -22,9 +22,9 @@ const New: React.FC = () => {
     >
       <div className="text-center flex items-center flex-col sm:flex-row gap-2 mb-2 justify-between">
         <Image
-          src="/1stlogo.png"
+          src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/1stlogo.png"
           alt="e"
-          width={300}
+          width={200}
           height={100}
           className="w-full h-[100px] hidden sm:block"
         />
@@ -35,7 +35,7 @@ const New: React.FC = () => {
                 <CarouselItem className="flex justify-center items-center w-full">
                   {" "}
                   <Image
-                    src="/logo11.png"
+                    src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/logo11.png"
                     alt="e"
                     width={200}
                     height={200}
@@ -45,7 +45,7 @@ const New: React.FC = () => {
                 <CarouselItem className="flex justify-center items-center w-full">
                   {" "}
                   <Image
-                    src="/logo22.png"
+                    src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/logo22.png"
                     alt="e"
                     width={200}
                     height={200}
@@ -54,7 +54,7 @@ const New: React.FC = () => {
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center w-full">
                   <Image
-                    src="/100.png"
+                    src="/https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/100.png"
                     alt="e"
                     width={200}
                     height={200}
@@ -63,7 +63,7 @@ const New: React.FC = () => {
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center w-full">
                   <Image
-                    src="/google.png"
+                    src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/google.png"
                     alt="e"
                     width={200}
                     height={200}
@@ -110,16 +110,16 @@ const New: React.FC = () => {
           </div>
         </div>
         <Image
-          src="/100.png"
-          alt="e"
-          width={200}
+          src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/100.png"
+          alt="100% Image"
+          width={100}
           height={100}
           className="w-full h-[100px] hidden sm:block"
         />
         <Image
-          src="/google.png"
-          alt="e"
-          width={200}
+          src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/google.png"
+          alt="Google Reviews Image"
+          width={100}
           height={100}
           className="w-full h-[100px] hidden sm:block"
         />
@@ -138,43 +138,45 @@ const New: React.FC = () => {
           <CarouselContent>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
-                alt="image1"
-                src="/fot.png"
+                src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/fot.png?raw=true"
+                className="w-[365px] object-cover rounded-xl border-2 border-white"
+                loading="eager"
+              />
+            </CarouselItem>
+            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
+              <img
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.png"
+                loading="eager"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
-                alt="image2"
-                src="/fet.png"
+                loading="eager"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.jpg"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
-                alt="image3"
-                src="/hou.jpg"
+                loading="eager"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.png"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
-                alt="image4"
-                src="/moter.png"
-                className="w-[365px] object-cover rounded-xl border-2 border-white"
-              />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              <img
+                loading="eager"
                 alt="image5"
-                src="/sddsfaa.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.png"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
                 alt="image6"
-                src="/phone.jpg"
+                loading="eager"
+                src="/phone.jpghttps://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.jpg"
                 className="w-[365px] object-cover object-center h-full rounded-xl border-2 border-white"
               />
             </CarouselItem>
