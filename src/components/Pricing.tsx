@@ -58,7 +58,7 @@
 //         <button
 //           // onClick={() => handleClick('small')}
 //             style={{
-//                   backgroundImage: "/bubbles.png)",
+//                   backgroundImage: "/bubbles.png",
 //                 }}
 //           className={`bg-green text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'small' ? 'border-2 border-[#e5e5e5]' : ''}`}
 //         >
@@ -68,7 +68,7 @@
 //         <button
 //           // onClick={() => handleClick('pickup')}
 //           style={{
-//             backgroundImage: "/bubbles.png)",
+//             backgroundImage: "/bubbles.png",
 //           }}
 //           className={`bg-yellow-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'pickup' ? 'border-2 border-[#e5e5e5]' : ''}`}
 //         >
@@ -78,7 +78,7 @@
 //         <button
 //           // onClick={() => handleClick('suv')}
 //           style={{
-//             backgroundImage: "/bubbles.png)",
+//             backgroundImage: "/bubbles.png",
 //           }}
 //           className={`bg-red-500 text-white w-fit font-bold text-lg px-8 pb-2 pt-0 rounded-xl mr-2 ${selectedCar === 'suv' ? 'border-2 border-[#e5e5e5]' : ''}`}
 //         >
@@ -92,7 +92,7 @@
 //               {data[selectedCar].map((plan, index) => (
 //                 <div key={index} className="border p-4 h-[520px] bg-white px-12 shadow-lg rounded-xl my-6"
 //                 style={{
-//                   backgroundImage: "/bubbles.png)",
+//                   backgroundImage: "/bubbles.png",
 //                 }}>
 //                   <strong>{plan.name}</strong>
 //                   <p className='font-bold text-5xl mb-2 text-black flex items-start justify-center'><span className='text-lg font-bold'>$</span>{plan.price}</p>
@@ -135,10 +135,10 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 import React, { useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
 
 interface Plan {
   name: string;
@@ -153,7 +153,7 @@ const Pricing: React.FC = () => {
   const [selectedButton, setSelectedButton] = useState<string>("");
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+  );
   const handleClick = (carType: string) => {
     setSelectedCar(carType);
   };
@@ -163,15 +163,24 @@ const Pricing: React.FC = () => {
     console.log(`Selected Car: ${selectedCar}`);
   }, [selectedCar]);
   return (
-    <div id="Pricing" className="font-sans text-center mt-8 flex justify-center items-center flex-col">
-  <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
-    <Image  src="/Frame-1.png" alt="image of house" className="w-[200px] h-[200px] ml-0" width={5000000} height={5000000} />
-  <div>
-      <p className="tracking-widest text-blue">OUR ONE-TIME SERVICES</p>
-      <h1 className="text-4xl mb-2 font-bold">Choose Your Plan</h1>
+    <div
+      id="Pricing"
+      className="font-sans text-center mt-8 flex justify-center items-center flex-col"
+    >
+      <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
+        <Image
+          src="/Frame-1.png"
+          alt="image of house"
+          className="w-[200px] h-[200px] ml-0"
+          width={200}
+          height={200}
+        />
+        <div>
+          <p className="tracking-widest text-blue">OUR ONE-TIME SERVICES</p>
+          <h1 className="text-4xl mb-2 font-bold">Choose Your Plan</h1>
+        </div>
+        <div />
       </div>
-  <div />
-  </div>
 
       <div className="flex flex-col sm:gap-[10px] mb-3">
         <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-[50px]">
@@ -180,17 +189,21 @@ const Pricing: React.FC = () => {
             <div
               className="border p-4 h-[500px] bg-white w-full rounded-2xl flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-xl"
               style={{
-                backgroundImage: "url(/bubbles.png)",
+                backgroundImage:
+                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
               }}
             >
               <Image
                 alt="car image"
                 src="/car3.png"
-                width={50000000}
-                height={600000000000}
+                width={52}
+                height={200}
                 className="w-52 hover:scale-110 transition-all duration-300"
               />
-              <h1 className="text-2xl font-bold capitalize"><span className="text-blue">Custom car </span><br /> hand wash</h1>
+              <h1 className="text-2xl font-bold capitalize">
+                <span className="text-blue">Custom car </span>
+                <br /> hand wash
+              </h1>
               <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
                 <span className="text-lg font-bold">$</span>15
               </p>
@@ -226,19 +239,23 @@ const Pricing: React.FC = () => {
               </p>
             </div>
             <div
-             className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
+              className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
-                backgroundImage: "url(/bubbles.png)",
+                backgroundImage:
+                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
               }}
             >
-            <Image
+              <Image
                 alt="car image"
                 src="/sedan.png"
-                width={50000000}
-                height={600000000000}
+                width={52}
+                height={200}
                 className="w-52 hover:scale-110 transition-all duration-300"
               />
-                <h1 className="text-2xl font-bold capitalize"><span className="text-blue">Basic Mid Sized Cars</span> <br /> Hand Wash</h1>
+              <h1 className="text-2xl font-bold capitalize">
+                <span className="text-blue">Basic Mid Sized Cars</span> <br />{" "}
+                Hand Wash
+              </h1>
               <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
                 <span className="text-lg font-bold">$</span>16
               </p>
@@ -274,55 +291,57 @@ const Pricing: React.FC = () => {
               </p>
             </div>
             <div
-             className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
+              className="border p-4 h-[500px] bg-white w-full flex flex-col justify-center items-center text-center sm:w-[400px] px-5 shadow-lg rounded-xl"
               style={{
-                backgroundImage: "url(/bubbles.png)",
+                backgroundImage:
+                  "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png",
               }}
             >
-               <Carousel
-      plugins={[plugin.current]}
-      className="w-full"
-    >
-      <CarouselContent>
-      <CarouselItem className="w-full flex justify-center items-center">
-          <Image
-                alt="car image"
-                src="/car2.png"
-                width={50000000}
-                height={600000000000}
-                className="w-52 hover:scale-110 transition-all duration-300"
-              />
-          </CarouselItem>
+              <Carousel plugins={[plugin.current]} className="w-full">
+                <CarouselContent>
+                  <CarouselItem className="w-full flex justify-center items-center">
+                    <Image
+                      alt="car image"
+                      src="/car2.png"
+                      width={52}
+                      height={200}
+                      className="w-52 hover:scale-110 transition-all duration-300"
+                    />
+                  </CarouselItem>
 
-          <CarouselItem className="w-full flex justify-center items-center">
-          <Image
-                alt="car image"
-                src="/car1.png"
-                width={50000000}
-                height={600000000000}
-                className="w-52 hover:scale-110 transition-all duration-300"
-              />
-          </CarouselItem>
-          <CarouselItem className="w-full flex justify-center items-center">
-          <Image
-                alt="car image"
-                src="/van.png"
-                width={50000000}
-                height={600000000000}
-                className="w-52 hover:scale-110 transition-all duration-300"
-              />
-          </CarouselItem>
-      </CarouselContent>
-    </Carousel>
-             
-                <h1 className="text-2xl font-bold capitalize"><span className="text-blue">Basic SUVs, Vans and Full Sized Pickups Trucks</span> <br /> Hand Wash 
-</h1>
+                  <CarouselItem className="w-full flex justify-center items-center">
+                    <Image
+                      alt="car image"
+                      src="/car1.png"
+                      width={52}
+                      height={200}
+                      className="w-52 hover:scale-110 transition-all duration-300"
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="w-full flex justify-center items-center">
+                    <Image
+                      alt="car image"
+                      src="/van.png"
+                      width={52}
+                      height={200}
+                      className="w-52 hover:scale-110 transition-all duration-300"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+              </Carousel>
+
+              <h1 className="text-2xl font-bold capitalize">
+                <span className="text-blue">
+                  Basic SUVs, Vans and Full Sized Pickups Trucks
+                </span>{" "}
+                <br /> Hand Wash
+              </h1>
               <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
                 <span className="text-lg font-bold">$</span>17
               </p>
               <p className="flex flex-col gap-1 mb-1">
                 <span className="flex items-center justify-center w-full gap-2">
-                <FaCheck fill="green" />
+                  <FaCheck fill="green" />
                   Tire And All over hand Soapy
                 </span>
                 <span className="flex items-center justify-center w-full gap-2">

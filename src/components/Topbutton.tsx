@@ -49,7 +49,7 @@ const GoTopButton = () => {
     >
        
       Go Top
-      <Image alt="car" src='/download.webp' className='w-[170px] absolute h-[30px] bottom-6 right-[1px]' width={6000000} height={6000000} />  
+      <Image alt="car" src='/download.webp' className='w-[170px] absolute h-[30px] bottom-6 right-[1px]' width={170} height={30} />  
     </motion.button>
   );
 };
