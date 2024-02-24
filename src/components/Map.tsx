@@ -12,7 +12,7 @@ const Map = () => {
     >
       <div className="flex flex-col items-center mt-6 mb-1 justify-center">
         <div className="flex flex-col mb-4 lg:hidden w-full items-center mt-6 justify-center">
-          <h1 className="text-2xl font-bold uppercase">Location</h1>
+          <h1 className="text-2xl mb-7 font-bold uppercase">Location</h1>
           <p className="font-semibold text-lg mb-2">
             1953 9th Ave, Longview, WA2
           </p>
@@ -24,8 +24,9 @@ const Map = () => {
             aria-hidden="false"
           />
         </div>
-        <h1 className="text-2xl font-bold uppercase">HOURS OF OPERATION</h1>
-        <p className="font-semibold text-lg mb-2">1953 9th Ave, Longview, WA</p>
+        <h1 className="text-2xl font-bold uppercase mb-8">
+          HOURS OF OPERATION
+        </h1>
         <div className="w-full h-[305px] rounded-xl border-green border p-4 flex flex-col">
           <div className="flex w-full justify-between font-semibold -mt-1 text-lg">
             <p>Monday</p>

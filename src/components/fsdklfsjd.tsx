@@ -8,7 +8,6 @@ import { IoMdMail } from "react-icons/io";
 import { IoTime } from "react-icons/io5";
 
 const Git: React.FC = () => {
-
   return (
     <>
       <div id="#MemberShips">
@@ -21,16 +20,21 @@ const Git: React.FC = () => {
           }}
         >
           <div className="flex py-8 flex-col w-full h-full justify-center items-center gap-3">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-4 tracking-widest">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-1 tracking-widest">
               GIFT CERTIFICATE
             </h1>
+            <p className="mb-4 text-center">
+              Gift the joy of a pristine ride with Wash Me Car Wash Gift
+              Certificates – the perfect, eco-friendly way to say "thank you"
+              or celebrate any occasion in style!
+            </p>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="border-2 border-white w-fit ml-3 py-6 px-10 rounded-lg">
                 <ul className="list-disc">
                   <li>Equals to $10.90 per wash</li>
                   <li>Regularly ($15.00) each</li>
                   <li>
-                    You{" "}
+                    You
                     <span className="text-[#f60a11] font-extrabold">
                       SAVE $41.00
                     </span>
@@ -59,7 +63,7 @@ const Git: React.FC = () => {
           <Image
             width={700}
             height={500}
-            src="/Gift.png"
+            src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/MockUp_1.png?raw=true"
             alt={`Step 1 image`}
             className="w-[690px] h-[460px]"
           />
