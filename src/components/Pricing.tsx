@@ -268,7 +268,7 @@ const Pricing: React.FC = () => {
             <div className="w-full flex justify-center">
               <Image
                 className="mt-3"
-                src="/https___touch4wash.com_hugesavings_hugesavingmembers.php_flk=2266b543ddd7762a69f0a4c0173dfbdd.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/1st%20qr.png"
                 width={150}
                 height={250}
                 loading="eager"
@@ -371,7 +371,7 @@ const Pricing: React.FC = () => {
               <Image
                 className="mt-3"
                 loading="eager"
-                src="/https___touch4wash.com_hugesavings_hugesavingmembers.php_flk=d283035156d4b2fd9776ac54c0a05cd7.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/2nd%20qr.png"
                 width={150}
                 height={250}
                 alt="Compact Club"
@@ -498,7 +498,7 @@ const Pricing: React.FC = () => {
             <div className="w-full flex justify-center">
               <Image
                 className="mt-1"
-                src="/https___touch4wash.com_hugesavings_hugesavingmembers.php_flk=a68d0e837cb627acbfc0e9a24343e4ac.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/last%20qr.png"
                 width={150}
                 height={250}
                 loading="eager"
