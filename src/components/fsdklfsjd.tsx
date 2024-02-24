@@ -62,6 +62,7 @@ const Git: React.FC = () => {
           </div>
           <Image
             width={700}
+            loading="eager"
             height={500}
             src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/MockUp_1.png?raw=true"
             alt={`Step 1 image`}
