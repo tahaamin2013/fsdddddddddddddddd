@@ -155,16 +155,16 @@ const Pricing: React.FC = () => {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
-  const handleClick = (carType: string) => {
-    setSelectedCar(carType);
-  };
 
   useEffect(() => {
     // You can perform additional actions when the selected car changes
     console.log(`Selected Car: ${selectedCar}`);
   }, [selectedCar]);
   return (
-    <div className="font-sans text-center mt-8 my-8 flex justify-center items-center flex-col">
+    <div
+      id="#MemberShips"
+      className="font-sans text-center mt-8 my-8 flex justify-center items-center flex-col"
+    >
       <div className="flex flex-row items-center gap-0 sm:gap-[40px]">
         <Image
           src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/Frame-1.png"
@@ -260,7 +260,7 @@ const Pricing: React.FC = () => {
 
               <p className="mt-3">
                 Click the Above Link <br />
-                our
+                Or
                 <br />
                 Scan the QR Code Below By Utilizing Your Smartphone Camera
               </p>
@@ -271,6 +271,7 @@ const Pricing: React.FC = () => {
                 src="/https___touch4wash.com_hugesavings_hugesavingmembers.php_flk=2266b543ddd7762a69f0a4c0173dfbdd.png"
                 width={150}
                 height={250}
+                loading="eager"
                 alt="Compact Club"
               />
             </div>
@@ -361,7 +362,7 @@ const Pricing: React.FC = () => {
 
               <p className="mt-3">
                 Click the Above Link <br />
-                our
+                Or
                 <br />
                 Scan the QR Code Below By Utilizing Your Smartphone Camera
               </p>
@@ -369,6 +370,7 @@ const Pricing: React.FC = () => {
             <div className="w-full flex justify-center">
               <Image
                 className="mt-3"
+                loading="eager"
                 src="/https___touch4wash.com_hugesavings_hugesavingmembers.php_flk=d283035156d4b2fd9776ac54c0a05cd7.png"
                 width={150}
                 height={250}
@@ -488,7 +490,7 @@ const Pricing: React.FC = () => {
               </Link>
               <p className="mt-3">
                 Click the Above Link <br />
-                our
+                Or
                 <br />
                 Scan the QR Code Below By Utilizing Your Smartphone Camera
               </p>
@@ -499,6 +501,7 @@ const Pricing: React.FC = () => {
                 src="/https___touch4wash.com_hugesavings_hugesavingmembers.php_flk=a68d0e837cb627acbfc0e9a24343e4ac.png"
                 width={150}
                 height={250}
+                loading="eager"
                 alt="Compact Club"
               />
             </div>

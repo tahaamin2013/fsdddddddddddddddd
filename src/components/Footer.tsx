@@ -174,7 +174,7 @@ export default function Footer() {
           <div className="text-white/70 hover:text-white transition-all w-fit">
             <Goy
               aria-label="Blog"
-              id="Pricing"
+              id="#MemberShips"
               className=" text-base leading-6"
             >
               Save Here
