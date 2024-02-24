@@ -26,7 +26,7 @@ const Git: React.FC = () => {
             <p className="mb-4 text-center">
               Gift the joy of a pristine ride with Wash Me Car Wash Gift
               Certificates – the perfect, eco-friendly way to say &quot;thank
-              you&quot; or celebrate any occasion in style!
+              you &quot; or celebrate any occasion in style!
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="border-2 border-white w-fit ml-3 py-6 px-10 rounded-lg">
@@ -34,7 +34,7 @@ const Git: React.FC = () => {
                   <li>Equals to $10.90 per wash</li>
                   <li>Regularly ($15.00) each</li>
                   <li>
-                    You
+                    You{" "}
                     <span className="text-[#f60a11] font-extrabold">
                       SAVE $41.00
                     </span>
@@ -65,7 +65,6 @@ const Git: React.FC = () => {
             height={500}
             src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/MockUp_1.png?raw=true"
             alt={`Step 1 image`}
-            className="w-[690px] h-[460px]"
           />
         </div>
       </div>
