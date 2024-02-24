@@ -13,6 +13,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 export default function Footer() {
   return (
     <div
+      id="Contact"
       style={{
         backgroundImage:
           "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
@@ -174,7 +175,7 @@ export default function Footer() {
           <div className="text-white/70 hover:text-white transition-all w-fit">
             <Goy
               aria-label="Blog"
-              id="Pricing"
+              id="#MemberShips"
               className=" text-base leading-6"
             >
               Save Here
