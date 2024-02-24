@@ -11,8 +11,8 @@ const Map = () => {
       }}
     >
       <div className="flex flex-col items-center gap-1 sm:mx-10 mx-0">
-        <h1 className="text-2xl font-bold uppercase">Location</h1>
         <div className="flex flex-col mb-2 lg:hidden w-full items-center mt-6 justify-center">
+          <h1 className="text-2xl font-bold uppercase">Location</h1>
           <p className="font-semibold text-lg mb-2">
             1953 9th Ave, Longview, WA2
           </p>
@@ -24,7 +24,9 @@ const Map = () => {
             aria-hidden="false"
           />
         </div>
-        <h1 className="text-2xl font-bold mt-2 uppercase">HOURS OF OPERATION</h1>
+        <h1 className="text-2xl font-bold mt-2 uppercase">
+          HOURS OF OPERATION
+        </h1>
         <div className="w-full rounded-xl border-green border p-4 flex flex-col">
           <div className="flex w-full justify-between font-semibold mt-1 text-lg">
             <p>Monday</p>
@@ -61,6 +63,7 @@ const Map = () => {
         </div>
       </div>
       <div className="hidden lg:flex flex-col w-full items-center mt-6 mb-1 justify-center">
+        <h1 className="text-2xl font-bold uppercase">Location</h1>
         <p className="font-semibold text-lg mb-2">1953 9th Ave, Longview, WA</p>
         <iframe
           className="sm:w-full sm:h-[300px] h-[400px] w-full overflow-hidden rounded-md"
