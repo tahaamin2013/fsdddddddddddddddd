@@ -4,14 +4,14 @@ const Map = () => {
   return (
     <div
       key="1"
-      className="bg-blue lg:grid grid-cols-2 px-7 py-6 items-center text-white overflow-hidden shadow-xl"
+      className="bg-blue lg:grid gap-6 grid-cols-2 px-7 py-6 items-center text-white overflow-hidden shadow-xl"
       style={{
         backgroundImage:
           "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
       }}
     >
-      <div className="flex flex-col items-center gap-1 sm:mx-10 mx-0">
-        <div className="flex flex-col mb-2 lg:hidden w-full items-center mt-6 justify-center">
+      <div className="flex flex-col items-center mt-6 mb-1 justify-center">
+        <div className="flex flex-col mb-4 lg:hidden w-full items-center mt-6 justify-center">
           <h1 className="text-2xl font-bold uppercase">Location</h1>
           <p className="font-semibold text-lg mb-2">
             1953 9th Ave, Longview, WA2
@@ -24,44 +24,44 @@ const Map = () => {
             aria-hidden="false"
           />
         </div>
-        <h1 className="text-2xl font-bold mt-2 uppercase">
-          HOURS OF OPERATION
-        </h1>
-        <div className="w-full rounded-xl border-green border p-4 flex flex-col">
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+        <h1 className="text-2xl font-bold uppercase">HOURS OF OPERATION</h1>
+        <p className="font-semibold text-lg mb-2">1953 9th Ave, Longview, WA</p>
+        <div className="w-full h-[305px] rounded-xl border-green border p-4 flex flex-col">
+          <div className="flex w-full justify-between font-semibold -mt-1 text-lg">
             <p>Monday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Tuesday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Wednesday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Thursday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Monday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Friday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Saturday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-1 text-lg">
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Sunday</p>
             <p>10:00 AM - 4:00 PM</p>
           </div>
         </div>
       </div>
+
       <div className="hidden lg:flex flex-col w-full items-center mt-6 mb-1 justify-center">
         <h1 className="text-2xl font-bold uppercase">Location</h1>
         <p className="font-semibold text-lg mb-2">1953 9th Ave, Longview, WA</p>
