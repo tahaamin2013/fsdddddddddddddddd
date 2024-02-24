@@ -25,8 +25,8 @@ const Git: React.FC = () => {
             </h1>
             <p className="mb-4 text-center">
               Gift the joy of a pristine ride with Wash Me Car Wash Gift
-              Certificates – the perfect, eco-friendly way to say "thank you"
-              or celebrate any occasion in style!
+              Certificates – the perfect, eco-friendly way to say &quot;thank
+              you&quot; or celebrate any occasion in style!
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="border-2 border-white w-fit ml-3 py-6 px-10 rounded-lg">
