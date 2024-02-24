@@ -9,7 +9,7 @@ import Autoplay from "embla-carousel-autoplay";
 import React, { useRef } from "react";
 
 const WhatWeDo: React.FC = () => {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
 
   const data = [
     {
