@@ -41,7 +41,6 @@ export default function Loader({ children }: { children: React.ReactNode }) {
           <span className="sr-only">Loading...</span>
         </div>
       ) : (
-        // Render children when loading is complete
         <>{children}</>
       )}
     </div>
