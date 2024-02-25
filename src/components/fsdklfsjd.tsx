@@ -13,7 +13,7 @@ const Git: React.FC = () => {
       <div id="#MemberShips">
         <div
           key="2"
-          className="bg-blue my-6 sm:grid grid-cols-2 rounded-xl text-white overflow-hidden shadow-xl"
+          className="bg-blue my-6 items-center sm:grid grid-cols-2 rounded-xl text-white overflow-hidden shadow-xl"
           style={{
             backgroundImage:
               "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
@@ -60,11 +60,11 @@ const Git: React.FC = () => {
               </span>
             </div>
           </div>
-          <Image
-            width={700}
+
+          <img
             loading="eager"
-            height={500}
-            src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/MockUp_1%20(2).webp"
+            className="max-w-full "
+            src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/RealMockup.webp"
             alt={`Step 1 image`}
           />
         </div>

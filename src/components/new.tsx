@@ -206,7 +206,6 @@ const New: React.FC = () => {
                 src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               /> */}
-
               <Image
                 alt="Step 4"
                 width={365}
