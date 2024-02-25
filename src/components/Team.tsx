@@ -12,7 +12,7 @@ const Team = () => {
         <div className="absolute inset-0">
           <Image
             alt="Wash me car wash team image"
-            src="/teem.png"
+            src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/teem.webp"
             width={1200}
             height={800}
             className="w-full h-full object-center object-cover"
