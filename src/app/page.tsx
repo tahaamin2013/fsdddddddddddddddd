@@ -122,7 +122,7 @@ const Home: React.FC = () => {
         height={390}
       /> */}
       <Image
-        src="/washhouse.webp"
+        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
         alt="image of house"
         className="w-screen"
         width={3200}

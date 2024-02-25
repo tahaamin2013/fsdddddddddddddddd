@@ -164,7 +164,7 @@ const New: React.FC = () => {
                 alt="Step 1"
                 width={365}
                 height={400}
-                src="/fot.webp"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fot.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
@@ -179,7 +179,7 @@ const New: React.FC = () => {
                 alt="Step 2"
                 width={365}
                 height={400}
-                src="/fet.webp"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
@@ -195,7 +195,7 @@ const New: React.FC = () => {
                 alt="Step 3"
                 width={365}
                 height={400}
-                src="/hou.webp"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
@@ -211,7 +211,7 @@ const New: React.FC = () => {
                 alt="Step 4"
                 width={365}
                 height={400}
-                src="/moter.webp"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
@@ -228,7 +228,7 @@ const New: React.FC = () => {
                 alt="Step 5"
                 width={365}
                 height={400}
-                src="/sddsfaa.webp"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
@@ -245,7 +245,7 @@ const New: React.FC = () => {
                 alt="Step 6"
                 width={365}
                 height={400}
-                src="/phone.webp"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
