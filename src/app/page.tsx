@@ -1,18 +1,15 @@
 "use client";
-import Cleaning from "@/components/Cleaning";
-import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
-import Navbar from "@/components/Navbar";
+import Map from "@/components/Map";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import WhatWeDo from "@/components/WhatWeDo";
-import Reviews from "@/components/reviews";
 import Git from "@/components/fsdklfsjd";
 import New from "@/components/new";
-import { motion, AnimatePresence } from "framer-motion";
+import Reviews from "@/components/reviews";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Map from "@/components/Map";
 type Data = {
   texts: { text: string; desc: string }[];
 };
@@ -117,8 +114,15 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* <Image
+        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
+        alt="image of house"
+        className="w-screen"
+        width={3200}
+        height={390}
+      /> */}
       <Image
-        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.png"
+        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
         alt="image of house"
         className="w-screen"
         width={3200}

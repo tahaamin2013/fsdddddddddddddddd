@@ -160,48 +160,94 @@ const New: React.FC = () => {
         >
           <CarouselContent>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              <img
-                src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/fot.png?raw=true"
+              <Image
+                alt="Step 1"
+                width={365}
+                height={400}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fot.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              <img
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.png"
+              {/* <img
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.webp"
                 loading="eager"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
+              /> */}
+              <Image
+                alt="Step 2"
+                width={365}
+                height={400}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.webp"
+                className="w-[365px] object-cover rounded-xl border-2 border-white"
+                loading="eager"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              <img
+              {/* <img
                 loading="eager"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.jpg"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
+              /> */}
+
+              <Image
+                alt="Step 3"
+                width={365}
+                height={400}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.webp"
+                className="w-[365px] object-cover rounded-xl border-2 border-white"
+                loading="eager"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              <img
+              {/* <img
                 loading="eager"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
+              /> */}
+              <Image
+                alt="Step 4"
+                width={365}
+                height={400}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.webp"
+                className="w-[365px] object-cover rounded-xl border-2 border-white"
+                loading="eager"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              <img
+              {/* <img
                 loading="eager"
                 alt="image5"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
+              /> */}
+
+              <Image
+                alt="Step 5"
+                width={365}
+                height={400}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.webp"
+                className="w-[365px] object-cover rounded-xl border-2 border-white"
+                loading="eager"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
                 alt="image6"
                 loading="eager"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.jpg"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.webp"
                 className="w-[365px] object-cover object-center h-full rounded-xl border-2 border-white"
               />
+
+              {/* <Image
+                alt="Step 6"
+                width={365}
+                height={400}
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.webp"
+                className="w-[365px] object-cover rounded-xl border-2 border-white"
+                loading="eager"
+              /> */}
             </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
