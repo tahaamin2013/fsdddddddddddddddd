@@ -161,14 +161,14 @@ const New: React.FC = () => {
           <CarouselContent>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
-                src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/fot.png?raw=true"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fot.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fet.webp"
                 loading="eager"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
@@ -176,14 +176,14 @@ const New: React.FC = () => {
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
                 loading="eager"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.jpg"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/hou.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
               <img
                 loading="eager"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/moter.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
@@ -191,7 +191,7 @@ const New: React.FC = () => {
               <img
                 loading="eager"
                 alt="image5"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.png"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/sddsfaa.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
               />
             </CarouselItem>
@@ -199,7 +199,7 @@ const New: React.FC = () => {
               <img
                 alt="image6"
                 loading="eager"
-                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.jpg"
+                src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.webp"
                 className="w-[365px] object-cover object-center h-full rounded-xl border-2 border-white"
               />
             </CarouselItem>

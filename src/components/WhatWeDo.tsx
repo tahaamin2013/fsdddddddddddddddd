@@ -14,7 +14,7 @@ const WhatWeDo: React.FC = () => {
   const data = [
     {
       image:
-        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/23.png",
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/23.webp",
       title: "Step 1: Washing the Wheels",
       description:
         "In the first step, attention is given to the wheels of the car. This involves a thorough cleaning process to remove dirt, brake dust, and other debris from the wheels, ensuring a fresh and polished look.",
