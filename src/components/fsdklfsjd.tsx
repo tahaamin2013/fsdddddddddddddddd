@@ -64,7 +64,7 @@ const Git: React.FC = () => {
             width={700}
             loading="eager"
             height={500}
-            src="https://github.com/aimahusnain/Washme-CarWash-Images/blob/main/MockUp_1.png?raw=true"
+            src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/MockUp_1%20(2).webp"
             alt={`Step 1 image`}
           />
         </div>

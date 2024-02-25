@@ -14,6 +14,7 @@ const Team = () => {
             alt="Wash me car wash team image"
             src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/teem.webp"
             width={1200}
+            loading="eager"
             height={800}
             className="w-full h-full object-center object-cover"
           />
@@ -49,7 +50,8 @@ const Team = () => {
       >
         <Image
           alt="Wash me car wash team image"
-          src="/teem.png"
+          src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/teem.webp"
+          loading="eager"
           width={600}
           height={400}
           className="w-full h-full object-center object-cover"

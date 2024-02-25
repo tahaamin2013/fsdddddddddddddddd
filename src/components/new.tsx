@@ -234,21 +234,21 @@ const New: React.FC = () => {
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full flex justify-center items-center">
-              {/* <img
+              <img
                 alt="image6"
                 loading="eager"
                 src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.webp"
                 className="w-[365px] object-cover object-center h-full rounded-xl border-2 border-white"
-              /> */}
+              />
 
-              <Image
+              {/* <Image
                 alt="Step 6"
                 width={365}
                 height={400}
                 src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/phone.webp"
                 className="w-[365px] object-cover rounded-xl border-2 border-white"
                 loading="eager"
-              />
+              /> */}
             </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
