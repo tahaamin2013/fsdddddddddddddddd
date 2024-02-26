@@ -300,7 +300,7 @@ const Pricing: React.FC = () => {
             <span className="text-blue">SUV. Vans full-sized Pickups</span>
             <br />{" "}
           </h1>
-          <h1 className="text-2xl font-bold mt-2 z-[999] uppercase">
+          <h1 className="text-2xl font-bold mt-2 uppercase">
             Hand Wash <br /> ONE-TIME
           </h1>
           <p className="font-bold text-5xl mb-2 text-black flex items-start justify-center">
