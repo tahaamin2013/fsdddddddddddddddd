@@ -29,6 +29,18 @@ const Map = () => {
         </h1>
         <div className="w-full h-[305px] rounded-xl border-green border p-4 flex flex-col">
           <div className="flex w-full justify-between font-semibold -mt-1 text-lg">
+            <p>Friday</p>
+            <p>9:00 AM - 6:00 PM</p>
+          </div>
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+            <p>Saturday</p>
+            <p>9:00 AM - 6:00 PM</p>
+          </div>
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+            <p>Sunday</p>
+            <p>9:00 AM - 4:00 PM</p>
+          </div>
+          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Monday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
@@ -43,22 +55,6 @@ const Map = () => {
           <div className="flex w-full justify-between font-semibold mt-2 text-lg">
             <p>Thursday</p>
             <p>9:00 AM - 6:00 PM</p>
-          </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
-            <p>Monday</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
-            <p>Friday</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
-            <p>Saturday</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
-            <p>Sunday</p>
-            <p>10:00 AM - 4:00 PM</p>
           </div>
         </div>
       </div>
