@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="flex flex-col">
         <div className="flex">
           <Image
-            src="/final.png"
+            src="/Hand Wash Open 9 - 4.png"
             width={100}
             height={300}
             className="h-[200px] sm:h-[300px] w-fit rounded-l-xl"
