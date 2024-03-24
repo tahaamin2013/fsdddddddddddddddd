@@ -27,33 +27,33 @@ const Map = () => {
         <h1 className="text-2xl font-bold uppercase mb-8">
           HOURS OF OPERATION
         </h1>
-        <div className="w-full h-[305px] rounded-xl border-green border p-4 flex flex-col">
-          <div className="flex w-full justify-between font-semibold -mt-1 text-lg">
-            <p>Friday</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
-            <p>Saturday</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+        <div className="w-full h-[305px] rounded-xl justify-between border-green border p-4 flex flex-col">
+          <div className="flex w-full justify-between font-semibold text-lg">
             <p>Sunday</p>
             <p>9:00 AM - 4:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+          <div className="flex w-full justify-between font-semibold text-lg">
             <p>Monday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+          <div className="flex w-full justify-between font-semibold text-lg">
             <p>Tuesday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+          <div className="flex w-full justify-between font-semibold text-lg">
             <p>Wednesday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
-          <div className="flex w-full justify-between font-semibold mt-2 text-lg">
+          <div className="flex w-full justify-between font-semibold text-lg">
             <p>Thursday</p>
+            <p>9:00 AM - 6:00 PM</p>
+          </div>
+          <div className="flex w-full justify-between font-semibold text-lg">
+            <p>Friday</p>
+            <p>9:00 AM - 6:00 PM</p>
+          </div>
+          <div className="flex w-fuj  ll justify-between font-semibold text-lg">
+            <p>Saturday</p>
             <p>9:00 AM - 6:00 PM</p>
           </div>
         </div>
