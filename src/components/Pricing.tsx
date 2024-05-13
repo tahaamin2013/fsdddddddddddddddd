@@ -77,7 +77,7 @@ const Pricing: React.FC = () => {
           <p className="flex flex-col gap-1 mb-1">
             <span className="flex items-center justify-center w-full gap-2">
               <FaCheck fill="green" />
-              Tire And All over hand Soapy
+              Tire and All over Pre-soak
             </span>
             <span className="flex items-center justify-center w-full gap-2">
               <FaCheck fill="green" />
@@ -180,7 +180,7 @@ const Pricing: React.FC = () => {
           <p className="flex flex-col gap-1 mb-1">
             <span className="flex items-center justify-center w-full gap-2">
               <FaCheck fill="green" />
-              Tire And All over hand Soapy
+             Tire and All over Pre-soak
             </span>
             <span className="flex items-center justify-center w-full gap-2">
               <FaCheck fill="green" />
@@ -309,7 +309,7 @@ const Pricing: React.FC = () => {
           <p className="flex flex-col gap-1 mb-1">
             <span className="flex items-center justify-center w-full gap-2">
               <FaCheck fill="green" />
-              Tire And All over hand Soapy
+             Tire and All over Pre-soak
             </span>
             <span className="flex items-center justify-center w-full gap-2">
               <FaCheck fill="green" />
