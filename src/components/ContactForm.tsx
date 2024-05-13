@@ -1,41 +1,45 @@
-export default function Contact() {
-    const [result, setResult] = React.useState("");
-  
-    const onSubmit = async (event) => {
-      event.preventDefault();
-      setResult("Sending....");
-      const formData = new FormData(event.target);
-  
-      formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
-  
+import {useState} from 'react'
+import React from 'react';
+
+export function Contact() {
+  async function handleSubmit(e: any) {
+      e.preventDefault();
       const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+          },
+          body: JSON.stringify({
+              access_key: "YOUR_ACCESS_KEY_HERE",
+              name: e.target.name.value,
+              email: e.target.email.value,
+              message: e.target.message.value,
+          }),
       });
-  
-      const data = await response.json();
-  
-      if (data.success) {
-        setResult("Form Submitted Successfully");
-        event.target.reset();
-      } else {
-        console.log("Error", data);
-        setResult(data.message);
+      const result = await response.json();
+      if (result.success) {
+          console.log(result);
       }
-    };
-  
-    return (
-      <div>
-        <form onSubmit={onSubmit}>
-          <input type="text" name="name" required/>
-          <input type="email" name="email" required/>
-          <textarea name="message" required></textarea>
-  
-          <button type="submit">Submit Form</button>
-  
-        </form>
-        <span>{result}</span>
-  
-      </div>
-    );
   }
+
+return (
+  <>
+    <form onSubmit={handleSubmit}>
+        <div>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" required placeholder="Your name" />
+        </div>
+        <div>
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" required placeholder="email@example.com" />
+        </div>
+        <div>
+            <label htmlFor="message">Message</label>
+            <textarea name="message" required rows={3} placeholder="Enter Message"></textarea>
+        </div>
+        <button type="submit">Submit Form</button>
+    </form>
+  </>
+);
+}

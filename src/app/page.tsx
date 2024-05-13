@@ -8,8 +8,11 @@ import Git from "@/components/fsdklfsjd";
 import New from "@/components/new";
 import Reviews from "@/components/reviews";
 import { motion } from "framer-motion";
+import { Contact } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
+
 type Data = {
   texts: { text: string; desc: string }[];
 };
@@ -114,13 +117,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <Image
-        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
-        alt="image of house"
-        className="w-screen"
-        width={3200}
-        height={390}
-      /> */}
       <Image
         src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
         alt="image of house"
@@ -144,6 +140,7 @@ const Home: React.FC = () => {
         <Git />
         <Reviews />
         <FAQ />
+        <Contact />
         {/* <div className="mx-5">
           <Contact />
         </div> */}
