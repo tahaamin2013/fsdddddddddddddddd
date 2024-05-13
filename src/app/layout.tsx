@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className="overflow-x-hidden">
       <body className={inter.className}>
         <Loader>
-          <Memberships />
+          {/* <Memberships /> */}
           <Navbar />
 
           {children}
