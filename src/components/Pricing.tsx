@@ -104,8 +104,8 @@ const Pricing: React.FC = () => {
               Add $2 For Wax
             </span>
           </p>
-
-          <div className="mt-3">
+<hr />
+<div className="mt-3 border-0 border-t-2 border-black">
             <p className="font-sans text-2xl font-bold uppercase">
               4 Washes Per Month
             </p>
@@ -207,8 +207,7 @@ const Pricing: React.FC = () => {
               Add $2 For Wax
             </span>
           </p>
-
-          <div className="mt-3">
+          <div className="mt-3 border-0 border-t-2 border-black">
             <p className="font-sans text-2xl font-bold uppercase">
               4 Washes Per Month
             </p>
@@ -336,7 +335,7 @@ const Pricing: React.FC = () => {
               Add $2 For Wax
             </span>
           </p>
-          <div className="mt-3">
+          <div className="mt-3 border-0 border-t-2 border-black">
             <p className="font-sans text-2xl font-bold uppercase">
               4 Washes Per Month
             </p>
