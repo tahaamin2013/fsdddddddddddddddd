@@ -65,16 +65,21 @@ const Navbar = () => {
                 <SheetTrigger className="text-white  -my-4 mt-1 text-2xl">
                   <AlignJustify fill="white" size={27} />
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent
+                  style={{
+                    backgroundImage:
+                      "url(https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/bubbles.png)",
+                  }}
+                >
                   <div className="flex-col flex gap-3 text-left items-start w-full font-bold">
                     <SheetClose>
                       <Goy id="Our Services">Our Services</Goy>
                     </SheetClose>
                     <SheetClose>
-                      <Goy id="Pricing">Save Here</Goy>
+                      <Goy id="#MemberShips">Save Here</Goy>
                     </SheetClose>
                     <SheetClose>
-                      <Goy id="Meet the Team - mobile">Meet The Teem</Goy>
+                      <Goy id="Meet the Team - mobile">Meet The Team</Goy>
                     </SheetClose>
                     <SheetClose>
                       <Goy id="FAQ">FAQ</Goy>

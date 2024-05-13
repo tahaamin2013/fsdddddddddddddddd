@@ -9,48 +9,55 @@ import Autoplay from "embla-carousel-autoplay";
 import React, { useRef } from "react";
 
 const WhatWeDo: React.FC = () => {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
 
   const data = [
     {
-      image: "/23.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/23.webp",
       title: "Step 1: Washing the Wheels",
       description:
         "In the first step, attention is given to the wheels of the car. This involves a thorough cleaning process to remove dirt, brake dust, and other debris from the wheels, ensuring a fresh and polished look.",
     },
     {
-      image: "/washing-the-weels.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washing-the-weels.webp",
       title: "Step 2: Darrin Carefully Prewashes the Lower Car",
       description:
         "Darrin, the car detailing professional, takes special care to prewash the lower parts of the car. This step is crucial for removing initial layers of grime and preparing the vehicle for a comprehensive cleaning.",
     },
     {
-      image: "/full.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/full%20(1).webp",
       title: "Step 3: Beginning of the Full Body Wash Even Before the Tunnel",
       description:
         "The full-body wash commences, starting even before the car enters the cleaning tunnel. This stage involves a general surface cleaning to eliminate surface dirt and contaminants from the entire vehicle.",
     },
     {
-      image: "/fsd.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/fsd%20(2).webp",
       title: "Step 4: Full Body Hand Wash Before the Tunnel",
       description:
         "Before entering the automated cleaning tunnel, a meticulous hand wash is performed on the entire body of the car. This step ensures a detailed cleaning, addressing specific areas that may require extra attention.",
     },
     {
-      image: "/get.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/get%20(1)%20(1).webp",
       title: "Step 5: Getting Ready for the Pre-Soak Rinse",
       description:
         "Preparations are made for the pre-soak rinse, a step that involves applying a specialized cleaning solution to loosen and break down stubborn dirt and grime before the main washing process.",
     },
     {
-      image: "/in.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/in%20(1).webp",
       title:
         "Step 6: Inside the Tunnel with Another Hand Wash Using Lambswool Mittens",
       description:
         "As the car enters the cleaning tunnel, another round of hand washing takes place. This time, lambswool mittens are utilized for a gentle yet effective cleaning, ensuring that every nook and cranny is thoroughly addressed.",
     },
     {
-      image: "/li.png",
+      image:
+        "https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/li.webp",
       title: "Last Step: Teflon Wax Then Dry",
       description:
         "In the final step, Teflon wax is applied to the car's surface. This not only enhances the vehicle's shine but also provides a protective layer against environmental elements. The car is then carefully dried, completing the detailing process and leaving it looking polished and well-maintained.",

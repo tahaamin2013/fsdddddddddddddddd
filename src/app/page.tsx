@@ -1,15 +1,13 @@
 "use client";
-import Cleaning from "@/components/Cleaning";
-import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
-import Navbar from "@/components/Navbar";
+import Map from "@/components/Map";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import WhatWeDo from "@/components/WhatWeDo";
-import Reviews from "@/components/reviews";
 import Git from "@/components/fsdklfsjd";
 import New from "@/components/new";
-import { motion, AnimatePresence } from "framer-motion";
+import Reviews from "@/components/reviews";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 type Data = {
@@ -86,20 +84,18 @@ const Home: React.FC = () => {
           />
         </video>
 
-        <div className="absolute top-[50%] sm:top-[35%] items-center justify-center w-full flex flex-col">
-          <div className="text-white flex flex-col lg:!mx-52 sm:!mx-7 mx-auto justify-center max-w-fit items-center left-[200px]">
-            <div className="">
-              <motion.div
-                className="text-transition"
-                initial={{ y: "100%" }}
-                animate={{ y: shouldAnimateDown ? "100%" : 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <p className="h-[25px] text-[#0097dd] tracking-widest uppercase overflow-hidden sm:text-xl font-semibold text-sm mb-2">
-                  {data.texts[visibleIndex].desc}
-                </p>
-              </motion.div>
-            </div>
+        <div className="absolute top-[40%] sm:top-[35%] items-center justify-center w-full flex flex-col">
+          <div className="text-white flex flex-col lg:!mx-52 sm:!mx-7 mx-auto justify-center max-w-fit items-center">
+            <motion.div
+              className="text-transition"
+              initial={{ y: "100%" }}
+              animate={{ y: shouldAnimateDown ? "100%" : 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="h-fit text-center text-[#0097dd] tracking-widest uppercase overflow-hidden sm:text-xl font-semibold text-sm mb-2">
+                {data.texts[visibleIndex].desc}
+              </p>
+            </motion.div>
             <div className="h-fit pb-3 text-left tracking-widest flex justify-center items-center text-white w-full overflow-hidden">
               <motion.div
                 className="text-transition"
@@ -118,13 +114,21 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* <Image
+        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
+        alt="image of house"
+        className="w-screen"
+        width={3200}
+        height={390}
+      /> */}
       <Image
-        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.png"
+        src="https://raw.githubusercontent.com/aimahusnain/Washme-CarWash-Images/main/washhouse.webp"
         alt="image of house"
         className="w-screen"
         width={3200}
         height={390}
       />
+      <Map />
       <main>
         <div className="-mt-3">
           <New />
@@ -140,9 +144,9 @@ const Home: React.FC = () => {
         <Git />
         <Reviews />
         <FAQ />
-        <div className="mx-5">
+        {/* <div className="mx-5">
           <Contact />
-        </div>
+        </div> */}
       </main>
     </>
   );
