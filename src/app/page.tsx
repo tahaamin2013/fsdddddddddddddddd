@@ -1,4 +1,5 @@
 "use client";
+import { Contact } from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import Map from "@/components/Map";
 import Pricing from "@/components/Pricing";
@@ -8,7 +9,6 @@ import Git from "@/components/fsdklfsjd";
 import New from "@/components/new";
 import Reviews from "@/components/reviews";
 import { motion } from "framer-motion";
-import { Contact } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

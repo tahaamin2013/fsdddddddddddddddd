@@ -1,45 +1,91 @@
-import {useState} from 'react'
-import React from 'react';
+import React, { useState } from 'react';
+import { Button } from './ui/button';
+import { toast } from "sonner"
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+  });
+
   async function handleSubmit(e: any) {
-      e.preventDefault();
-      const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-          },
-          body: JSON.stringify({
-              access_key: "YOUR_ACCESS_KEY_HERE",
-              name: e.target.name.value,
-              email: e.target.email.value,
-              message: e.target.message.value,
-          }),
+    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "69ac6f7c-e4c6-40b6-af03-d47876657613",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      toast("Form Submitted Successfully")
+      console.log(result);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
       });
-      const result = await response.json();
-      if (result.success) {
-          console.log(result);
-      }
+    }
   }
 
-return (
-  <>
-    <form onSubmit={handleSubmit}>
-        <div>
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" required placeholder="Your name" />
+  function handleChange(e: any) {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+
+  return (
+    <>
+      <form onSubmit={handleSubmit} className="max-w-sm my-10 mx-auto">
+      <h1 className='text-4xl font-bold mx-auto mb-2'>Contact Form</h1>
+        <div className="mb-4">
+          <label htmlFor="name" className="block mb-1">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            placeholder="Your name"
+            className="w-full px-4 py-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+          />
         </div>
-        <div>
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" required placeholder="email@example.com" />
+        <div className="mb-4">
+          <label htmlFor="email" className="block mb-1">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            placeholder="email@example.com"
+            className="w-full px-4 py-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+          />
         </div>
-        <div>
-            <label htmlFor="message">Message</label>
-            <textarea name="message" required rows={3} placeholder="Enter Message"></textarea>
+        <div className="mb-4">
+          <label htmlFor="phone" className="block mb-1">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            placeholder="+ 0123 456 789"
+            className="w-full px-4 py-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+          />
         </div>
-        <button type="submit">Submit Form</button>
-    </form>
-  </>
-);
+        <Button type="submit" className='bg-black text-white'>Submit Form</Button>
+      </form>
+    </>
+  );
 }

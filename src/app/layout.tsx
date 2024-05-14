@@ -7,6 +7,7 @@ import Topbutton from "@/components/Topbutton";
 import Footer from "@/components/Footer";
 import Memberships from "@/components/memberships";
 import Loader from "@/lib/Loader";
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
         <Loader>
           {/* <Memberships /> */}
           <Navbar />
-
+          <Toaster />
           {children}
           <Topbutton />
           <Footer />
