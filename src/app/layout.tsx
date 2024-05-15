@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Loader>
           {/* <Memberships /> */}
-          <Popup />
+          {/* <Popup /> */}
           <Navbar />
           <Toaster />
           {children}
