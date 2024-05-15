@@ -8,6 +8,15 @@ import Footer from "@/components/Footer";
 import Memberships from "@/components/memberships";
 import Loader from "@/lib/Loader";
 import { Toaster } from "@/components/ui/sonner"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import Popup from "@/components/Popup";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +35,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <Loader>
           {/* <Memberships /> */}
+          <Popup />
           <Navbar />
           <Toaster />
           {children}
-          <Topbutton />
-          <Footer />
+          <Topbutton />          <Footer />
         </Loader>
       </body>
     </html>

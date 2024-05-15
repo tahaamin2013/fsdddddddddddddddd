@@ -145,6 +145,7 @@ const Home: React.FC = () => {
           <Contact />
         </div> */}
       </main>
+
     </>
   );
 };
